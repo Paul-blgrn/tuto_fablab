@@ -1,0 +1,27 @@
+.Home-Title2 {
+  text-transform: uppercase;
+  text-shadow: rgba(0, 53, 85, 1) 3px 3px;
+  margin: 0;
+}
+
+.Home-button {
+  background-color: rgba(0, 53, 85, 1);
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  border-radius: 5px;
+  transform: scale(1);
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 5px;
+  font-size: calc(10px + 2vmin);
+  display: inline-block;
+}
+  
+.Home-button:hover {
+  background-color: #fff;
+  color: rgba(0, 53, 85, 1);
+  font-weight: bold;
+  transform: scale(1.1);
+}

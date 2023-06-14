@@ -1,34 +1,58 @@
+/* -------------- */
+/* - Base React - */
+/* -------------- */
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 52, 85, 0.827);
+}
+
+hr {
+  width: 40rem;
+}
+
+button {
+  margin: 10px;
+  font-size: 16px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  color: #fff;
+  padding: 23px 50px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+  border: 0px;
+  cursor: pointer;
+}
+
+.Home-container{
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  gap: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Home-ListButtons {
+  margin: 10px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 840px) {
+	.Home-ListButtons {
+		flex-direction: column;
+    width: 30rem;
+	}
+}
+
+.Home-Title {
+  text-transform: uppercase;
+  text-shadow: rgba(0, 53, 85, 1) 3px 3px;
 }

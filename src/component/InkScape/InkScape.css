@@ -1,5 +1,4 @@
-.Home-container{
-    background-color: #282c34;
+.Tutos-Container{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -7,23 +6,28 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    width: 50%;
+    margin-top: 10px;
 }
 
-.Home-button {
-  background-color: #6d7585;
+.Tutos-buttonBack {
+  background-color: rgba(0, 53, 85, 1);
   transition: all 0.3s ease-in-out;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 5px;
   transform: scale(1);
   padding: 10px;
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+  margin: 5px;
+  font-size: 1.3rem;
+  width: 10rem;
 }
   
-.Home-button:hover {
+.Tutos-buttonBack:hover {
   background-color: #fff;
-  color: #282c34;
+  color: rgba(0, 53, 85, 1);
   font-weight: bold;
   transform: scale(1.1);
 }
