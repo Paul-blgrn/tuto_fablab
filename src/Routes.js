@@ -1,12 +1,12 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Home from './pages/Home';
-import InkScape from './component/InkScape/InkScape';
+import Tutorial from './pages/Tuto';
 
 const MainRoutes = () => {
     return (
         <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/inkscape" element={<InkScape />} />
+            <Route path="/tuto/:id" element={<Tutorial />} />
             <Route path='*' element={<Navigate to='/' />} />
         </Routes>
     );

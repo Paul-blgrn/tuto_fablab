@@ -17,6 +17,7 @@
   margin: 5px;
   font-size: calc(10px + 2vmin);
   display: inline-block;
+  width: auto;
 }
   
 .Home-button:hover {
@@ -24,4 +25,14 @@
   color: rgba(0, 53, 85, 1);
   font-weight: bold;
   transform: scale(1.1);
+}
+
+.Home-container1 {
+  border: 2px solid blue;
+  padding: 3px;
+  margin: 5px;
+}
+
+.Home-container2 {
+  border: 2px solid red;
 }
