@@ -1,17 +1,15 @@
 import React, { useEffect } from "react";
-import { useNavigate  } from "react-router-dom";
+import { useParams  } from "react-router-dom";
 import parse from 'html-react-parser';
 
 import './TutoPage.css';
 
 const Tutopage = (props) => {
     const {tutoDetail } = props;
-    
-    // return to "/"
-    const navigate = useNavigate();
-    const handleGoHome = () => {
-        navigate("/");
-    };
+
+    // get id in adress bar
+    const { id1 } = useParams();
+    console.log("ID = " + id1)
 
     // close current window
     const closeWindow = () => {
@@ -25,13 +23,6 @@ const Tutopage = (props) => {
     return(
         <div className="Tuto-Container">
             <div className="Tuto-button-container">
-                <button 
-                    className="Tuto-buttonBack" 
-                    onClick={handleGoHome}
-                >
-                    Retour à l'accueil
-                </button>
-
                 <button 
                     className="Tuto-buttonBack" 
                     onClick={closeWindow}

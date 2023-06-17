@@ -18,22 +18,6 @@
   flex-wrap: wrap;
 }
 
-.Aide-button-container-bottom {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 150%;
-}
-
-@media screen and (max-width: 1060px) {
-	.Aide-button-container {
-		flex-direction: column;
-    width: 30rem;
-	}
-}
-
 .Aide-buttonBack {
   background-color: rgba(0, 53, 85, 1);
   font-size: 16px;
@@ -62,7 +46,39 @@
   transform: scale(1.1);
 }
 
-.Aide-button {
+.Aide-Title2 {
+  text-transform: uppercase;
+  text-shadow: rgba(0, 53, 85, 1) 3px 3px;
+  margin: 10px;
+}
+
+.Aide-Description {
+  border: 1px solid white;
+  width: 150%;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Aide-button-container-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 150%;
+}
+
+.Aide-Empty {
+  color:crimson;
+  font-weight: bold;
+  text-shadow: #000000 1px 2px;
+}
+
+.Aide-buttons {
   background-color: rgba(0, 53, 85, 1);
   transition: all 0.3s ease-in-out;
   width: 40vmin;
@@ -82,26 +98,20 @@
   transform: scale(1);
 }
   
-.Aide-button:hover {
+.Aide-buttons:hover {
   background-color: #fff;
   color: rgba(0, 53, 85, 1);
   font-weight: bold;
   transform: scale(1.1);
 }
 
-.Aide-Title2 {
-  text-transform: uppercase;
-  text-shadow: rgba(0, 53, 85, 1) 3px 3px;
-  margin: 10px;
-}
-
-.Aide-Content {
-  border: 1px solid white;
-  width: 150%;
-  padding: 10px;
-  margin: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+@media screen and (max-width: 1060px) {
+	.Aide-button-container-top {
+		flex-direction: column;
+    width: 30rem;
+	}
+  .Aide-button-container-bottom {
+		flex-direction: column;
+    width: 30rem;
+	}
 }

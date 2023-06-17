@@ -7,14 +7,6 @@
   background-color: rgba(0, 52, 85, 0.827);
 }
 
-hr {
-  width: 40rem;
-}
-
-.separator2 {
-  margin: 20px;
-}
-
 button {
   background-color: rgba(0, 53, 85, 1);
   font-size: 16px;
@@ -35,13 +27,20 @@ button:hover {
   background-color: #fff;
   color: rgba(0, 53, 85, 1);
   transform: scale(1.1);
-} 
-
-.Home-Title {
-  text-transform: uppercase;
-  text-shadow: rgba(0, 53, 85, 1) 3px 3px;
 }
 
+hr {
+  width: 40rem;
+}
+
+.separator2 {
+  margin: 20px;
+} 
+
+
+/* -------------- */
+/* -    HOME    - */
+/* -------------- */
 .Home-container{
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
@@ -52,6 +51,12 @@ button:hover {
   align-items: center;
   justify-content: center;
   /* border: 5px solid red; */
+}
+
+.Home-Title2 {
+  text-transform: uppercase;
+  text-shadow: rgba(0, 53, 85, 1) 3px 3px;
+  margin: 0;
 }
 
 .Home-ListButtons {
@@ -71,12 +76,4 @@ button:hover {
 		flex-direction: column;
     width: 30rem;
 	}
-}
-
-.Home-div1 {
-  border: 2px solid pink;
-}
-
-.Home-div2 {
-  border: 2px solid rgb(233, 192, 255);
 }

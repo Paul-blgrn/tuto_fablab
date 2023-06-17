@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+//import axios from 'axios';
 
 import { useEffect, useState } from "react";
 
@@ -19,16 +19,16 @@ const Home = () => {
         getData();
     }, []);
 
-    const editJson = () => {
-        axios.get(`http://localhost:3000/data/lorem.json`)
-             .then((response)=> {
-                let someData = JSON.stringify(response);
-                console.log(JSON.parse(someData));
-                /* fs.writeFile("../../public/data/lorem2.json", someData, (err) => {
-                    if (err) console.log('Error writing file:', err);
-                }); */
-             });
-    }
+    // const editJson = () => {
+    //     axios.get(`http://localhost:3000/data/lorem.json`)
+    //          .then((response)=> {
+    //             let someData = JSON.stringify(response);
+    //             console.log(JSON.parse(someData));
+    //             /* fs.writeFile("../../public/data/lorem2.json", someData, (err) => {
+    //                 if (err) console.log('Error writing file:', err);
+    //             }); */
+    //          });
+    // }
 
     return (
         <div className="Home-container">
