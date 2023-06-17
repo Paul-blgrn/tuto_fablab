@@ -1,44 +1,86 @@
 [
     {
         "id": 1,
-        "name": "InkScape",
-        "type" : "logiciel",
-        "route": "/tuto/",
-        "description": "Inkscape est un logiciel de dessin vectoriel libre multiplateforme (Windows, Mac OS X (sous X11), GNU/Linux et FreeBSD). Il gère des fichiers conformes aux standards XML, SVG et CSS du W3C. Le logiciel est intégré à la liste des logiciels libres préconisés par l’État français dans le cadre de la modernisation globale de ses systèmes d’information. Il a des fonctionnalités similaires aux logiciels propriétaires CorelDRAW et Adobe Illustrator."
+        "name": "Imprimante 3D",
+        "type" : "machine",
+        "route": "/aide/",
+        "description": "Imprimez des pièces en 3D à partir de dessins vectoriels.",
+        "subButtons": []
     },
     {
         "id": 2,
-        "name": "Idea Maker",
-        "type" : "logiciel",
-        "route": "/tuto/",
-        "description": "<h2>desc 1</h2>"
+        "name": "Brodeuse Numérique",
+        "type" : "machine",
+        "route": "/aide/",
+        "description": "La brodeuse numérique est une machine qui permet de broder des motifs.",
+        "subButtons": []
     },
     {
         "id": 3,
-        "name": "Fusion 360",
-        "type" : "logiciel",
-        "route": "/tuto/",
-        "description": "desc 2"
+        "name": "Machine laser",
+        "type" : "machine",
+        "route": "/aide/",
+        "description": "C'est une machine qui permet de découper et graver sur plusieurs support comme le bois, le minéral ou l'acrylique.",
+        "subButtons": []
     },
     {
         "id": 4,
-        "name": "testtttest4",
+        "name": "Peloteur de découpe",
         "type" : "machine",
-        "route": "/tuto/",
-        "description": "desc 3"
+        "route": "/aide/",
+        "description": "Peloteur de découpe",
+        "subButtons": []
     },
     {
         "id": 5,
-        "name": "testtestt5",
+        "name": "Fraiseuse CNC",
         "type" : "machine",
-        "route": "/tuto/",
-        "description": "desc 4"
+        "route": "/aide/",
+        "description": "Fraiseuse CNC",
+        "subButtons": []
     },
     {
         "id": 6,
-        "name": "test test test 6",
-        "type" : "machine",
-        "route": "/tuto/",
-        "description": "desc 5"
+        "name": "InkScape",
+        "type" : "logiciel",
+        "route": "/aide/",
+        "description": "Inkscape est un logiciel de dessin vectoriel libre multiplateforme (Windows, Mac OS X (sous X11), GNU/Linux et FreeBSD). Il gère des fichiers conformes aux standards XML, SVG et CSS du W3C. Le logiciel est intégré à la liste des logiciels libres préconisés par l’État français dans le cadre de la modernisation globale de ses systèmes d’information. Il a des fonctionnalités similaires aux logiciels propriétaires CorelDRAW et Adobe Illustrator.",
+        "subButtons": [
+            {
+                "id": 1,
+                "route": "/tuto/",
+                "name": "Zoomer / DeZoomer",
+                "content": "azerty"
+            },
+            {
+                "id": 2,
+                "route": "/tuto/",
+                "name": "Vectoriser une image",
+                "content": "Tutoriel inkscape"
+            }
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Idea Maker",
+        "type" : "logiciel",
+        "route": "/aide/",
+        "description": "Idea Maker est un logiciel d'impression 3D",
+        "subButtons": [
+            {
+                "id": 1,
+                "route": "/tuto/",
+                "name": "Tuto 3",
+                "content": "Tutoriel ida maker"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Fusion 360",
+        "type" : "logiciel",
+        "route": "/aide/",
+        "description": "Fusion 360 est une application logicielle commerciale de conception assistée par ordinateur (CAO), de fabrication assistée par ordinateur (FAO), d’ingénierie assistée par ordinateur (IAO) et de carte de circuit imprimé (PCB), développée par Autodesk. Il est disponible pour Windows, macOS et navigateur Web,[5] avec des applications simplifiées disponibles pour Android et iOS. Fusion 360 est concédé sous licence sous forme d’abonnement payant, avec une édition personnelle gratuite limitée à domicile et non commerciale.",
+        "subButtons": []
     }
 ]

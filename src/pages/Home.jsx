@@ -2,7 +2,6 @@ import React from 'react';
 import axios from 'axios';
 
 import { useEffect, useState } from "react";
-//import { Link  } from "react-router-dom";
 
 import Button from '../component/homePage/HomePage';
 import API from '../services/API';
@@ -33,12 +32,9 @@ const Home = () => {
 
     return (
         <div className="Home-container">
-            {/* Title */}
-            <h1 className="Home-Title">Tutoriels</h1>
-            
-            {/* SubTitle 1 */}
+            {/* Title 1 */}
             <hr />
-            <h2 className="Home-Title2">Logiciel:</h2>
+            <h2 className="Home-Title2">Tutoriel Logiciel:</h2>
             <hr/>
 
             {/* BUTTONS 1 */}
@@ -62,9 +58,9 @@ const Home = () => {
             {/* SEPARATOR */}
             <div className="separator2"></div>
             
-            {/* SubTitle 2 */}
+            {/* Title 2 */}
             <hr/>
-            <h2 className="Home-Title2">Machine:</h2>
+            <h2 className="Home-Title2">Tutoriel Machine:</h2>
             <hr/>
 
             {/* BUTTONS 2 */}
@@ -86,9 +82,9 @@ const Home = () => {
             </div>
 
             {/* BUTTON TEST */}
-            <div>
+            {/* <div>
                 <button onClick={editJson}>edit json test</button>
-            </div>
+            </div> */}
         </div>
     );
 }

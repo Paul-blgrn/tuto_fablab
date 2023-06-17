@@ -1,5 +1,5 @@
 import { Link  } from "react-router-dom";
-import parse from 'html-react-parser'
+import parse from 'html-react-parser';
 
 import './HomePage.css';
 

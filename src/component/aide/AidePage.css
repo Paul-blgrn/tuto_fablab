@@ -1,0 +1,107 @@
+.Aide-Container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.Aide-button-container-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Aide-button-container-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 150%;
+}
+
+@media screen and (max-width: 1060px) {
+	.Aide-button-container {
+		flex-direction: column;
+    width: 30rem;
+	}
+}
+
+.Aide-buttonBack {
+  background-color: rgba(0, 53, 85, 1);
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  margin: 10px;
+  padding: 10px;
+  transition: all 0.3s ease-in-out;
+  transform: scale(1);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40vmin;
+}
+  
+.Aide-buttonBack:hover {
+  background-color: #fff;
+  color: rgba(0, 53, 85, 1);
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.Aide-button {
+  background-color: rgba(0, 53, 85, 1);
+  transition: all 0.3s ease-in-out;
+  width: 40vmin;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin: 15px;
+  font-size: calc(10px + 1.5vmin);
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1);
+}
+  
+.Aide-button:hover {
+  background-color: #fff;
+  color: rgba(0, 53, 85, 1);
+  font-weight: bold;
+  transform: scale(1.1);
+}
+
+.Aide-Title2 {
+  text-transform: uppercase;
+  text-shadow: rgba(0, 53, 85, 1) 3px 3px;
+  margin: 10px;
+}
+
+.Aide-Content {
+  border: 1px solid white;
+  width: 150%;
+  padding: 10px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}

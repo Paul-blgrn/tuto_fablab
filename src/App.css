@@ -35,7 +35,7 @@ button:hover {
   background-color: #fff;
   color: rgba(0, 53, 85, 1);
   transform: scale(1.1);
-}
+} 
 
 .Home-Title {
   text-transform: uppercase;
@@ -61,6 +61,8 @@ button:hover {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
   /* border: 2px solid yellow; */
 }
 
