@@ -88,11 +88,11 @@ hr {
   justify-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  border: 1px solid rgb(255, 0, 195);
+  /* border: 1px solid rgb(255, 0, 195); */
 }
 
 .contenttext {
-  border: 1px solid rgb(0, 255, 145);
+  /* border: 1px solid rgb(0, 255, 145); */
   text-align: center;
   font-size: 3vmin;
   margin: 10px;
@@ -108,7 +108,7 @@ hr {
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 
 .imagestuto img {
@@ -119,6 +119,12 @@ hr {
   font-size: 8vmin;
   font-weight: bold;
   margin-left: 3vmin;
+}
+
+.tutosignplusb {
+  font-size: 8vmin;
+  font-weight: bold;
+  padding: 3vmin;
 }
 
 .arrownmouse {
@@ -143,7 +149,7 @@ hr {
   justify-items: center;
   align-items: center;
   flex-wrap: nowrap;
-  border: 1px solid rgb(255, 0, 128);
+  /* border: 1px solid rgb(255, 0, 128); */
   height: 30vmin;
   width: 30vmin;
   margin-right: 2vmin;
@@ -156,17 +162,17 @@ hr {
   margin: 0 auto;
   position: relative;
   right: 6vmin;
-  border: 1px solid rgb(212, 255, 0);
+  /* border: 1px solid rgb(212, 255, 0); */
 }
 
 .your-image {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   height: 30vmin;
   width: 30vmin;
 }
 
 .pointerovermouse {
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   width: 8vmin;
   height: 15vmin;
   z-index: 1;
@@ -175,10 +181,9 @@ hr {
   left: 20vmin;
 }
 
-.ctrltouch {
+.keyboard-touch {
   width: 20vmin;
-  height: 15vmin;
-  background-color: white;
+  height: 20vmin;
   border-radius: 2vmin;
 }
 
