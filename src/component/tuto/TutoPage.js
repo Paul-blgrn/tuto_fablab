@@ -4,6 +4,8 @@ import parse from 'html-react-parser';
 
 import './TutoPage.css';
 
+import Index from './tutoriels/index.jsx';
+
 const Tutopage = (props) => {
     const {tutoDetail } = props;
 
@@ -19,6 +21,7 @@ const Tutopage = (props) => {
     useEffect(() => {
         document.title = tutoDetail.name;
     }, [tutoDetail.name]);
+
 
     return(
         <div className="Tuto-Container">
@@ -40,7 +43,9 @@ const Tutopage = (props) => {
             <div
                 className="Tuto-Content"
             >
-                {parse(tutoDetail.content)}
+                <div>
+                    <Index content={tutoDetail.content} />
+                </div>
             </div>
         </div>
     );

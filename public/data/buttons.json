@@ -41,6 +41,14 @@
     },
     {
         "id": 6,
+        "name": "Presse à chaud",
+        "type" : "machine",
+        "route": "/aide/",
+        "description": "Presse à chaud",
+        "subButtons": []
+    },
+    {
+        "id": 7,
         "name": "InkScape",
         "type" : "logiciel",
         "route": "/aide/",
@@ -50,24 +58,24 @@
                 "id": 1,
                 "route": "/tuto/",
                 "name": "Zoomer / DeZoomer",
-                "content": "<div className='contentbox'><div className='contenttext'>Pour Zoomer / Dezoomer, Maintenez la touche «CTRL» de votre clavier.<br/>Faites rouler la roue de votre souris vers le haut (+) ou le bas (-).<br/> (+) = Zoomer || (-) = Dezoomer.<hr className='hrcontent'/><h2 className='Home-Title2'>Exemple:</h2></div><div className='imagestuto'><img className='keyboard-touch scale-in-out-anim' src='/images/key_ctrl.svg' alt='ctrl keyboard'/><div className='tutosignplus'>+</div><div className='arrownmouse'><img className='mousewheelarrows up-down-anim' src='/images/up_n_down.svg' alt='up and down'/><img style='width: 30vmin;height: 30vmin;' src='/images/mousewheel.svg' alt='mousewheel'/></div></div></div>"
+                "content": "zoom"
             },
             {
                 "id": 2,
                 "route": "/tuto/",
                 "name": "Sauvegarder un fichier",
-                "content": "<div className='contentbox'><div className='contenttext'>Pour sauvegarder votre fichier, appuyez sur la touche «CTRL» et la touche «S» de votre clavier.<br/>Une fenetre va s'ouvrir, choisissez l'emplacement et le nom de votre ficher puis appuyez sur le bouton «Enregistrer». <hr className='hrcontent'/><h2 className='Home-Title2'>Exemple:</h2></div> <div className='imagestuto'><img className='keyboard-touch scale-in-out-anim' src='/images/key_ctrl.svg' alt='ctrl keyboard'/><div className='tutosignplusb'>+</div><img className='keyboard-touch scale-in-out-anim' src='/images/key_s.svg' alt='ctrl keyboard'/></div></div>"
+                "content": "save"
             },
             {
                 "id": 3,
                 "route": "/tuto/",
                 "name": "Vectoriser une image",
-                "content": "<div className='contentbox'><div className='contenttext'>Pour vectoriser une image:<hr className='hrcontent'/>Clic droit sur votre image → «Vectoriser un objet matriciel» </div> <div className='imagestuto'><img className='your-image' src='/images/votreimage.svg' alt='yourimage'/><div className='arrownmouse1'><img className='pointerovermouse scale-in-out-anim' src='/images/pointer.svg' alt='pointer'/><img className='right-mouse' src='/images/mouseright.svg' alt='mouseright'/></div></div></div>"
+                "content": "vectoriser"
             }
         ]
     },
     {
-        "id": 7,
+        "id": 8,
         "name": "Idea Maker",
         "type" : "logiciel",
         "route": "/aide/",
@@ -75,7 +83,7 @@
         "subButtons": []
     },
     {
-        "id": 8,
+        "id": 9,
         "name": "Fusion 360",
         "type" : "logiciel",
         "route": "/aide/",
