@@ -11,8 +11,9 @@ const Sauvegarder = () => {
             <div className='imagestuto'>
                 <img className='keyboard' src='/images/keyboard.svg' alt='ctrl keyboard'/>
                 <div className="pushtouch">
-                    <div className="pushtouch-ctrl"></div>
-                    <div className="pushtouch-s"></div>
+                    <div className="pushtouch-ctrl pushtouch-animate"></div>
+                    <div className="pushtouch-s pushtouch-animate"></div>
+                    <div className="pushtouch-test"></div>
                 </div>
             </div>
         </div>

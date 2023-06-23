@@ -11,44 +11,68 @@
     justify-items: center;
     align-items: center;
     flex-wrap: nowrap;
+    width: 97vmin;
+    height: 30vmin;
+    position: absolute;
+    border-radius: 3vmin;
+    border: 1px solid green;
+}
+
+.pushtouch-animate {
+    animation: opacity .8s ease-in-out infinite alternate;
 }
 
 .pushtouch-ctrl {
-  width: 5.2vmin;
+  width: 5.5vmin;
   height: 4vmin;
-  position: relative;
-  top: -9.58vmin;
-  left: -44vmin;
+  position: absolute;
+  bottom: 1.92vmin;
+  left: 1.8vmin;
   background-color: red;
-  border-radius: 0.5vmin;
-  animation: opacity .8s ease-in-out infinite alternate;
+  border-radius: 0.3vmin;
 }
 
 .pushtouch-s {
     background-color: red;
     border-radius: 0.5vmin;
+    width: 4.1vmin;
+    height: 4.1vmin;
+    position: absolute;
+    top: 14.56vmin;
+    left: 16.15vmin;
+}
+
+.pushtouch-test {
+    background-color: blue;
+    border-radius: 0.5vmin;
     width: 4vmin;
     height: 4vmin;
-    position: relative;
-    top: -23vmin;
-    left: -30.4vmin;
-    animation: opacity .8s ease-in-out infinite alternate;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 @media screen and (max-width: 1060px) {
   .keyboard {
     width: 75vmin;
   }
+  .pushtouch {
+    width: 72.6vmin;
+    height: 22.6vmin;
+  }
   .pushtouch-ctrl {
-    width: 4vmin;
-    height: 3vmin;
-    top: -7.6vmin;
-    left: -32.95vmin;
+    width: 4.1vmin;
+    height: 3.1vmin;
+    bottom: 1.4vmin;
+    left: 1.25vmin;
   }
   .pushtouch-s {
-        width: 3vmin;
-        height: 3vmin;
-        top: -17.8vmin;
-        left: -22.75vmin;
-    }
+    width: 3.1vmin;
+    height: 3.1vmin;
+    left: 12vmin;
+    top: 11vmin;
+  }
+  .pushtouch-test {
+    
+  }
 }
