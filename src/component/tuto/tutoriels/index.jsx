@@ -2,6 +2,7 @@ import React from 'react';
 
 // editez le style des tutoriels sur ce fichier
 import './Tutoriels.css';
+import './Keyboard.css';
 
 import Save from './Sauvegarder.jsx';
 import Zoom from './Zoom.jsx';
@@ -25,7 +26,7 @@ const indexHtml = (props) => {
             // si la valeur "content" du fichier json est égale a aucune des valeurs ci-dessus 
             // on affiche une petite phrase qui indique que c'est pas bon
             ) : (
-                <h2 className="Empty-Tutorial">No tutorial here</h2>
+                <h3 className="Empty-Tutorial">404 - Not Found</h3>
             )
         )
     );

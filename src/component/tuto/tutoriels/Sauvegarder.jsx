@@ -9,9 +9,11 @@ const Sauvegarder = () => {
                 <h2 className='Home-Title2'>Exemple:</h2>
             </div>
             <div className='imagestuto'>
-                <img className='keyboard-touch scale-in-out-anim' src='/images/key_ctrl.svg' alt='ctrl keyboard'/>
-                <div className='tutosignplusb'>+</div>
-                <img className='keyboard-touch scale-in-out-anim' src='/images/key_s.svg' alt='ctrl keyboard'/>
+                <img className='keyboard' src='/images/keyboard.svg' alt='ctrl keyboard'/>
+                <div className="pushtouch">
+                    <div className="pushtouch-ctrl"></div>
+                    <div className="pushtouch-s"></div>
+                </div>
             </div>
         </div>
     );

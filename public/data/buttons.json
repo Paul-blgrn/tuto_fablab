@@ -71,7 +71,20 @@
                 "route": "/tuto/",
                 "name": "Vectoriser une image",
                 "content": "vectoriser"
+            },
+            {
+                "id": 4,
+                "route": "/tuto/",
+                "name": "Annuler une action",
+                "content": "cancel"
+            },
+            {
+                "id": 5,
+                "route": "/tuto/",
+                "name": "Se",
+                "content": "selectAll"
             }
+
         ]
     },
     {
