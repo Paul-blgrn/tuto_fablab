@@ -32,13 +32,9 @@
   justify-items: center;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin: 0 auto;
   /* border: 1px solid blue; */
-}
-
-.imagestuto img {
-  margin: 2vmin;
 }
 
 .tutosignplus {
@@ -113,15 +109,35 @@
   border-radius: 2vmin;
 }
 
-.keyboard {
-  width: 100vmin;
+.Keyboard-parent {
+  border: 1px solid pink;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  justify-items: center;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
+
+.keyboard {
+  width: 78vmin;
+  height: 30vmin;
+  margin: 0 auto;
+  align-items: center;
+  position: absolute;
+}
+
+.push-keys {
+  width: 78vmin;
+  height: 24vmin;
+  position: relative;
+  border-radius: 3vmin;
+  border: 1px solid rgb(0, 255, 42);
+}
+
+/* .push-keys :hover {
+  background-color: blue;
+  transition: all .3s ease-in-out;
+} */
 
 .hrcontent {
   width: 50vmin;
@@ -145,4 +161,10 @@
 { 
   from {transform: scale(1);}
   to { transform: scale(1.1);}
+}
+
+@media screen and (max-width: 760px) {
+	.Keyboard-parent {
+    flex-direction: column;
+	}
 }

@@ -1,78 +1,318 @@
+/* Animation des touches */
 @keyframes opacity
 { 
-  from { opacity: 0;}
-  to {opacity: 0.8;}
+  from { 
+    opacity: 0;
+    content: "A";
+  }
+  to {
+    opacity: 0.7; 
+  }
 }
 
-.pushtouch {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 97vmin;
-    height: 30vmin;
-    position: absolute;
-    border-radius: 3vmin;
-    border: 1px solid green;
-}
-
-.pushtouch-animate {
+.key-animate {
     animation: opacity .8s ease-in-out infinite alternate;
 }
-
-.pushtouch-ctrl {
-  width: 5.5vmin;
-  height: 4vmin;
-  position: absolute;
-  bottom: 1.92vmin;
-  left: 1.8vmin;
-  background-color: red;
-  border-radius: 0.3vmin;
+.key-hide {
+    visibility: hidden;
 }
 
-.pushtouch-s {
-    background-color: red;
-    border-radius: 0.5vmin;
-    width: 4.1vmin;
-    height: 4.1vmin;
-    position: absolute;
-    top: 14.56vmin;
-    left: 16.15vmin;
+/* ------------------------ */
+/* ---  KEYBOARD LINE 1 --- */
+/* ------------------------ */
+/* Touche echap à power (pad) */
+
+/* ------------------------ */
+/* ---  KEYBOARD LINE 2 --- */
+/* ------------------------ */
+/* Touche ² à - (pad) */
+
+/* ------------------------ */
+/* ---  KEYBOARD LINE 3 --- */
+/* ------------------------ */
+
+.keyboard-line3 {
+    height: 3.2vmin;
+    width: 48.6vmin;
+    position: relative;
+    top: 7.85vmin;
+    left: 7.8vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.pushtouch-test {
-    background-color: blue;
-    border-radius: 0.5vmin;
-    width: 4vmin;
-    height: 4vmin;
-    position: absolute;
-    top: 0;
-    left: 0;
+.touch {
+    background-color: rgb(255, 0, 0);
+    width: 3.2vmin;
+    height: 3.2vmin;
+    margin-right: 0.93vmin;
+    margin-left: 0vmin;
 }
 
-@media screen and (max-width: 1060px) {
-  .keyboard {
-    width: 75vmin;
-  }
-  .pushtouch {
-    width: 72.6vmin;
-    height: 22.6vmin;
-  }
-  .pushtouch-ctrl {
-    width: 4.1vmin;
-    height: 3.1vmin;
-    bottom: 1.4vmin;
-    left: 1.25vmin;
-  }
-  .pushtouch-s {
-    width: 3.1vmin;
-    height: 3.1vmin;
-    left: 12vmin;
-    top: 11vmin;
-  }
-  .pushtouch-test {
-    
-  }
+.touch:first-child {
+    margin-left: -0.1vmin;
+    margin-right: 1.03vmin;
+}
+
+/* ------------------------ */
+/* ---  KEYBOARD LINE 4 --- */
+/* ------------------------ */
+
+.keyboard-line4 {
+    height: 3.2vmin;
+    width: 47.7vmin;
+    position: relative;
+    top: 8.5vmin;
+    left: 8.65vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.touch2 {
+    background-color: rgb(255, 0, 0);
+    width: 3.2vmin;
+    height: 3.2vmin;
+    margin-left: 0.5vmin;
+}
+
+.touch2:first-child {
+    margin-left: 0vmin;
+}
+
+.touch2:nth-child(11) {
+    margin-right: -0.2vmin;
+}
+
+.touch2:last-child {
+    background-color: rgb(255, 0, 0);
+    width: 2.8vmin;
+    position: relative;
+    left: 0.35vmin;
+    margin-left: 0.3vmin;
+}
+
+
+/* ------------------------ */
+/* ---  KEYBOARD LINE 5 --- */
+/* ------------------------ */
+
+.keyboard-line5 {
+    height: 3.2vmin;
+    width: 45.6vmin;
+    position: relative;
+    top: 9.1vmin;
+    left: 7.35vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.touch3 {
+    background-color: rgb(255, 0, 0);
+    width: 3.25vmin;
+    height: 3.25vmin;
+    margin-right: 1vmin;
+}
+
+.touch3:first-child {
+    margin-left: -0.1vmin;
+    margin-right: 1vmin;
+}
+
+/* ------------------------ */
+/* ---  KEYBOARD LINE 6 --- */
+/* ------------------------ */
+
+.keyboard-line6 {
+    height: 3.2vmin;
+    width: 46.2vmin;
+    position: relative;
+    top: 9.7vmin;
+    left: 1.4vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.touch6 {
+    background-color: rgb(255, 0, 0);
+    width: 3.25vmin;
+    height: 3.25vmin;
+    margin-right: 1vmin;
+}
+
+.touch6:first-child {
+    width: 4.25vmin;
+    position: relative;
+    left: 0.05vmin;
+}
+
+.touch6:nth-child(2) {
+    position: relative;
+    left: 0.1vmin;
+}
+
+.touch6:nth-child(3) {
+    position: relative;
+    left: 0.2vmin;
+}
+
+.touch6:nth-child(4) {
+    position: relative;
+    left: 0.2vmin;
+}
+
+.touch6:nth-child(5) {
+    width: 19.4vmin;
+    position: relative;
+    left: 0.3vmin;
+}
+
+.touch6:nth-child(6) {
+    position: relative;
+    left: 0.4vmin;
+}
+
+.touch6:last-child {
+    position: relative;
+    left: 0.4vmin;
+}
+
+/* ------------------------- */
+/* ---  KEYBOARD NUM PAD --- */
+/* ------------------------- */
+
+.keyboard-pad {
+    height: 18.4vmin;
+    width: 17vmin;
+    position: relative;
+    top: -9vmin;
+    left: 61.3vmin;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.touchpad {
+    background-color: rgb(255, 0, 0);
+    width: 3.25vmin;
+    height: 3.25vmin;
+    margin-right: 1vmin;
+}
+
+.touchpad:first-child {
+    position: relative;
+    top: 0.3vmin;
+    left: 0.05vmin;
+}
+
+.touchpad:nth-child(2) {
+    position: relative;
+    top: 0.3vmin;
+    left: -0.2vmin;
+}
+
+.touchpad:nth-child(3) {
+    top: 0.3vmin;
+    position: relative;
+    left: -0.5vmin;
+}
+
+.touchpad:nth-child(4) {
+    top: 0.3vmin;
+    position: relative;
+    left: -0.7vmin;
+}
+
+.touchpad:nth-child(5) {
+    position: relative;
+    top: -1.15vmin;
+    left: 0.05vmin;
+}
+
+.touchpad:nth-child(6) {
+    position: relative;
+    top: -1.15vmin;
+    left: -0.2vmin;
+}
+
+.touchpad:nth-child(7) {
+    position: relative;
+    top: -1.15vmin;
+    left: -0.5vmin;
+}
+
+.touchpad:nth-child(8) {
+    position: relative;
+    height: 7.2vmin;
+    top: 0.8vmin;
+    left: -0.7vmin;
+}
+
+.touchpad:nth-child(9) {
+    position: relative;
+    top: -4.6vmin;
+    left: 0.05vmin;
+}
+
+.touchpad:nth-child(10) {
+    position: relative;
+    top: -4.6vmin;
+    left: -0.2vmin;
+}
+
+.touchpad:nth-child(11) {
+    position: relative;
+    top: -4.6vmin;
+    left: -0.5vmin;
+}
+
+.touchpad:nth-child(12) {
+    position: relative;
+    height: 7.2vmin;
+    top: 1.2vmin;
+    left: -0.7vmin;
+}
+
+.touchpad:nth-child(13) {
+    position: relative;
+    top: -6vmin;
+    left: 0.05vmin;
+}
+
+.touchpad:nth-child(14) {
+    position: relative;
+    top: -6vmin;
+    left: -0.2vmin;
+}
+
+.touchpad:nth-child(15) {
+    position: relative;
+    top: -6vmin;
+    left: -0.5vmin;
+}
+
+.touchpad:nth-child(16) {
+    position: relative;
+    top: -2.2vmin;
+    left: -4.7vmin;
+}
+
+.touchpad:last-child {
+    position: relative;
+    width: 7.3vmin;
+    top: -5.4vmin;
+    left: 0.05vmin;
 }
