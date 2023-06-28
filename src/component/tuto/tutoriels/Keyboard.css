@@ -3,7 +3,6 @@
 { 
   from { 
     opacity: 0;
-    content: "A";
   }
   to {
     opacity: 0.7; 
@@ -13,8 +12,10 @@
 .key-animate {
     animation: opacity .8s ease-in-out infinite alternate;
 }
-.key-hide {
-    visibility: hidden;
+
+.key-show {
+    visibility: visible;
+    animation: opacity .8s ease-in-out infinite alternate;
 }
 
 /* ------------------------ */
@@ -42,9 +43,10 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
+    visibility: hidden;
 }
 
-.touch {
+.touch3 {
     background-color: rgb(255, 0, 0);
     width: 3.2vmin;
     height: 3.2vmin;
@@ -52,9 +54,17 @@
     margin-left: 0vmin;
 }
 
-.touch:first-child {
+.touch3:first-child {
     margin-left: -0.1vmin;
-    margin-right: 1.03vmin;
+    margin-right: 1vmin;
+}
+
+.touch3:nth-child(7) {
+    margin-left: 0.05vmin;
+}
+
+.touch3:last-child {
+    margin-left: -0.05vmin;
 }
 
 /* ------------------------ */
@@ -72,24 +82,25 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
+    visibility: hidden;
 }
 
-.touch2 {
+.touch4 {
     background-color: rgb(255, 0, 0);
     width: 3.2vmin;
     height: 3.2vmin;
     margin-left: 0.5vmin;
 }
 
-.touch2:first-child {
+.touch4:first-child {
     margin-left: 0vmin;
 }
 
-.touch2:nth-child(11) {
+.touch4:nth-child(11) {
     margin-right: -0.2vmin;
 }
 
-.touch2:last-child {
+.touch4:last-child {
     background-color: rgb(255, 0, 0);
     width: 2.8vmin;
     position: relative;
@@ -113,16 +124,17 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
+    visibility: hidden;
 }
 
-.touch3 {
+.touch5 {
     background-color: rgb(255, 0, 0);
     width: 3.25vmin;
     height: 3.25vmin;
     margin-right: 1vmin;
 }
 
-.touch3:first-child {
+.touch5:first-child {
     margin-left: -0.1vmin;
     margin-right: 1vmin;
 }
@@ -142,6 +154,7 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
+    visibility: hidden;
 }
 
 .touch6 {
@@ -203,6 +216,7 @@
     justify-content: left;
     align-items: center;
     flex-wrap: wrap;
+    visibility: hidden;
 }
 
 .touchpad {
@@ -263,56 +277,56 @@
 
 .touchpad:nth-child(9) {
     position: relative;
-    top: -4.6vmin;
+    top: -4.4vmin;
     left: 0.05vmin;
 }
 
 .touchpad:nth-child(10) {
     position: relative;
-    top: -4.6vmin;
+    top: -4.4vmin;
     left: -0.2vmin;
 }
 
 .touchpad:nth-child(11) {
     position: relative;
-    top: -4.6vmin;
+    top: -4.4vmin;
     left: -0.5vmin;
 }
 
 .touchpad:nth-child(12) {
     position: relative;
-    height: 7.2vmin;
+    height: 7vmin;
     top: 1.2vmin;
     left: -0.7vmin;
 }
 
 .touchpad:nth-child(13) {
     position: relative;
-    top: -6vmin;
+    top: -5.8vmin;
     left: 0.05vmin;
 }
 
 .touchpad:nth-child(14) {
     position: relative;
-    top: -6vmin;
+    top: -5.8vmin;
     left: -0.2vmin;
 }
 
 .touchpad:nth-child(15) {
     position: relative;
-    top: -6vmin;
+    top: -5.8vmin;
     left: -0.5vmin;
 }
 
 .touchpad:nth-child(16) {
     position: relative;
-    top: -2.2vmin;
+    top: -2vmin;
     left: -4.7vmin;
 }
 
 .touchpad:last-child {
     position: relative;
     width: 7.3vmin;
-    top: -5.4vmin;
+    top: -5.2vmin;
     left: 0.05vmin;
 }
