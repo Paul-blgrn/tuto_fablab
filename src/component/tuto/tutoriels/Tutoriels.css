@@ -1,9 +1,3 @@
-.Empty-Tutorial {
-    color:crimson;
-    font-weight: bold;
-    text-shadow: #000000 1px 2px;
-}
-
 /* ---------------- */
 /* - JSON CONTENT - */
 /* ---------------- */
@@ -25,8 +19,14 @@
   padding: 10px;
 }
 
-.imagestuto {
+.hide-content {
+  visibility: hidden;
+}
 
+/* -------------------- */
+/* - TUTORIAL CONTENT - */
+/* -------------------- */
+.imagestuto {
   display: flex;
   flex-direction: row;
   justify-items: center;
@@ -34,7 +34,6 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 0 auto;
-  /* border: 1px solid blue; */
 }
 
 .tutosignplus {
@@ -62,6 +61,15 @@
   height: 15vmin;
   z-index: 1;
   position: absolute;
+}
+
+.mousewheelleftclick {
+  width: 8vmin;
+  height: 15vmin;
+  z-index: 1;
+  position: relative;
+  left: 5vmin;
+  top: 1vmin;
 }
 
 .arrownmouse1 {
@@ -103,6 +111,10 @@
   left: 20vmin;
 }
 
+
+/* -------------------- */
+/* - KEYBOARD CONTENT - */
+/* -------------------- */
 .keyboard-touch {
   width: 20vmin;
   height: 20vmin;
@@ -116,7 +128,7 @@
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
-  margin: 5px;
+  margin: 2vmin;
 }
 
 .keyboard {
@@ -127,21 +139,17 @@
   position: absolute;
 }
 
-.push-keys {
-  width: 78vmin;
-  height: 24vmin;
-  position: relative;
-  border-radius: 3vmin;
-  /* border: 1px solid rgb(0, 255, 42); */
-}
-
-/* .push-keys :hover {
-  background-color: blue;
-  transition: all .3s ease-in-out;
-} */
-
+/* ------------------ */
+/* - GLOBAL CONTENT - */
+/* ------------------ */
 .hrcontent {
   width: 50vmin;
+}
+
+.Empty_Tutorial{
+  color:crimson;
+  font-weight: bold;
+  text-shadow: #000000 1px 2px;
 }
 
 .up-down-anim {
@@ -160,8 +168,12 @@
   
 @keyframes upndownwscale
 { 
-  from {transform: scale(1);}
-  to { transform: scale(1.1);}
+  from {
+    transform: scale(1);
+  }
+  to { 
+    transform: scale(1.1);
+  }
 }
 
 @media screen and (max-width: 760px) {

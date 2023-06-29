@@ -5,6 +5,7 @@ import InkScapeSave from './InkScape/Sauvegarder';
 import InkScapeZoom from './InkScape/Zoom';
 import InkScapeVectoriser from './InkScape/Vectoriser';
 import InkScapeAnnuler from './InkScape/Cancel';
+import InkScapeSelectObject from './InkScape/SelectObject';
 
 const IndexHtml = (props) => {
 
@@ -24,8 +25,10 @@ const IndexHtml = (props) => {
             // on affiche une petite phrase qui indique que c'est pas bon
             ) : content === "inkscape_cancel" ? "inkscape_cancel" && (
                 <InkScapeAnnuler />
+            ) : content === "inkscape_selectObject" ? "inkscape_selectObject" && (
+                <InkScapeSelectObject/>
             ) : (
-                <h3 className="Empty-Tutorial">404 - Not Found</h3>
+                <h3 className="Empty_Tutorial">404 - Not Found</h3>
             )
         )
     );

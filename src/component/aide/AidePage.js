@@ -33,7 +33,7 @@ const Tuto = (props) => {
                     Object.keys(infoDetail.subButtons).length === 0 
                     ? 
                     
-                    <h3 className="Aide-Empty">Aucun tutoriel à afficher pour le moment.</h3>
+                    <h3 className="Aide-Empty">Aucun tutoriel à afficher pour <br/> «{infoDetail.name}».</h3>
                     
                     :
                     infoDetail.subButtons.map((subButtons) => {

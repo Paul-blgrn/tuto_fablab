@@ -17,8 +17,9 @@ const Keyboard = (props) => {
     const { keyboardKeys } = props;
     const [keys, setKeys] = useState(keyboardKeys);
     const prevKey = usePrevious(keys);
+    const domRef = useRef();
 
-    //console.log(prevKey)
+    //id && console.log(id)
 
     const getData = async () => {
 		const results = keyboardKeys;
@@ -31,19 +32,19 @@ const Keyboard = (props) => {
     })
 
     useEffect(() => {
-        keys && keys.map((actualKeys) => {
+        keys && Object(keys.map((actualKeys) => {
             let actualKey = document.getElementById(actualKeys);
             //actualKey && console.log(actualKey)
             actualKey && actualKey.classList.add("key-show")
-        })
+        }))
     }, [keys]);
 
     useEffect(() => {
-        prevKey && prevKey.map((oldKeys) => {
+        prevKey && Object(prevKey.map((oldKeys) => {
             let oldKey = document.getElementById(oldKeys);
             //oldKey && console.log(oldKey)
             oldKey && oldKey.classList.remove("key-show")
-        })
+        }))
     }, [prevKey]);
 
     useEffect(() => {
@@ -51,7 +52,7 @@ const Keyboard = (props) => {
     })
 
     return(
-        <div>
+        <div id="Keyboard-touch" className="Keyboard-touch">
             {/* LINE 1 */}
             <div className="keyboard-line1">
                 <div></div>

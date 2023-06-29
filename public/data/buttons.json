@@ -57,32 +57,38 @@
             {
                 "id": 1,
                 "route": "/tuto/",
-                "name": "Zoomer / DeZoomer",
-                "content": "inkscape_zoom"
-            },
-            {
-                "id": 2,
-                "route": "/tuto/",
                 "name": "Sauvegarder un fichier",
                 "content": "inkscape_save"
             },
             {
-                "id": 3,
+                "id": 2,
                 "route": "/tuto/",
-                "name": "Vectoriser une image",
-                "content": "inkscape_vectoriser"
+                "name": "Importer une image",
+                "content": "inkscape_import"
             },
             {
-                "id": 4,
+                "id": 3,
                 "route": "/tuto/",
                 "name": "Annuler une action",
                 "content": "inkscape_cancel"
             },
             {
+                "id": 4,
+                "route": "/tuto/",
+                "name": "Zoomer / DeZoomer",
+                "content": "inkscape_zoom"
+            },
+            {
                 "id": 5,
                 "route": "/tuto/",
-                "name": "Se",
-                "content": "inkscape_selectAll"
+                "name": "Selectionner des objets",
+                "content": "inkscape_selectObject"
+            },
+            {
+                "id": 6,
+                "route": "/tuto/",
+                "name": "Vectoriser une image",
+                "content": "inkscape_vectoriser"
             }
 
         ]

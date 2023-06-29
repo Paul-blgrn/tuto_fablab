@@ -18,15 +18,22 @@
     animation: opacity .8s ease-in-out infinite alternate;
 }
 
+.Keyboard-touch {
+    width: 78vmin;
+    height: 24vmin;
+    position: relative;
+    top: 0vmin;
+}
+
 /* ------------------------ */
 /* ---  KEYBOARD LINE 1 --- */
 /* ------------------------ */
-/* Touche echap à power (pad) */
+/* Touche F1 à F12 */
 
 /* ------------------------ */
 /* ---  KEYBOARD LINE 2 --- */
 /* ------------------------ */
-/* Touche ² à - (pad) */
+/* Touche 1 à 9 */
 
 /* ------------------------ */
 /* ---  KEYBOARD LINE 3 --- */

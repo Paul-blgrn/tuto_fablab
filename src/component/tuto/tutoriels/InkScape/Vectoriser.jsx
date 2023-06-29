@@ -22,6 +22,7 @@ const Vectoriser = () => {
                         {localKey && <Keyboard key={localKey} keyboardKeys={localKey} />}
                     </div>
                 </div>
+                <div className='tutosignplus hide-content'>+</div>
             </div>
         </div>
     );

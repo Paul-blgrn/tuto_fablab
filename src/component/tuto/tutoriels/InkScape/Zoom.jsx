@@ -5,7 +5,7 @@ const Zoom = () => {
     const localKey = [
         "Key-LCTRL",
     ];
-
+    
     return (
         <div className='contentbox'>
             <div className='contenttext'>
@@ -17,12 +17,10 @@ const Zoom = () => {
                 <hr className='hrcontent'/>
                 <h2 className='Home-Title2'>Exemple:</h2>
             </div>
-            <div className='imagestuto'>
+            <div className="imagestuto">
                 <div className="Keyboard-parent">
-                    <img className="keyboard" src='/images/keyboard.svg' alt='ctrl keyboard'/>
-                    <div className="push-keys">
-                        {localKey && <Keyboard key={localKey} keyboardKeys={localKey} />}
-                    </div>
+                    <img className="keyboard" src='/images/keyboard.svg' alt='keyboard'/>
+                    {localKey && <Keyboard id="KeyboardZoom1" key={localKey.toString()} keyboardKeys={localKey} />}
                 </div>
                 <div className='tutosignplus'>+</div>
                 <div className='arrownmouse'>

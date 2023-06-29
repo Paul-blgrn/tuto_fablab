@@ -17,11 +17,12 @@ const Sauvegarder = () => {
             </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">
-                    <img className="keyboard" src='/images/keyboard.svg' alt='ctrl keyboard'/>
+                    <img className="keyboard" src='/images/keyboard.svg' alt='keyboard'/>
                     <div className="push-keys">
                         {localKey && <Keyboard key={localKey} keyboardKeys={localKey} />}
                     </div>
                 </div>
+                <div className='tutosignplus hide-content'>+</div>
             </div>
         </div>
     );
