@@ -17,7 +17,6 @@ const Keyboard = (props) => {
     const { keyboardKeys } = props;
     const [keys, setKeys] = useState(keyboardKeys);
     const prevKey = usePrevious(keys);
-    const domRef = useRef();
 
     //id && console.log(id)
 
@@ -34,8 +33,9 @@ const Keyboard = (props) => {
     useEffect(() => {
         keys && Object(keys.map((actualKeys) => {
             let actualKey = document.getElementById(actualKeys);
-            //actualKey && console.log(actualKey)
-            actualKey && actualKey.classList.add("key-show")
+            return(
+                actualKey && actualKey.classList.add("key-show")
+            )
         }))
     }, [keys]);
 
@@ -43,7 +43,9 @@ const Keyboard = (props) => {
         prevKey && Object(prevKey.map((oldKeys) => {
             let oldKey = document.getElementById(oldKeys);
             //oldKey && console.log(oldKey)
-            oldKey && oldKey.classList.remove("key-show")
+            return(
+                oldKey && oldKey.classList.remove("key-show")
+            )
         }))
     }, [prevKey]);
 
