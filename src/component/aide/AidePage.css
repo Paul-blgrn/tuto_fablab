@@ -50,6 +50,7 @@
   text-transform: uppercase;
   text-shadow: rgba(0, 53, 85, 1) 3px 3px;
   margin: 10px;
+  padding: 5px;
 }
 
 .Aide-Description {
@@ -96,6 +97,7 @@
   align-items: center;
   justify-content: center;
   transform: scale(1);
+  text-align: center;
 }
   
 .Aide-buttons:hover {
@@ -114,4 +116,8 @@
 		flex-direction: column;
     width: 30rem;
 	}
+  .Aide-Title2 {
+    font-size: 7vmin;
+    text-align: center;
+  }
 }

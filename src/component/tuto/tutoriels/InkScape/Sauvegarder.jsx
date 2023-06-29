@@ -1,20 +1,10 @@
-import Keyboard from './Keyboard';
-import { useEffect, useState } from 'react';
+import Keyboard from '../Keyboard';
 
 const Sauvegarder = () => {
-    const localKey = ["Key-LCTRL", "Key-S"];
-
-    const [data, setData] = useState();
-
-    const getData = async () => {
-		const results = localKey;
-        setData(results);
-    };
-
-    useEffect(() => {
-		  getData().catch((err) => console.log(err));
-		  // eslint-disable-next-line react-hooks/exhaustive-deps
-	}, []);
+    const localKey = [
+        "Key-LCTRL", 
+        "Key-S"
+    ];
 
     return (
         <div className='contentbox'>
@@ -29,14 +19,7 @@ const Sauvegarder = () => {
                 <div className="Keyboard-parent">
                     <img className="keyboard" src='/images/keyboard.svg' alt='ctrl keyboard'/>
                     <div className="push-keys">
-                        {/* {data && data.map((keys) => {
-                            return(
-                                <Keyboard key={keys} keyboardKeys={keys} />
-                            );
-                        })}  */}
-
-                        {data && <Keyboard key={data} keyboardKeys={data} />}
-                        
+                        {localKey && <Keyboard key={localKey} keyboardKeys={localKey} />}
                     </div>
                 </div>
             </div>

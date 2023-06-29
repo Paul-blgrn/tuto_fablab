@@ -58,31 +58,31 @@
                 "id": 1,
                 "route": "/tuto/",
                 "name": "Zoomer / DeZoomer",
-                "content": "zoom"
+                "content": "inkscape_zoom"
             },
             {
                 "id": 2,
                 "route": "/tuto/",
                 "name": "Sauvegarder un fichier",
-                "content": "save"
+                "content": "inkscape_save"
             },
             {
                 "id": 3,
                 "route": "/tuto/",
                 "name": "Vectoriser une image",
-                "content": "vectoriser"
+                "content": "inkscape_vectoriser"
             },
             {
                 "id": 4,
                 "route": "/tuto/",
                 "name": "Annuler une action",
-                "content": "cancel"
+                "content": "inkscape_cancel"
             },
             {
                 "id": 5,
                 "route": "/tuto/",
                 "name": "Se",
-                "content": "selectAll"
+                "content": "inkscape_selectAll"
             }
 
         ]

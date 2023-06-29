@@ -144,10 +144,10 @@
 /* ------------------------ */
 
 .keyboard-line6 {
-    height: 3.2vmin;
+    height: 3.25vmin;
     width: 46.2vmin;
     position: relative;
-    top: 9.7vmin;
+    top: 9.65vmin;
     left: 1.4vmin;
     display: flex;
     flex-direction: column;
@@ -159,46 +159,47 @@
 
 .touch6 {
     background-color: rgb(255, 0, 0);
-    width: 3.25vmin;
-    height: 3.25vmin;
+    width: 3.3vmin;
+    height: 3.3vmin;
     margin-right: 1vmin;
 }
 
 .touch6:first-child {
-    width: 4.25vmin;
+    width: 4.4vmin;
     position: relative;
-    left: 0.05vmin;
+    left: 0vmin;
+    top: 0vmin;
 }
 
 .touch6:nth-child(2) {
     position: relative;
-    left: 0.1vmin;
+    left: 0vmin;
 }
 
 .touch6:nth-child(3) {
     position: relative;
-    left: 0.2vmin;
+    left: 0vmin;
 }
 
 .touch6:nth-child(4) {
     position: relative;
-    left: 0.2vmin;
+    left: 0vmin;
 }
 
 .touch6:nth-child(5) {
     width: 19.4vmin;
     position: relative;
-    left: 0.3vmin;
+    left: 0vmin;
 }
 
 .touch6:nth-child(6) {
     position: relative;
-    left: 0.4vmin;
+    left: 0vmin;
 }
 
 .touch6:last-child {
     position: relative;
-    left: 0.4vmin;
+    left: 0vmin;
 }
 
 /* ------------------------- */
@@ -329,4 +330,63 @@
     width: 7.3vmin;
     top: -5.2vmin;
     left: 0.05vmin;
+}
+
+/* ---------------------- */
+/* ---  KEYBOARD LEFT --- */
+/* ---------------------- */
+.keyboard-left {
+    height: 21.1vmin;
+    width: 6.2vmin;
+    position: relative;
+    top: -30vmin;
+    left: 1.4vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: nowrap;
+    visibility: hidden;
+}
+
+.kleft {
+    background-color: rgb(255, 0, 0);
+    width: 3.25vmin;
+    height: 3.25vmin;
+    margin-top: 0.9vmin;
+}
+
+.kleft:first-child {
+    position: relative;
+    height: 2.1vmin;
+    top: -0.8vmin;
+    left: -0.05vmin;
+}
+
+.kleft:nth-child(2) {
+    position: relative;
+    top: -1.15vmin;
+    left: -0.05vmin;
+}
+
+.kleft:nth-child(3) {
+    position: relative;
+    width: 5.6vmin;
+    top: -1.4vmin;
+    left: -0.05vmin;
+}
+
+.kleft:nth-child(4) {
+    position: relative;
+    width: 6.65vmin;
+    top: -1.85vmin;
+    left: -0.05vmin;
+}
+
+.kleft:last-child {
+    position: relative;
+    width: 4.85vmin;
+    height: 3.25vmin;
+    top: -2.1vmin;
+    left: -0.05vmin;
 }

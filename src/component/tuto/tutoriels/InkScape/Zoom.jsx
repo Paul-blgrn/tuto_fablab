@@ -1,4 +1,11 @@
+import Keyboard from '../Keyboard';
+
 const Zoom = () => {
+
+    const localKey = [
+        "Key-LCTRL",
+    ];
+
     return (
         <div className='contentbox'>
             <div className='contenttext'>
@@ -11,7 +18,12 @@ const Zoom = () => {
                 <h2 className='Home-Title2'>Exemple:</h2>
             </div>
             <div className='imagestuto'>
-                <img className='keyboard-touch scale-in-out-anim' src='/images/key_ctrl.svg' alt='ctrl keyboard'/>
+                <div className="Keyboard-parent">
+                    <img className="keyboard" src='/images/keyboard.svg' alt='ctrl keyboard'/>
+                    <div className="push-keys">
+                        {localKey && <Keyboard key={localKey} keyboardKeys={localKey} />}
+                    </div>
+                </div>
                 <div className='tutosignplus'>+</div>
                 <div className='arrownmouse'>
                     <img className='mousewheelarrows up-down-anim' src='/images/up_n_down.svg' alt='up and down'/>

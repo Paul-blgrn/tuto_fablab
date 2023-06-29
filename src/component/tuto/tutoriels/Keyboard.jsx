@@ -33,7 +33,7 @@ const Keyboard = (props) => {
     useEffect(() => {
         keys && keys.map((actualKeys) => {
             let actualKey = document.getElementById(actualKeys);
-            actualKey && console.log(actualKey)
+            //actualKey && console.log(actualKey)
             actualKey && actualKey.classList.add("key-show")
         })
     }, [keys]);
@@ -41,7 +41,7 @@ const Keyboard = (props) => {
     useEffect(() => {
         prevKey && prevKey.map((oldKeys) => {
             let oldKey = document.getElementById(oldKeys);
-            oldKey && console.log(oldKey)
+            //oldKey && console.log(oldKey)
             oldKey && oldKey.classList.remove("key-show")
         })
     }, [prevKey]);
@@ -52,6 +52,16 @@ const Keyboard = (props) => {
 
     return(
         <div>
+            {/* LINE 1 */}
+            <div className="keyboard-line1">
+                <div></div>
+            </div>
+
+            {/* LINE 2 */}
+            <div className="keyboard-line2">
+
+            </div>
+
             {/* LINE 3 */}
             <div className="keyboard-line3">
                 <div id="Key-A" className="touch3"></div>
@@ -129,6 +139,15 @@ const Keyboard = (props) => {
                 <div id="Key-PAD-3" className="touchpad"></div>
                 <div id="Key-PAD-POINT" className="touchpad"></div>
                 <div id="Key-PAD-0" className="touchpad"></div>
+            </div>
+
+            {/* LEFT */}
+            <div className="keyboard-left">
+                <div id="Key-LEFT-ECHAP" className="kleft"></div>
+                <div id="Key-LEFT-²" className="kleft"></div>
+                <div id="Key-LEFT-TAB" className="kleft"></div>
+                <div id="Key-LEFT-VERMAJ" className="kleft"></div>
+                <div id="Key-LEFT-LSHIFT" className="kleft"></div>
             </div>
         </div>
     );

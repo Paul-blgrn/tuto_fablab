@@ -26,13 +26,13 @@
 }
 
 .imagestuto {
-  width: 80vmin;
+
   display: flex;
   flex-direction: row;
   justify-items: center;
   justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   margin: 0 auto;
   /* border: 1px solid blue; */
 }
@@ -110,12 +110,13 @@
 }
 
 .Keyboard-parent {
-  border: 1px solid pink;
+  /* border: 1px solid pink; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  margin: 5px;
 }
 
 .keyboard {
@@ -131,7 +132,7 @@
   height: 24vmin;
   position: relative;
   border-radius: 3vmin;
-  border: 1px solid rgb(0, 255, 42);
+  /* border: 1px solid rgb(0, 255, 42); */
 }
 
 /* .push-keys :hover {

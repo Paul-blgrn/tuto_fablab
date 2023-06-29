@@ -22,11 +22,11 @@ const Tuto = (props) => {
                 <button className="Aide-buttonBack" onClick={closeWindow}>Fermer L'onglet</button>
             </div>
 
+            <br />
+
             <h1 className="Aide-Title2">{infoDetail.name}</h1>
 
-            <div className="Aide-Description">
-                {parse(infoDetail.description)}
-            </div>
+            <br />
 
             <div className="Aide-button-container-bottom">
                 {
