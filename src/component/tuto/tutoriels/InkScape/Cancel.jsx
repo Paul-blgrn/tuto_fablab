@@ -1,9 +1,14 @@
-import Keyboard from '../Keyboard';
+import Keyboard from '../KeyboardFunction';
 
 const Cancel = () => {
     const localKey = [
-        "Key-LCTRL", 
-        "Key-Z"
+        {
+            "id": 1,
+            "keys": [
+                "Key-LCTRL", 
+                "Key-Z", 
+            ]
+        }
     ];
 
     return (
@@ -17,7 +22,7 @@ const Cancel = () => {
                 <div className="Keyboard-parent">
                     <img className="keyboard" src='/images/keyboard.svg' alt='keyboard'/>
                     <div className="push-keys">
-                        {localKey && <Keyboard key={localKey} keyboardKeys={localKey} />}
+                        {localKey && <Keyboard keyboardKeys={localKey} />}
                     </div>
                 </div>
             </div>

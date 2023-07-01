@@ -1,9 +1,14 @@
-import Keyboard from '../Keyboard';
+import Keyboard from '../KeyboardFunction';
 
 const Sauvegarder = () => {
     const localKey = [
-        "Key-LCTRL", 
-        "Key-S"
+        {
+            "id": 1,
+            "keys": [
+                "Key-LCTRL", 
+                "Key-S",
+            ]
+        }
     ];
 
     return (
@@ -17,9 +22,8 @@ const Sauvegarder = () => {
             </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">
-                    <img className="keyboard" src='/images/keyboard.svg' alt='keyboard'/>
                     <div className="push-keys">
-                        {localKey && <Keyboard key={localKey} keyboardKeys={localKey} />}
+                        {localKey && <Keyboard keyboardKeys={localKey} />}
                     </div>
                 </div>
                 <div className='tutosignplus hide-content'>+</div>

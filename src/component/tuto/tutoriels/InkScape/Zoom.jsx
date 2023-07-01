@@ -1,11 +1,22 @@
-import Keyboard from '../Keyboard';
+import Keyboard from '../KeyboardFunction';
 
 const Zoom = () => {
 
     const localKey = [
-        "Key-LCTRL",
+        {
+            "id": 1,
+            "keys": [
+                "Key-LCTRL",
+            ]
+        },
+        {
+            "id": 2,
+            "keys": [
+                "Key-PAD-SOUSTRACTION",
+                "Key-PAD-ADDITION",
+            ]
+        }
     ];
-    
     return (
         <div className='contentbox'>
             <div className='contenttext'>
@@ -19,8 +30,7 @@ const Zoom = () => {
             </div>
             <div className="imagestuto">
                 <div className="Keyboard-parent">
-                    <img className="keyboard" src='/images/keyboard.svg' alt='keyboard'/>
-                    {localKey && <Keyboard id="KeyboardZoom1" key={localKey.toString()} keyboardKeys={localKey} />}
+                    {localKey && <Keyboard keyboardKeys={localKey} />}
                 </div>
                 <div className='tutosignplus'>+</div>
                 <div className='arrownmouse'>

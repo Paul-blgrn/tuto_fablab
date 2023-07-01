@@ -1,9 +1,14 @@
-import Keyboard from '../Keyboard';
+import Keyboard from '../KeyboardFunction';
 
 const SelectObject = () => {
 
     const localKey = [
-        "Key-LCTRL",
+        {
+            "id": 1,
+            "keys": [
+                "Key-LEFT-LSHIFT", 
+            ]
+        }
     ];
 
     return (
@@ -21,7 +26,7 @@ const SelectObject = () => {
                 <div className="Keyboard-parent">
                     <img className="keyboard" src='/images/keyboard.svg' alt='ctrl keyboard'/>
                     <div className="push-keys">
-                        {localKey && <Keyboard key={localKey} keyboardKeys={localKey} />}
+                        {localKey && <Keyboard keyboardKeys={localKey} />}
                     </div>
                 </div>
                 <div className='tutosignplus'>+</div>

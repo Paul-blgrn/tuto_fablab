@@ -1,11 +1,17 @@
-import Keyboard from '../Keyboard';
+import Keyboard from '../KeyboardFunction';
 
 const Vectoriser = () => {
     const localKey = [
-        "Key-LEFT-LSHIFT",
-        "Key-LALT",
-        "Key-B",
+        {
+            "id": 1,
+            "keys": [
+                "Key-LEFT-LSHIFT", 
+                "Key-LALT", 
+                "Key-B", 
+            ]
+        }
     ];
+
     return (
         <div className='contentbox'>
             <div className='contenttext'>
@@ -19,7 +25,7 @@ const Vectoriser = () => {
                 <div className="Keyboard-parent">
                     <img className="keyboard" src='/images/keyboard.svg' alt='ctrl keyboard'/>
                     <div className="push-keys">
-                        {localKey && <Keyboard key={localKey} keyboardKeys={localKey} />}
+                        {localKey && <Keyboard keyboardKeys={localKey} />}
                     </div>
                 </div>
                 <div className='tutosignplus hide-content'>+</div>

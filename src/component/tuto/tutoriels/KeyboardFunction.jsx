@@ -1,4 +1,85 @@
-const Keyboard = () => {
+import React, { useEffect, useState, useRef } from 'react';
+//import Keyboard from './Keyboard';
+
+function usePrevious(value) {
+    // create a new reference
+    const ref = useRef();
+  
+    // store current value in ref
+    useEffect(() => {
+      ref.current = value;
+    }, [value]); // only re-run if value changes
+  
+    // return previous value (happens before update in useEffect above)
+    return ref.current;
+}
+
+const KeyboardFunction = (props) => {
+    const { keyboardKeys } = props;
+    const [keys, setKeys] = useState([]);
+    
+    //console.log(keyboardKeys)
+
+    const getData = async () => {
+		const results = keyboardKeys;
+        setKeys(results);
+    };
+
+    useEffect(() => {
+        getData().catch((err) => console.log(err));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    })
+
+    const prevKey = usePrevious(keys);
+
+    useEffect(() => {
+
+        prevKey && prevKey.map((key) => {
+            return(
+                //console.log(key),
+                key.keys.map((oldKeys) => {
+                    let oldKey = document.getElementById(oldKeys);
+                    return(
+                        //console.log(oldKeys),
+                        oldKey && oldKey.classList.remove("key-show")
+                    );
+                })
+            );
+        })
+
+        keys && keys.map((key) => {
+            const countArray = JSON.parse(JSON.stringify(keys)).length;
+            return(
+                //console.log(countArray),
+                countArray > 1 
+                ?
+                    console.log("Objects: " + countArray)
+                    // key.forEach(value, key => {
+                    //        <Keyboard />
+                    // })
+                :
+                    console.log("Object: " + countArray),
+                    key.keys.map((keys) => {
+                        let actualKey = document.getElementById(keys);
+                        return(
+                            //console.log(keys),
+                            actualKey && actualKey.classList.add("key-show")
+                        );
+                    })
+            );
+        })
+    }, [keys, prevKey]);
+
+    // useEffect(() => {
+    //     keys && keys.map((key) => {
+    //         let customid = document.getElementsByClassName("Keyboard-touch")
+    //         return(
+    //             //customid.setAttribute("id", `${key.id}`)
+    //             console.log(customid)
+    //         );
+    //     })
+    // })
+
     return(
         <div id="keyboard" className="Keyboard-touch">
             {/* LINE 1 */}
@@ -102,4 +183,4 @@ const Keyboard = () => {
     );
 }
 
-export default Keyboard;
+export default KeyboardFunction;

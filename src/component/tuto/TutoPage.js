@@ -10,8 +10,8 @@ const Tutopage = (props) => {
     const {tutoDetail } = props;
 
     // get id in adress bar
-    const { id1 } = useParams();
-    console.log("ID = " + id1)
+    const { id1, id2 } = useParams();
+    console.log("URL ID(1) = " + id1 + "\nURL ID(2) = " + id2)
 
     // close current window
     const closeWindow = () => {
