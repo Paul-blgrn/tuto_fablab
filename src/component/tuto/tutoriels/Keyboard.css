@@ -33,10 +33,67 @@
 /* ------------------------ */
 /* Touche F1 à F12 */
 
+.keyboard-line1 {
+    height: 2vmin;
+    width: 71vmin;
+    position: relative;
+    top: 1.3vmin;
+    left: 5.4vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex-wrap: wrap;
+    visibility: hidden;
+    border: 1px solid red;
+}
+
+.touch1 {
+    background-color: rgb(255, 0, 0);
+    width: 3.2vmin;
+    height: 3vmin;
+    margin-left: 0.15vmin;
+    margin-right: 0.65vmin;
+}
+
+.touch1:first-child {
+    margin-left: -0.1vmin;
+}
+
 /* ------------------------ */
 /* ---  KEYBOARD LINE 2 --- */
 /* ------------------------ */
 /* Touche 1 à 9 */
+
+.keyboard-line2 {
+    height: 3.2vmin;
+    width: 47.7vmin;
+    position: relative;
+    top: 1.8vmin;
+    left: 5.4vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    visibility: hidden;
+}
+
+.touch2 {
+    background-color: rgb(255, 0, 0);
+    width: 3.2vmin;
+    height: 3.2vmin;
+    margin-right: 1vmin;
+    margin-left: -0.15vmin;
+}
+
+.touch2:first-child {
+    margin-left: 0.15vmin;
+}
+
+.touch2:nth-child(8) {
+    margin-left: -0.25vmin;
+}
 
 /* ------------------------ */
 /* ---  KEYBOARD LINE 3 --- */
@@ -46,8 +103,8 @@
     height: 3.2vmin;
     width: 48.6vmin;
     position: relative;
-    top: 7.85vmin;
-    left: 7.8vmin;
+    top: 2.5vmin;
+    left: 7.85vmin;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -73,8 +130,16 @@
     margin-left: 0.05vmin;
 }
 
-.touch3:last-child {
+.touch3:nth-child(9) {
     margin-left: -0.05vmin;
+}
+
+.touch3:nth-child(10) {
+    margin-left: -0.05vmin;
+}
+
+.touch3:last-child {
+    margin-left: 0.05vmin;
 }
 
 /* ------------------------ */
@@ -85,7 +150,7 @@
     height: 3.2vmin;
     width: 47.7vmin;
     position: relative;
-    top: 8.5vmin;
+    top: 3vmin;
     left: 8.65vmin;
     display: flex;
     flex-direction: column;
@@ -127,7 +192,7 @@
     height: 3.2vmin;
     width: 45.6vmin;
     position: relative;
-    top: 9.1vmin;
+    top: 3.5vmin;
     left: 7.35vmin;
     display: flex;
     flex-direction: column;
@@ -157,7 +222,7 @@
     height: 3.25vmin;
     width: 46.2vmin;
     position: relative;
-    top: 9.65vmin;
+    top: 4.15vmin;
     left: 1.4vmin;
     display: flex;
     flex-direction: column;
@@ -220,7 +285,7 @@
     height: 18.4vmin;
     width: 17vmin;
     position: relative;
-    top: -9vmin;
+    top: -14.55vmin;
     left: 61.3vmin;
     display: flex;
     flex-direction: row;
@@ -349,7 +414,7 @@
     height: 21.1vmin;
     width: 6.2vmin;
     position: relative;
-    top: -30vmin;
+    top: -35.45vmin;
     left: 1.4vmin;
     display: flex;
     flex-direction: column;
@@ -399,4 +464,14 @@
     height: 3.25vmin;
     top: -2.1vmin;
     left: -0.05vmin;
+}
+
+.mouse-hide {
+    visibility: hidden;
+    display: none;
+}
+
+.mouse-show {
+    visibility: visible;
+    display: block;
 }

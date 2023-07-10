@@ -7,6 +7,7 @@ const Zoom = () => {
             "id": 1,
             "keys": [
                 "Key-LCTRL",
+                "Mouse-RightClick",
             ]
         },
         {
@@ -14,6 +15,14 @@ const Zoom = () => {
             "keys": [
                 "Key-PAD-SOUSTRACTION",
                 "Key-PAD-ADDITION",
+            ]
+        },
+        {
+            "id": 3,
+            "keys": [
+                "Key-LCTRL",
+                "Key-)",
+                "Key-=",
             ]
         }
     ];
@@ -31,11 +40,6 @@ const Zoom = () => {
             <div className="imagestuto">
                 <div className="Keyboard-parent">
                     {localKey && <Keyboard keyboardKeys={localKey} />}
-                </div>
-                <div className='tutosignplus'>+</div>
-                <div className='arrownmouse'>
-                    <img className='mousewheelarrows up-down-anim' src='/images/up_n_down.svg' alt='up and down'/>
-                    <img className="your-image" src='/images/mousewheel.svg' alt='mousewheel'/>
                 </div>
             </div>
         </div>

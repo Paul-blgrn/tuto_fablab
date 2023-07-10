@@ -7,6 +7,7 @@ const SelectObject = () => {
             "id": 1,
             "keys": [
                 "Key-LEFT-LSHIFT", 
+                "Mouse-LeftClick", 
             ]
         }
     ];
@@ -24,15 +25,9 @@ const SelectObject = () => {
             </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">
-                    <img className="keyboard" src='/images/keyboard.svg' alt='ctrl keyboard'/>
                     <div className="push-keys">
                         {localKey && <Keyboard keyboardKeys={localKey} />}
                     </div>
-                </div>
-                <div className='tutosignplus'>+</div>
-                <div className='arrownmouse'>
-                    <img className='mousewheelleftclick scale-in-out-anim' src='/images/right_pointer.svg' alt='pointer'/>
-                    <img className="right-mouse" src='/images/mouseleft.svg' alt='mouseleft'/>
                 </div>
             </div>
         </div>

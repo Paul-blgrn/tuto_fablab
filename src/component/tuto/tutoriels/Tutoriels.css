@@ -60,7 +60,9 @@
   width: 8vmin;
   height: 15vmin;
   z-index: 1;
-  position: absolute;
+  position: relative;
+  left: 13.1vmin;
+  top: -15vmin;
 }
 
 .mousewheelleftclick {
@@ -69,7 +71,16 @@
   z-index: 1;
   position: relative;
   left: 5vmin;
-  top: 1vmin;
+  top: -14vmin;
+}
+
+.mousewheelrightlick {
+  width: 8vmin;
+  height: 15vmin;
+  z-index: 1;
+  position: relative;
+  left: 20vmin;
+  top: -14vmin;
 }
 
 .arrownmouse1 {
@@ -79,30 +90,21 @@
   justify-items: center;
   align-items: center;
   flex-wrap: nowrap;
-  /* border: 1px solid rgb(255, 0, 128); */
   height: 30vmin;
   width: 30vmin;
   margin-right: 2vmin;
   margin-left: 2vmin;
 }
 
-.right-mouse {
-  height: 30vmin;
-  width: 30vmin;
-  margin: 0 auto;
-  position: relative;
-  right: 6vmin;
-  /* border: 1px solid rgb(212, 255, 0); */
-}
-
 .your-image {
-  /* border: 1px solid red; */
   height: 30vmin;
   width: 30vmin;
+  position: relative;
+  margin: 0 auto;
+  right: 6vmin;
 }
 
 .pointerovermouse {
-  /* border: 1px solid blue; */
   width: 8vmin;
   height: 15vmin;
   z-index: 1;
