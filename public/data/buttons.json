@@ -70,22 +70,28 @@
                 "id": 3,
                 "route": "/tuto/",
                 "name": "Annuler une action",
-                "content": "inkscape_cancel"
+                "content": "inkscape_undo"
             },
             {
                 "id": 4,
+                "route": "/tuto/",
+                "name": "Rétablir une action",
+                "content": "inkscape_redo"
+            },
+            {
+                "id": 5,
                 "route": "/tuto/",
                 "name": "Zoomer / DeZoomer",
                 "content": "inkscape_zoom"
             },
             {
-                "id": 5,
+                "id": 6,
                 "route": "/tuto/",
                 "name": "Selectionner des objets",
                 "content": "inkscape_selectObject"
             },
             {
-                "id": 6,
+                "id": 7,
                 "route": "/tuto/",
                 "name": "Vectoriser une image",
                 "content": "inkscape_vectoriser"

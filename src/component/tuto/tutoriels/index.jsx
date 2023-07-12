@@ -4,7 +4,8 @@ import './Keyboard.css';
 import InkScapeSave from './InkScape/Sauvegarder';
 import InkScapeZoom from './InkScape/Zoom';
 import InkScapeVectoriser from './InkScape/Vectoriser';
-import InkScapeAnnuler from './InkScape/Cancel';
+import InkScapeUndo from './InkScape/CancelAction';
+import InkScapeRedo from './InkScape/RedoAction';
 import InkScapeSelectObject from './InkScape/SelectObject';
 
 const IndexHtml = (props) => {
@@ -23,8 +24,10 @@ const IndexHtml = (props) => {
                 <InkScapeVectoriser />
             // si la valeur "content" du fichier json est égale a aucune des valeurs ci-dessus 
             // on affiche une petite phrase qui indique que c'est pas bon
-            ) : content === "inkscape_cancel" ? "inkscape_cancel" && (
-                <InkScapeAnnuler />
+            ) : content === "inkscape_undo" ? "inkscape_undo" && (
+                <InkScapeUndo />
+            ) : content === "inkscape_redo" ? "inkscape_redo" && (
+                <InkScapeRedo />
             ) : content === "inkscape_selectObject" ? "inkscape_selectObject" && (
                 <InkScapeSelectObject/>
             ) : (
