@@ -23,9 +23,15 @@
     height: 24vmin;
     position: relative;
     top: 0vmin;
+    margin: 1vmin;
     background: url('../../../../public/images/keyboard.svg') no-repeat center;
     background-size: 78vmin;
-    margin: 1vmin;
+}
+
+.Keyboard-touch-image {
+    background: url('../../../../public/images/keyboard.svg') no-repeat center;
+    background-size: 78vmin;
+    display: block;
 }
 
 /* ------------------------ */

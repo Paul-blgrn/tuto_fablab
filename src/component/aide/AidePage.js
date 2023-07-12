@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 //import parse from 'html-react-parser'
 import './AidePage.css';
 
 const Tuto = (props) => {
-    const { id } = useParams();
-
-    console.log("URL ID: " + id);
+    // get button id in url
+    //const { id } = useParams();
+    //console.log("URL ID: " + id);
 
     const { infoDetail } = props;
 

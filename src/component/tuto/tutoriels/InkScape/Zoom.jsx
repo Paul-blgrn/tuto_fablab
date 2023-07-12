@@ -7,7 +7,7 @@ const Zoom = () => {
             "id": 1,
             "keys": [
                 "Key-LCTRL",
-                "Mouse-RightClick",
+                "Mouse-Scroll",
             ]
         },
         {

@@ -36,11 +36,17 @@ const Keyboard = (props) => {
     useEffect(() => {
         prevKey && prevKey.map((key) => {
             const keyboardID = document.getElementById(id);
-            const getMouse = document.getElementById(key);
+            //const getMouse = document.getElementById(key);
             return(
                 //console.log(keyboardID),
                 key === "Mouse-RightClick" || key === "Mouse-LeftClick" || key === "Mouse-Scroll"  ?
-                    getMouse.classList.remove("mouse-show")
+                    //getMouse.classList.remove("mouse-show")
+                    keyboardID && keyboardID
+                        .getElementsByTagName('div')
+                        .namedItem(key).classList
+                        .remove("mouse-show")
+                : key === "no-keyboard" ?
+                    console.log("removed keyboard")
                 :
                     keyboardID && keyboardID
                         .getElementsByTagName('div')
@@ -53,18 +59,29 @@ const Keyboard = (props) => {
         keys && keys.map((key) => {
             //const countArray = JSON.parse(JSON.stringify(keys)).length;
             const keyboardID = document.getElementById(id);
-            const getMouse = document.getElementById(key);
+            //const getMouse = document.getElementById(key);
             return(
-                //console.log(keyboardID),
-                console.log(key),
-                key === "Mouse-RightClick" || key === "Mouse-LeftClick" || key === "Mouse-Scroll"  ?
-                    //console.log("clic gauche"),
-                    getMouse.classList.add("mouse-show")
-                :
-                    keyboardID &&keyboardID
-                        .getElementsByTagName('div')
-                        .namedItem(key).classList
-                        .add("key-show")
+                //console.log(key),
+                    key === "Mouse-RightClick" || key === "Mouse-LeftClick" || key === "Mouse-Scroll"  ?
+                        //console.log("clic gauche"),
+                        //getMouse.classList.add("mouse-show")
+                        keyboardID && keyboardID
+                            .getElementsByTagName('div')
+                            .namedItem(key).classList
+                            .add("mouse-show")
+                    :
+                        key === "no-keyboard" ?
+                            console.log('contain no keyboard')
+                        :
+                            keyboardID && 
+                                keyboardID
+                                    .getElementsByTagName('div')
+                                    .namedItem(key).classList
+                                    .add("key-show")
+                                && keyboardID
+                                    .getElementsByTagName('div')
+                                    .namedItem("Keyboard-touch").classList
+                                    .add("Keyboard-touch-image")
             );
         })
     }, [id, keys, prevKey]);

@@ -9,6 +9,20 @@ const Vectoriser = () => {
                 "Key-LALT", 
                 "Key-B", 
             ]
+        },
+        {
+            "id": 2,
+            "keys": [
+                "Key-B", 
+                "Mouse-RightClick",
+            ]
+        },
+        {
+            "id": 3,
+            "keys": [
+                //"no-keyboard",
+                "Mouse-LeftClick",
+            ]
         }
     ];
 
@@ -23,7 +37,6 @@ const Vectoriser = () => {
             </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">
-                    <img className="keyboard" src='/images/keyboard.svg' alt='ctrl keyboard'/>
                     <div className="push-keys">
                         {localKey && <Keyboard keyboardKeys={localKey} />}
                     </div>
