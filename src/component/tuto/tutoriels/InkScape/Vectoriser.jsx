@@ -20,7 +20,7 @@ const Vectoriser = () => {
         {
             "id": 3,
             "keys": [
-                //"no-keyboard",
+                "no-keyboard",
                 "Mouse-LeftClick",
             ]
         }

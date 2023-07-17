@@ -18,7 +18,7 @@
     animation: opacity .8s ease-in-out infinite alternate;
 }
 
-.Keyboard-touch {
+.keyboard-touch {
     width: 78vmin;
     height: 24vmin;
     position: relative;
@@ -26,6 +26,11 @@
     margin: 1vmin;
     background: url('../../../../public/images/keyboard.svg') no-repeat center;
     background-size: 78vmin;
+}
+
+.no-keyboard-image {
+    display: none;
+    background: none;
 }
 
 .Keyboard-touch-image {

@@ -36,22 +36,22 @@ const Keyboard = (props) => {
     useEffect(() => {
         prevKey && prevKey.map((key) => {
             const keyboardID = document.getElementById(id);
-            //const getMouse = document.getElementById(key);
+            const keyboardTouchID = document.getElementById("Keyboard-" + id)
             return(
                 //console.log(keyboardID),
                 key === "Mouse-RightClick" || key === "Mouse-LeftClick" || key === "Mouse-Scroll"  ?
-                    //getMouse.classList.remove("mouse-show")
                     keyboardID && keyboardID
                         .getElementsByTagName('div')
                         .namedItem(key).classList
                         .remove("mouse-show")
                 : key === "no-keyboard" ?
-                    console.log("removed keyboard")
+                    //console.log("Keyboard " + id + " contain 'no-keyboard' value")
+                    keyboardTouchID.classList.remove('no-keyboard-image')
                 :
-                    keyboardID && keyboardID
+                    keyboardTouchID
                         .getElementsByTagName('div')
-                        .namedItem(key).classList
-                        .remove("key-show")
+                        .namedItem(key)
+                        .classList.remove('key-show')
 
             );
         })
@@ -59,29 +59,23 @@ const Keyboard = (props) => {
         keys && keys.map((key) => {
             //const countArray = JSON.parse(JSON.stringify(keys)).length;
             const keyboardID = document.getElementById(id);
-            //const getMouse = document.getElementById(key);
+            const keyboardTouchID = document.getElementById("Keyboard-" + id)
             return(
                 //console.log(key),
                     key === "Mouse-RightClick" || key === "Mouse-LeftClick" || key === "Mouse-Scroll"  ?
-                        //console.log("clic gauche"),
-                        //getMouse.classList.add("mouse-show")
                         keyboardID && keyboardID
                             .getElementsByTagName('div')
                             .namedItem(key).classList
                             .add("mouse-show")
                     :
                         key === "no-keyboard" ?
-                            console.log('contain no keyboard')
+                            //console.log("Keyboard " + id + " contain 'no-keyboard' value")
+                            keyboardTouchID.classList.add('no-keyboard-image')
                         :
-                            keyboardID && 
-                                keyboardID
-                                    .getElementsByTagName('div')
-                                    .namedItem(key).classList
-                                    .add("key-show")
-                                && keyboardID
-                                    .getElementsByTagName('div')
-                                    .namedItem("Keyboard-touch").classList
-                                    .add("Keyboard-touch-image")
+                            keyboardTouchID
+                                .getElementsByTagName('div')
+                                .namedItem(key)
+                                .classList.add('key-show')
             );
         })
     }, [id, keys, prevKey]);
@@ -89,7 +83,7 @@ const Keyboard = (props) => {
     return(
         <div id={id}>
             <hr className='hrcontent'/>
-            <div className="Keyboard-touch">
+            <div id={"Keyboard-" + id} className="keyboard-touch">
                 {/* LINE 1 */}
                 <div className="keyboard-line1">
                 <div id="Key-F1" className="touch1"></div>
