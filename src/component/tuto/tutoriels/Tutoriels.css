@@ -49,38 +49,35 @@
 }
 
 .arrownmouse {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  justify-items: center;
-  flex-wrap: nowrap;
+  position: relative;
+  left: 4vmin;
 }
 
 .mousewheelarrows {
   width: 8vmin;
   height: 15vmin;
   z-index: 1;
-  position: relative;
-  left: 13.1vmin;
-  top: -15vmin;
+  position: absolute;
+  left: 11vmin;
+  top: 0vmin;
 }
 
 .mousewheelleftclick {
   width: 8vmin;
   height: 15vmin;
   z-index: 1;
-  position: relative;
-  left: 5vmin;
-  top: -14vmin;
+  position: absolute;
+  left: 4vmin;
+  top: 0vmin;
 }
 
 .mousewheelrightlick {
   width: 8vmin;
   height: 15vmin;
   z-index: 1;
-  position: relative;
-  left: 20vmin;
-  top: -14vmin;
+  position: absolute;
+  right: 4vmin;
+  top: 0vmin;
 }
 
 .arrownmouse1 {
@@ -101,7 +98,6 @@
   width: 30vmin;
   position: relative;
   margin: 0 auto;
-  right: 6vmin;
 }
 
 .pointerovermouse {

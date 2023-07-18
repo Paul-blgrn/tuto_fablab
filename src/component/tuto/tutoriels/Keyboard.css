@@ -18,6 +18,11 @@
     animation: opacity .8s ease-in-out infinite alternate;
 }
 
+.menu-show {
+    visibility: visible;
+    animation: opacity .8s ease-in-out infinite alternate;
+}
+
 .keyboard-touch {
     width: 78vmin;
     height: 24vmin;
@@ -33,10 +38,33 @@
     background: none;
 }
 
-.Keyboard-touch-image {
-    background: url('../../../../public/images/keyboard.svg') no-repeat center;
-    background-size: 78vmin;
+.menu-rightclick {
+    margin: 0 auto;
+    width: 40vmin;
+    height: 60vmin;
+    background: url('../../../../public/images/rightclick_menu.svg') no-repeat center;
+    background-size: 40vmin;
+    position: relative;
+}
+
+.content-hide {
+    visibility: hidden;
+    display: none;
+    background: none;
+}
+
+.content-show {
+    visibility: visible;
     display: block;
+}
+
+.bottomKeyboard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
 }
 
 /* ------------------------ */
@@ -477,12 +505,32 @@
     left: -0.05vmin;
 }
 
-.mouse-hide {
+
+/* ------------- */
+/* ---  MENU --- */
+/* ------------- */
+
+.submenu {
+    height: 53.8vmin;
+    width: 38vmin;
+    position: relative;
+    top: 3vmin;
+    left: 1vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    flex-wrap: nowrap;
     visibility: hidden;
-    display: none;
 }
 
-.mouse-show {
-    visibility: visible;
-    display: block;
+.menu1 {
+    position: relative;
+    top: 0.2vmin;
+    background-color: rgb(255, 0, 0);
+    width: 38vmin;
+    height: 3vmin;
+    margin-bottom: 0.150vmin;
+    margin-top: 0.008vmin;
+    opacity: 1;
 }

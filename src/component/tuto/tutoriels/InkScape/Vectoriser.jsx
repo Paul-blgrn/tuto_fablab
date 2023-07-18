@@ -8,20 +8,17 @@ const Vectoriser = () => {
                 "Key-LEFT-LSHIFT", 
                 "Key-LALT", 
                 "Key-B", 
-            ]
-        },
-        {
-            "id": 2,
-            "keys": [
-                "Key-B", 
-                "Mouse-RightClick",
-            ]
+            ],
+            "menu" : []
         },
         {
             "id": 3,
             "keys": [
                 "no-keyboard",
-                "Mouse-LeftClick",
+                "Mouse-RightClick",
+            ],
+            "menu" : [
+                "submenu-9",
             ]
         }
     ];
@@ -31,9 +28,9 @@ const Vectoriser = () => {
             <div className='contenttext'>
                 Pour vectoriser une image:
                 <hr className='hrcontent'/>
-                Clic droit sur votre image → «Vectoriser un objet matriciel» 
+                Selectionnez votre image,
                 <br/>
-                où :
+                puis :
             </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">

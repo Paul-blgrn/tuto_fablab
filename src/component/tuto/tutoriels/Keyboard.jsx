@@ -16,22 +16,30 @@ function usePrevious(value) {
 
 
 const Keyboard = (props) => {
-    const { id, keyboardKeys } = props;
+    const { id, keyboardKeys, keyboardMenu } = props;
     const [keys, setKeys] = useState([]);
+    const [menu, setMenu] = useState([]);
 
-    //console.log(keyboardKeys)
+    //console.log(keyboardMenu)
 
     const getData = async () => {
 		const results = keyboardKeys;
         setKeys(results);
     };
 
+    const getMenu = async () => {
+        const resultMenu = keyboardMenu;
+        setMenu(resultMenu);
+    };
+
     useEffect(() => {
         getData().catch((err) => console.log(err));
+        getMenu().catch((err) => console.log(err));
         // eslint-disable-next-line react-hooks/exhaustive-deps
     })
 
     const prevKey = usePrevious(keys);
+    const prevMenu = usePrevious(menu);
 
     useEffect(() => {
         prevKey && prevKey.map((key) => {
@@ -43,7 +51,7 @@ const Keyboard = (props) => {
                     keyboardID && keyboardID
                         .getElementsByTagName('div')
                         .namedItem(key).classList
-                        .remove("mouse-show")
+                        .remove("content-show")
                 : key === "no-keyboard" ?
                     //console.log("Keyboard " + id + " contain 'no-keyboard' value")
                     keyboardTouchID.classList.remove('no-keyboard-image')
@@ -66,7 +74,7 @@ const Keyboard = (props) => {
                         keyboardID && keyboardID
                             .getElementsByTagName('div')
                             .namedItem(key).classList
-                            .add("mouse-show")
+                            .add("content-show")
                     :
                         key === "no-keyboard" ?
                             //console.log("Keyboard " + id + " contain 'no-keyboard' value")
@@ -78,7 +86,35 @@ const Keyboard = (props) => {
                                 .classList.add('key-show')
             );
         })
-    }, [id, keys, prevKey]);
+
+        prevMenu && prevMenu.map((key) => {
+            //console.log(key)
+            const keyboardTouchID = document.getElementById("menu-vecto-" + id)
+            return(
+                keyboardTouchID
+                    .classList
+                    .add("content-hide"),
+                keyboardTouchID
+                    .getElementsByTagName('div')
+                    .namedItem(key)
+                    .classList.remove("menu-show")
+            );
+        })
+
+        menu && menu.map((key) => {
+            //console.log(key)
+            const keyboardTouchID = document.getElementById("menu-vecto-" + id)
+            return(
+                keyboardTouchID
+                    .classList
+                    .remove("content-hide"),
+                keyboardTouchID
+                    .getElementsByTagName('div')
+                    .namedItem(key)
+                    .classList.add("menu-show")
+            );
+        })
+    }, [id, keys, prevKey, menu, prevMenu]);
 
     return(
         <div id={id}>
@@ -211,22 +247,47 @@ const Keyboard = (props) => {
                 </div>
             </div>
 
+            <div className="bottomKeyboard">  
+                <div className="arrownmouse">
+                    <div id="Mouse-LeftClick" className="content-hide">
+                        <img className="mousewheelleftclick scale-in-out-anim" src="/images/right_pointer.svg" alt="pointer"/>
+                        <img className="your-image" src="/images/mouseleft.svg" alt="mouseleft"/>
+                    </div>
 
-            <div className="arrownmouse">
-                <div id="Mouse-LeftClick" className="mouse-hide">
-                    <img className="mousewheelleftclick scale-in-out-anim" src="/images/right_pointer.svg" alt="pointer"/>
-                    <img className="your-image" src="/images/mouseleft.svg" alt="mouseleft"/>
+                    <div id="Mouse-RightClick" className="content-hide">
+                        <img className="mousewheelrightlick scale-in-out-anim" src="/images/left_pointer.svg" alt="pointer"/>
+                        <img className="your-image" src="/images/mouseright.svg" alt="mouseright"/>
+                    </div>
+
+                    <div id="Mouse-Scroll" className="content-hide">
+                        <img className="mousewheelarrows up-down-anim" src="/images/up_n_down.svg" alt="up and down"/>
+                        <img className="your-image" src="/images/mousewheel.svg" alt="mousewheel"/>
+                    </div>
                 </div>
 
-                <div id="Mouse-RightClick" className="mouse-hide">
-                    <img className="mousewheelrightlick scale-in-out-anim" src="/images/left_pointer.svg" alt="pointer"/>
-                    <img className="your-image" src="/images/mouseright.svg" alt="mouseright"/>
-                </div>
 
-                <div id="Mouse-Scroll" className="mouse-hide">
-                    <img className="mousewheelarrows up-down-anim" src="/images/up_n_down.svg" alt="up and down"/>
-                    <img className="your-image" src="/images/mousewheel.svg" alt="mousewheel"/>
+                <div id={"menu-vecto-" + id} className="menu-rightclick content-hide">
+                    <div className="submenu ">
+                        <div id="submenu-1" className="menu1"></div>
+                        <div id="submenu-2" className="menu1"></div>
+                        <div id="submenu-3" className="menu1"></div>
+                        <div id="submenu-4" className="menu1"></div>
+                        <div id="submenu-5" className="menu1"></div>
+                        <div id="submenu-6" className="menu1"></div>
+                        <div id="submenu-7" className="menu1"></div>
+                        <div id="submenu-8" className="menu1"></div>
+                        <div id="submenu-9" className="menu1"></div>
+                        <div id="submenu-10" className="menu1"></div>
+                        <div id="submenu-11" className="menu1"></div>
+                        <div id="submenu-12" className="menu1"></div>
+                        <div id="submenu-13" className="menu1"></div>
+                        <div id="submenu-14" className="menu1"></div>
+                        <div id="submenu-15" className="menu1"></div>
+                        <div id="submenu-16" className="menu1"></div>
+                        <div id="submenu-17" className="menu1"></div>
+                    </div>
                 </div>
+            
             </div>
             <hr className='hrcontent'/>
         </div>
