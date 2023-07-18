@@ -8,7 +8,8 @@ const SelectObject = () => {
             "keys": [
                 "Key-LEFT-LSHIFT", 
                 "Mouse-LeftClick", 
-            ]
+            ],
+            "menu" : []
         }
     ];
 

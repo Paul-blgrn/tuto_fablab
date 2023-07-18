@@ -7,7 +7,8 @@ const Sauvegarder = () => {
             "keys": [
                 "Key-LCTRL", 
                 "Key-S",
-            ]
+            ],
+            "menu" : []
         }
     ];
 

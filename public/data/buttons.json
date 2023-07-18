@@ -95,6 +95,18 @@
                 "route": "/tuto/",
                 "name": "Vectoriser une image",
                 "content": "inkscape_vectoriser"
+            },
+            {
+                "id": 8,
+                "route": "/tuto/",
+                "name": "Copier du contenu",
+                "content": "inkscape_copy"
+            },
+            {
+                "id": 9,
+                "route": "/tuto/",
+                "name": "Coller du contenu",
+                "content": "inkscape_paste"
             }
 
         ]

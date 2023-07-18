@@ -7,6 +7,8 @@ import InkScapeVectoriser from './InkScape/Vectoriser';
 import InkScapeUndo from './InkScape/CancelAction';
 import InkScapeRedo from './InkScape/RedoAction';
 import InkScapeSelectObject from './InkScape/SelectObject';
+import InkScapeCopy from './InkScape/Copy';
+import InkScapePaste from './InkScape/Paste';
 
 const IndexHtml = (props) => {
 
@@ -30,6 +32,10 @@ const IndexHtml = (props) => {
                 <InkScapeRedo />
             ) : content === "inkscape_selectObject" ? "inkscape_selectObject" && (
                 <InkScapeSelectObject/>
+            ) : content === "inkscape_copy" ? "inkscape_copy" && (
+                <InkScapeCopy />
+            ) : content === "inkscape_paste" ? "inkscape_paste" && (
+                <InkScapePaste />
             ) : (
                 <h3 className="Empty_Tutorial">404 - Not Found</h3>
             )
