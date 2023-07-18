@@ -1,12 +1,12 @@
 import Keyboard from '../KeyboardFunction';
 
-const Cancel = () => {
+const Copy = () => {
     const localKey = [
         {
             "id": 1,
             "keys": [
                 "Key-LCTRL", 
-                "Key-Z", 
+                "Key-L", 
             ],
             "menu" : []
         }
@@ -15,9 +15,9 @@ const Cancel = () => {
     return (
         <div className='contentbox'>
             <div className='contenttext'>
-                Pour annuler une ou plusieurs actions, appuyez sur la touche «CTRL» et la touche «Z» de votre clavier.
+                Pour importer du contenu, appuyez sur la touche «CTRL» et la touche «L» de votre clavier.
                 <hr className='hrcontent'/>
-                <h2 className='Home-Title2'>Exemple:</h2>
+                <h2 className='Home-Title2'>Exemple(s):</h2>
             </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">
@@ -30,4 +30,4 @@ const Cancel = () => {
     );
 }
 
-export default Cancel
+export default Copy;

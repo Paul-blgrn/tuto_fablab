@@ -63,7 +63,7 @@
             {
                 "id": 2,
                 "route": "/tuto/",
-                "name": "Importer une image",
+                "name": "Importer du contenu",
                 "content": "inkscape_import"
             },
             {

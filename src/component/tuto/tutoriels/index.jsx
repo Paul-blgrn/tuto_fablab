@@ -9,6 +9,7 @@ import InkScapeRedo from './InkScape/RedoAction';
 import InkScapeSelectObject from './InkScape/SelectObject';
 import InkScapeCopy from './InkScape/Copy';
 import InkScapePaste from './InkScape/Paste';
+import InkScapeImport from './InkScape/Import';
 
 const IndexHtml = (props) => {
 
@@ -36,6 +37,8 @@ const IndexHtml = (props) => {
                 <InkScapeCopy />
             ) : content === "inkscape_paste" ? "inkscape_paste" && (
                 <InkScapePaste />
+            ) : content === "inkscape_import" ? "inkscape_import" && (
+                <InkScapeImport />
             ) : (
                 <h3 className="Empty_Tutorial">404 - Not Found</h3>
             )

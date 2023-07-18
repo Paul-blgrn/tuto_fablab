@@ -9,6 +9,16 @@ const Copy = () => {
                 "Key-C", 
             ],
             "menu" : []
+        },
+        {
+            "id": 2,
+            "keys": [
+                "no-keyboard",
+                "Mouse-RightClick",
+            ],
+            "menu" : [
+                "submenu-2",
+            ]
         }
     ];
 
@@ -21,7 +31,6 @@ const Copy = () => {
             </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">
-                    <img className="keyboard" src='/images/keyboard.svg' alt='keyboard'/>
                     <div className="push-keys">
                         {localKey && <Keyboard keyboardKeys={localKey} />}
                     </div>
