@@ -89,7 +89,7 @@ const Keyboard = (props) => {
 
         prevMenu && prevMenu.map((key) => {
             //console.log(key)
-            const keyboardTouchID = document.getElementById("menu-vecto-" + id)
+            const keyboardTouchID = document.getElementById("menu-context-" + id)
             return(
                 keyboardTouchID
                     .classList
@@ -103,7 +103,7 @@ const Keyboard = (props) => {
 
         menu && menu.map((key) => {
             //console.log(key)
-            const keyboardTouchID = document.getElementById("menu-vecto-" + id)
+            const keyboardTouchID = document.getElementById("menu-context-" + id)
             return(
                 keyboardTouchID
                     .classList
@@ -266,7 +266,7 @@ const Keyboard = (props) => {
                 </div>
 
 
-                <div id={"menu-vecto-" + id} className="menu-rightclick content-hide">
+                <div id={"menu-context-" + id} className="menu-rightclick content-hide">
                     <div className="submenu ">
                         <div id="submenu-1" className="menu1"></div>
                         <div id="submenu-2" className="menu1"></div>

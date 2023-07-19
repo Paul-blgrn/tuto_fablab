@@ -20,6 +20,8 @@
 
 .menu-show {
     visibility: visible;
+    max-width: 25vmin;
+    margin-left: 3vmin;
     animation: opacity .8s ease-in-out infinite alternate;
 }
 
@@ -525,12 +527,95 @@
 }
 
 .menu1 {
-    position: relative;
-    top: 0.2vmin;
-    background-color: rgb(255, 0, 0);
     width: 38vmin;
-    height: 3vmin;
-    margin-bottom: 0.150vmin;
-    margin-top: 0.008vmin;
-    opacity: 1;
+    height: 2.5vmin;
+    background-color: rgb(0, 130, 255);
+    position: relative;
+    top: 0vmin;
+    padding: 0;
+    margin-bottom: 0.6vmin;
 }
+
+.menu1:first-child {
+    margin-top: 0.8vmin;
+}
+
+.menu1:nth-child(3) {
+    margin-top: 0.2vmin;
+}
+
+.menu1:nth-child(11) {
+    margin-top: 0.2vmin;
+}
+
+.menu1:nth-child(13) {
+    margin-top: 0.2vmin;
+}
+
+/*.menu1:nth-child(2) {
+    top: 0.1vmin;
+}
+
+.menu1:nth-child(3) {
+    top: 0.2vmin;
+}
+
+.menu1:nth-child(4) {
+    top: 0.2vmin;
+}
+
+.menu1:nth-child(5) {
+    top: 0vmin;
+}
+
+.menu1:nth-child(6) {
+    top: 0.1vmin;
+}
+
+.menu1:nth-child(7) {
+    top: 0.1vmin;
+}
+
+.menu1:nth-child(8) {
+    top: 0.1vmin;
+}
+
+.menu1:nth-child(8) {
+    top: 0.1vmin;
+}
+
+.menu1:nth-child(9) {
+    top: 0.1vmin;
+}
+
+.menu1:nth-child(10) {
+    top: 0vmin;
+}
+
+.menu1:nth-child(11) {
+    top: 0.1vmin;
+}
+
+.menu1:nth-child(12) {
+    top: -0.1vmin;
+}
+
+.menu1:nth-child(13) {
+    top: 0vmin;
+}
+
+.menu1:nth-child(14) {
+    top: -0.3vmin;
+}
+
+.menu1:nth-child(15) {
+    top: -0.2vmin;
+}
+
+.menu1:nth-child(16) {
+    top: -0.2vmin;
+}
+
+.menu1:last-child {
+    top: -0.2vmin;
+} */
