@@ -8,7 +8,9 @@ const Cancel = () => {
                 "Key-LCTRL", 
                 "Key-Z", 
             ],
-            "menu" : []
+            "menu" : [],
+            "topmenu" : [],
+            "submenu": [],
         }
     ];
 

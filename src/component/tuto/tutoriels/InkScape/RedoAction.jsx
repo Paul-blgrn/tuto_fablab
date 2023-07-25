@@ -8,7 +8,9 @@ const RedoAction = () => {
                 "Key-LCTRL", 
                 "Key-Y", 
             ],
-            "menu" : []
+            "menu" : [],
+            "topmenu" : [],
+            "submenu": [],
         }
     ];
 

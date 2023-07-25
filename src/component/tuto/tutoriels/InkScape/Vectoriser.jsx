@@ -9,7 +9,9 @@ const Vectoriser = () => {
                 "Key-LALT", 
                 "Key-B", 
             ],
-            "menu" : []
+            "menu" : [],
+            "topmenu" : [],
+            "submenu": [],
         },
         {
             "id": 3,
@@ -19,7 +21,9 @@ const Vectoriser = () => {
             ],
             "menu" : [
                 "submenu-9",
-            ]
+            ],
+            "topmenu" : [],
+            "submenu": [],
         }
     ];
 

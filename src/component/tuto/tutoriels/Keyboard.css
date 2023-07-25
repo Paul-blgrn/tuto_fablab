@@ -9,6 +9,18 @@
   }
 }
 
+@keyframes top-menu-anim
+{ 
+  from { 
+    background-color: azure;
+    color: black;
+  }
+  to {
+    background-color: cornflowerblue;
+    color: azure;
+  }
+}
+
 .key-animate {
     animation: opacity .8s ease-in-out infinite alternate;
 }
@@ -23,6 +35,11 @@
     max-width: 25vmin;
     margin-left: 3vmin;
     animation: opacity .8s ease-in-out infinite alternate;
+}
+
+.top-menu-animate {
+    visibility: visible;
+    animation: top-menu-anim .8s ease-in-out infinite alternate;
 }
 
 .keyboard-touch {
@@ -567,4 +584,99 @@
 
 .menu1:last-child {
     margin-top: 0.1vmin;
+}
+
+/* ----------------- */
+/* ---  MENU TOP --- */
+/* ----------------- */
+
+.no-top-menu {
+    display: none;
+    visibility: hidden;
+    background-color: none;
+    background: none;
+}
+
+.no-sub-menu {
+    display: none;
+    visibility: hidden;
+    background-color: none;
+    background: none;
+}
+
+.menu-top {
+    width: 80vmin;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-top-title {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menu-top-title-text {
+    background-color: aliceblue;
+    color: black;
+    font-size: 2.15vmin;
+    font-weight: bold;
+    margin: 0.2vmin;
+    padding: 0.2vmin;
+}
+
+.menu-top-title-text:hover {
+    background-color: rgb(105, 105, 105);
+    color: azure;
+    cursor: pointer;
+}
+
+.topmenu-hr {
+    width: 34vmin;
+}
+
+.submenu-top {
+    width: 80vmin;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 0.2vmin;
+    margin-bottom: 1vmin;
+}
+
+.submenu-list {
+    background-color: azure;
+    width: 42vmin;
+    padding: 0.2vmin;
+    border: 1px solid red;
+    padding-top: 1vmin;
+    padding-bottom: 2vmin;
+}
+
+.submenu-texte {
+    color: black;
+    font-size: 2.17vmin;
+    margin-left: 1vmin;
+    padding: 0.8vmin;
+    transition: all .3s ease-in-out;
+}
+
+.submenu-fichier-texte:hover {
+    background-color: rgb(105, 105, 105);
+    color: azure;
+    padding: 1vmin;
+    cursor: pointer;
+}
+
+.submenu-fichier {
+    position: relative;
+    left: 0.4vmin;
+}
+
+.submenu-edition {
+    position: relative;
+    left: 8vmin;
 }

@@ -5,10 +5,25 @@ const Copy = () => {
         {
             "id": 1,
             "keys": [
+                "no-keyboard",
+            ],
+            "menu" : [],
+            "topmenu" : [
+                "fichier",
+            ],
+            "submenu": [
+                "importer",
+            ],
+        },
+        {
+            "id": 2,
+            "keys": [
                 "Key-LCTRL", 
                 "Key-L", 
             ],
-            "menu" : []
+            "menu" : [],
+            "topmenu" : [],
+            "submenu": [],
         }
     ];
 

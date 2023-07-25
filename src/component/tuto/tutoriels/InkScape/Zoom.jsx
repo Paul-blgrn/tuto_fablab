@@ -9,7 +9,9 @@ const Zoom = () => {
                 "Key-LCTRL",
                 "Mouse-Scroll",
             ],
-            "menu" : []
+            "menu" : [],
+            "topmenu" : [],
+            "submenu": [],
         },
         {
             "id": 2,
@@ -17,7 +19,9 @@ const Zoom = () => {
                 "Key-PAD-SOUSTRACTION",
                 "Key-PAD-ADDITION",
             ],
-            "menu" : []
+            "menu" : [],
+            "topmenu" : [],
+            "submenu": [],
         },
         {
             "id": 3,
@@ -26,7 +30,9 @@ const Zoom = () => {
                 "Key-)",
                 "Key-=",
             ],
-            "menu" : []
+            "menu" : [],
+            "topmenu" : [],
+            "submenu": [],
         }
     ];
     return (

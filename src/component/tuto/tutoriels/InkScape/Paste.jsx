@@ -8,7 +8,9 @@ const Paste = () => {
                 "Key-LCTRL", 
                 "Key-V", 
             ],
-            "menu" : []
+            "menu" : [],
+            "topmenu" : [],
+            "submenu": [],
         },
         {
             "id": 2,
@@ -18,7 +20,9 @@ const Paste = () => {
             ],
             "menu" : [
                 "submenu-3",
-            ]
+            ],
+            "topmenu" : [],
+            "submenu": [],
         }
     ];
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import './Tutoriels.css';
+import TopMenu from './TopMenu';
 
 function usePrevious(value) {
     // create a new reference
@@ -16,7 +17,7 @@ function usePrevious(value) {
 
 
 const Keyboard = (props) => {
-    const { id, keyboardKeys, keyboardMenu } = props;
+    const { id, keyboardKeys, keyboardMenu, topMenu, subMenu } = props;
     const [keys, setKeys] = useState([]);
     const [menu, setMenu] = useState([]);
 
@@ -287,8 +288,11 @@ const Keyboard = (props) => {
                         <div id="submenu-17" className="menu1"></div>
                     </div>
                 </div>
-            
             </div>
+            <div id={"menu-top-" + id} className="menu-top">
+                <TopMenu id={id} topMenu={topMenu} subMenu={subMenu} />
+            </div>
+
             <hr className='hrcontent'/>
         </div>
     );

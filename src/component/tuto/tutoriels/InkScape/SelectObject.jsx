@@ -9,7 +9,9 @@ const SelectObject = () => {
                 "Key-LEFT-LSHIFT", 
                 "Mouse-LeftClick", 
             ],
-            "menu" : []
+            "menu" : [],
+            "topmenu" : [],
+            "submenu": [],
         }
     ];
 

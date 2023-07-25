@@ -8,7 +8,9 @@ const Copy = () => {
                 "Key-LCTRL", 
                 "Key-C", 
             ],
-            "menu" : []
+            "menu" : [],
+            "topmenu" : [],
+            "submenu": [],
         },
         {
             "id": 2,
@@ -18,7 +20,9 @@ const Copy = () => {
             ],
             "menu" : [
                 "submenu-2",
-            ]
+            ],
+            "topmenu" : [],
+            "submenu": [],
         }
     ];
 
