@@ -690,3 +690,38 @@
     position: relative;
     left: 16vmin;
 }
+
+.submenu-calque{
+    position: relative;
+    left: 26.2vmin;
+}
+
+.submenu-objet{
+    position: relative;
+    left: 34vmin;
+}
+
+.submenu-chemin {
+    position: relative;
+    left: 41.2vmin;
+}
+
+.submenu-texte2 {
+    position: relative;
+    left: 49.5vmin;
+}
+
+.submenu-filtres {
+    position: relative;
+    left: 55.8vmin;
+}
+
+.submenu-extensions {
+    position: relative;
+    left: 62.8vmin;
+}
+
+.submenu-aide {
+    position: relative;
+    left: 36.9vmin;
+}

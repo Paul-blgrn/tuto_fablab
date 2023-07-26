@@ -8,7 +8,7 @@ const Copy = () => {
             "keys": [],
             "menu" : [],
             "topmenu" : [
-                "fichier",
+                "aide",
                 "importer",
             ],
         },
