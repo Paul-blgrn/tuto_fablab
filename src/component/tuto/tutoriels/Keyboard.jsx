@@ -17,7 +17,7 @@ function usePrevious(value) {
 
 
 const Keyboard = (props) => {
-    const { id, keyboardKeys, keyboardMenu, topMenu } = props;
+    const { id, description, keyboardKeys, keyboardMenu, topMenu } = props;
     const [keys, setKeys] = useState([]);
     const [menu, setMenu] = useState([]);
 
@@ -113,6 +113,9 @@ const Keyboard = (props) => {
     return(
         <div id={id}>
             <hr className='hrcontent'/>
+            <div id={"hint-" + id}>
+                <p className="keyboard-hint">{description}</p>
+            </div>
             <div id={"Keyboard-" + id} className="keyboard-touch no-keyboard-image">
                 {/* LINE 1 */}
                 <div className="keyboard-line1">

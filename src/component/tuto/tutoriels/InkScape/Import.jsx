@@ -4,6 +4,7 @@ const Copy = () => {
     const localKey = [
         {
             "id": 1,
+            "description" : "Cliquez sur «Fichier» puis «Importer»",
             "keys": [],
             "menu" : [],
             "topmenu" : [
@@ -13,6 +14,7 @@ const Copy = () => {
         },
         {
             "id": 2,
+            "description": "Pressez la touche «CTRL» puis «L»",
             "keys": [
                 "Key-LCTRL",
                 "Key-L",
@@ -24,11 +26,6 @@ const Copy = () => {
 
     return (
         <div className='contentbox'>
-            <div className='contenttext'>
-                Pour importer du contenu, appuyez sur la touche «CTRL» et la touche «L» de votre clavier.
-                <hr className='hrcontent'/>
-                <h2 className='Home-Title2'>Exemple(s):</h2>
-            </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">
                     <div className="push-keys">

@@ -4,6 +4,7 @@ const Copy = () => {
     const localKey = [
         {
             "id": 1,
+            "description": "Pressez la touche «CTRL» puis «C»",
             "keys": [
                 "Key-LCTRL", 
                 "Key-C", 
@@ -13,6 +14,7 @@ const Copy = () => {
         },
         {
             "id": 2,
+            "description": "«Clic-droit puis «Copier»",
             "keys": [
                 "Mouse-RightClick",
             ],
@@ -25,11 +27,6 @@ const Copy = () => {
 
     return (
         <div className='contentbox'>
-            <div className='contenttext'>
-                Pour copier du contenu, appuyez sur la touche «CTRL» et la touche «C» de votre clavier.
-                <hr className='hrcontent'/>
-                <h2 className='Home-Title2'>Exemple(s):</h2>
-            </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">
                     <div className="push-keys">

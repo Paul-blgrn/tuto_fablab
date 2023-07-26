@@ -4,6 +4,7 @@ const Paste = () => {
     const localKey = [
         {
             "id": 1,
+            "description": "Pressez la touche «CTRL» puis «V»",
             "keys": [
                 "Key-LCTRL", 
                 "Key-V", 
@@ -13,6 +14,7 @@ const Paste = () => {
         },
         {
             "id": 2,
+            "description": "«Clic-droit puis «Coller»",
             "keys": [
                 "Mouse-RightClick",
             ],

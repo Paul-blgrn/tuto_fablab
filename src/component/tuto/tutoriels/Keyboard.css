@@ -25,6 +25,17 @@
     animation: opacity .8s ease-in-out infinite alternate;
 }
 
+.top-menu-animate {
+    visibility: visible;
+    animation: top-menu-anim .8s ease-in-out infinite alternate;
+}
+
+.keyboard-hint {
+    text-align: center;
+    font-size: 2.8vmin;
+    font-style: italic;
+}
+
 .key-show {
     visibility: visible;
     animation: opacity .8s ease-in-out infinite alternate;
@@ -35,11 +46,6 @@
     max-width: 25vmin;
     margin-left: 3vmin;
     animation: opacity .8s ease-in-out infinite alternate;
-}
-
-.top-menu-animate {
-    visibility: visible;
-    animation: top-menu-anim .8s ease-in-out infinite alternate;
 }
 
 .keyboard-touch {

@@ -5,6 +5,7 @@ const Zoom = () => {
     const localKey = [
         {
             "id": 1,
+            "description": "Pressez la touche «CTRL» puis faites rouler la roulette vers le haut ou le bas",
             "keys": [
                 "Key-LCTRL",
                 "Mouse-Scroll",
@@ -14,6 +15,7 @@ const Zoom = () => {
         },
         {
             "id": 2,
+            "description": "Pressez la touche «+» ou «-»",
             "keys": [
                 "Key-PAD-SOUSTRACTION",
                 "Key-PAD-ADDITION",
@@ -23,6 +25,7 @@ const Zoom = () => {
         },
         {
             "id": 3,
+            "description": "Pressez la touche «CTRL» puis «+» ou «-»",
             "keys": [
                 "Key-LCTRL",
                 "Key-)",
@@ -34,15 +37,6 @@ const Zoom = () => {
     ];
     return (
         <div className='contentbox'>
-            <div className='contenttext'>
-                Pour Zoomer / Dezoomer, Maintenez la touche «CTRL» de votre clavier.
-                <br/>
-                Faites rouler la roue de votre souris vers le haut (+) ou le bas (-).
-                <br/> 
-                (+) = Zoomer || (-) = Dezoomer.
-                <hr className='hrcontent'/>
-                <h2 className='Home-Title2'>Exemple:</h2>
-            </div>
             <div className="imagestuto">
                 <div className="Keyboard-parent">
                     {localKey && <Keyboard keyboardKeys={localKey} />}

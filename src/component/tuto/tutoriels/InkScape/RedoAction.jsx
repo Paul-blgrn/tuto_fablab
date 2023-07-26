@@ -4,6 +4,7 @@ const RedoAction = () => {
     const localKey = [
         {
             "id": 1,
+            "description": "Pressez la touche «CTRL» puis «Y»",
             "keys": [
                 "Key-LCTRL", 
                 "Key-Y", 
@@ -15,11 +16,6 @@ const RedoAction = () => {
 
     return (
         <div className='contentbox'>
-            <div className='contenttext'>
-                Pour rétablir une ou plusieurs actions, appuyez sur la touche «CTRL» et la touche «y» de votre clavier.
-                <hr className='hrcontent'/>
-                <h2 className='Home-Title2'>Exemple:</h2>
-            </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">
                     <div className="push-keys">

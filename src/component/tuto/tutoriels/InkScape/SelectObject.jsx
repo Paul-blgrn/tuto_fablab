@@ -5,6 +5,7 @@ const SelectObject = () => {
     const localKey = [
         {
             "id": 1,
+            "description": "Pressez la touche «CTRL» puis «Clic-gauche»",
             "keys": [
                 "Key-LEFT-LSHIFT", 
                 "Mouse-LeftClick", 

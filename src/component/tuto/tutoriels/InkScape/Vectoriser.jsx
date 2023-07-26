@@ -4,6 +4,7 @@ const Vectoriser = () => {
     const localKey = [
         {
             "id": 1,
+            "description": "Pressez la touche «MAJ» puis «ALT» puis «B»",
             "keys": [
                 "Key-LEFT-LSHIFT", 
                 "Key-LALT", 
@@ -14,6 +15,7 @@ const Vectoriser = () => {
         },
         {
             "id": 2,
+            "description": "«Clic-droit» puis «Vectoriser un objet matriciel»",
             "keys": [
                 "Mouse-RightClick",
             ],
@@ -26,13 +28,6 @@ const Vectoriser = () => {
 
     return (
         <div className='contentbox'>
-            <div className='contenttext'>
-                Pour vectoriser une image:
-                <hr className='hrcontent'/>
-                Selectionnez votre image,
-                <br/>
-                puis :
-            </div>
             <div className='imagestuto'>
                 <div className="Keyboard-parent">
                     <div className="push-keys">
