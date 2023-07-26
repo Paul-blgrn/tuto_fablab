@@ -4,26 +4,21 @@ const Copy = () => {
     const localKey = [
         {
             "id": 1,
-            "keys": [
-                "no-keyboard",
-            ],
+            "keys": [],
             "menu" : [],
             "topmenu" : [
                 "fichier",
-            ],
-            "submenu": [
                 "importer",
             ],
         },
         {
             "id": 2,
             "keys": [
-                "Key-LCTRL", 
-                "Key-L", 
+                "Key-LCTRL",
+                "Key-L",
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         }
     ];
 

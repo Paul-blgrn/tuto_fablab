@@ -11,19 +11,16 @@ const Vectoriser = () => {
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         },
         {
-            "id": 3,
+            "id": 2,
             "keys": [
-                "no-keyboard",
                 "Mouse-RightClick",
             ],
             "menu" : [
                 "submenu-9",
             ],
             "topmenu" : [],
-            "submenu": [],
         }
     ];
 

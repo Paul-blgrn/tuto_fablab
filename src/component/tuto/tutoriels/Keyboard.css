@@ -664,10 +664,9 @@
     transition: all .3s ease-in-out;
 }
 
-.submenu-fichier-texte:hover {
+.submenu-texte:hover {
     background-color: rgb(105, 105, 105);
     color: azure;
-    padding: 1vmin;
     cursor: pointer;
 }
 

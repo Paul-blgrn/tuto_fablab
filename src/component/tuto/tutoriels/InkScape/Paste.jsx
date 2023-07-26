@@ -10,19 +10,16 @@ const Paste = () => {
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         },
         {
             "id": 2,
             "keys": [
-                "no-keyboard",
                 "Mouse-RightClick",
             ],
             "menu" : [
                 "submenu-3",
             ],
             "topmenu" : [],
-            "submenu": [],
         }
     ];
 

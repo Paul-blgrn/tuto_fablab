@@ -9,7 +9,7 @@ const KeyboardFunction = (props) => {
         keyboardKeys.map((key) => {
             return(
                 //<Keyboard key={key.id} id={key.id} Keys={key.keys} />
-                <Keyboard key={key.id} id={key.id} keyboardKeys={key.keys} keyboardMenu={key.menu} topMenu={key.topmenu} subMenu={key.submenu} />
+                <Keyboard key={key.id} id={key.id} keyboardKeys={key.keys} keyboardMenu={key.menu} topMenu={key.topmenu} />
             );
         })
     );

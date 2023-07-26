@@ -10,19 +10,16 @@ const Copy = () => {
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         },
         {
             "id": 2,
             "keys": [
-                "no-keyboard",
                 "Mouse-RightClick",
             ],
             "menu" : [
                 "submenu-2",
             ],
             "topmenu" : [],
-            "submenu": [],
         }
     ];
 

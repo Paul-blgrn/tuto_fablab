@@ -11,7 +11,6 @@ const SelectObject = () => {
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         }
     ];
 

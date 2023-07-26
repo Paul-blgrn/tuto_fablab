@@ -10,7 +10,6 @@ const Cancel = () => {
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         }
     ];
 

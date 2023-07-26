@@ -11,7 +11,6 @@ const Zoom = () => {
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         },
         {
             "id": 2,
@@ -21,7 +20,6 @@ const Zoom = () => {
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         },
         {
             "id": 3,
@@ -32,7 +30,6 @@ const Zoom = () => {
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         }
     ];
     return (

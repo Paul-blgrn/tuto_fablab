@@ -10,7 +10,6 @@ const Sauvegarder = () => {
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         }
     ];
 

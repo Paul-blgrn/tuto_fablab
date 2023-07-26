@@ -10,7 +10,6 @@ const RedoAction = () => {
             ],
             "menu" : [],
             "topmenu" : [],
-            "submenu": [],
         }
     ];
 

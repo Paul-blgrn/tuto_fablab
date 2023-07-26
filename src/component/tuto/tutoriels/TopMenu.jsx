@@ -15,101 +15,78 @@ function usePrevious(value) {
 }
 
 const TopMenu = (props) => {
-    const { id, topMenu, subMenu } = props;
+    const { id, topMenu } = props;
     //console.log(topMenu)
 
     const [topmenu, settopmenu] = useState([]);
-    const [submenu, setsubmenu] = useState([]);
 
     const getData = async () => {
 		const results = topMenu;
         settopmenu(results);
     };
 
-    const getSubData = async () => {
-		const results2 = subMenu;
-        setsubmenu(results2);
-    };
-
     useEffect(() => {
         getData().catch((err) => console.log(err));
-        getSubData().catch((err) => console.log(err));
     })
 
     const prevTopMenu = usePrevious(topmenu);
-    const prevSubMenu = usePrevious(submenu);
 
     useEffect(() => {
         prevTopMenu && prevTopMenu.map ((key) => {
             const topMenuID = document.getElementById("menu-top-" + id)
             const topMenu2 = document.getElementById("menu-top2-" + id)
+            
+            const menuSub = document.getElementById("submenu" + id);
+            const targetSubMenu = menuSub.getElementsByTagName('div').namedItem("submenu-" + key)
+
+            const topAnim = topMenuID.getElementsByTagName('div').namedItem(key)
+            const subAnim = menuSub.getElementsByTagName('div').namedItem(key);
             return(
                 //console.log(key),
 
                 // delete hide class
-                topMenu2.classList.add("no-top-menu"),
+                topMenu2 && topMenu2.classList.add("no-top-menu"),
 
-                // remove animation class
-                topMenuID
-                    .getElementsByTagName('div')
-                    .namedItem(key)
-                    .classList
-                    .remove("top-menu-animate")
+                // hide menu
+                targetSubMenu && targetSubMenu.classList.add("no-sub-menu"),
+
+                // remove animation class topmenu
+                topAnim && topAnim.classList.remove("top-menu-animate"),
+
+                // remove animation class submenu
+                subAnim && subAnim.classList.remove("top-menu-animate")
             );
         })
 
         topmenu && topmenu.map((key) => {
             //console.log(key)
-            const topMenuID = document.getElementById("menu-top-" + id)
-            const topMenu2 = document.getElementById("menu-top2-" + id)
+            const topMenuID = document.getElementById("menu-top-" + id);
+            const topMenu2 = document.getElementById("menu-top2-" + id);
+
+            const menuSub = document.getElementById("submenu" + id);
+            const targetSubMenu = menuSub.getElementsByTagName('div').namedItem("submenu-" + key)
+
+            const topAnim = topMenuID.getElementsByTagName('div').namedItem(key)
+            const subAnim = menuSub.getElementsByTagName('div').namedItem(key);
             return(
                 //console.log(topMenuID),
 
                 // delete hide class
-                topMenu2.classList.remove("no-top-menu"),
+                topMenu2 && topMenu2.classList.remove("no-top-menu"),
+
+                // show menu
+                targetSubMenu && targetSubMenu.classList.remove("no-sub-menu"),
 
                 // add animation class
-                topMenuID
-                    .getElementsByTagName('div')
-                    .namedItem(key)
-                    .classList
-                    .add("top-menu-animate")
-            );
-        })
+                topAnim && topAnim.classList.add("top-menu-animate"),
 
-        prevSubMenu && prevSubMenu.map((key) => {
-            const menuSub = document.getElementById("submenu" + id);
-            const menuElement = menuSub.getElementsByTagName('div').namedItem(key);
-            const subAnim = menuSub.getElementsByTagName('div').namedItem(key);
-            return(
-                //console.log(key),
-                // hide menu
-                menuElement
-                    .parentElement
-                    .classList
-                    .add("no-sub-menu"),
-                subAnim.classList.remove("top-menu-animate")
-            );
-        })
-
-        submenu && submenu.map((key) => {
-            const menuSub = document.getElementById("submenu" + id);
-            const menuElement = menuSub.getElementsByTagName('div').namedItem(key);
-            const subAnim = menuSub.getElementsByTagName('div').namedItem(key);
-            return(
-                //console.log(key),
-                // remove invisible class on content
-                menuElement
-                    .parentElement
-                    .classList
-                    .remove("no-sub-menu"),
-
-                    // add animation
-                    subAnim.classList.add("top-menu-animate")
+                // remove animation class submenu
+                subAnim && subAnim.classList.add("top-menu-animate")
+                
             );
         })
     
-    }, [id, prevTopMenu, topmenu, prevSubMenu, submenu])
+    }, [id, prevTopMenu, topmenu])
 
     return(
         <div id={"menu-top2-" + id} className="no-top-menu">
@@ -173,7 +150,7 @@ const TopMenu = (props) => {
                     <div id="supprimer" className="submenu-texte">Supprimer</div>
                     <hr className="topmenu-hr" />
                     <div id="selectionner-tout" className="submenu-texte">Sélectionner tout</div>
-                    <div id="selectionner-tout-calques" className="submenu-fichier-texte">Tout sélectionner dans tous les calques</div>
+                    <div id="selectionner-tout-calques" className="submenu-texte">Tout sélectionner dans tous les calques</div>
                     <div id="selectionner-meme" className="submenu-texte">Sélectionner même</div>
                     <div id="inverser-selection" className="submenu-texte">Inverser la sélection</div>
                     <div id="deselectionner" className="submenu-texte">Désélectionner</div>

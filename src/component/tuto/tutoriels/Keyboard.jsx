@@ -17,7 +17,7 @@ function usePrevious(value) {
 
 
 const Keyboard = (props) => {
-    const { id, keyboardKeys, keyboardMenu, topMenu, subMenu } = props;
+    const { id, keyboardKeys, keyboardMenu, topMenu } = props;
     const [keys, setKeys] = useState([]);
     const [menu, setMenu] = useState([]);
 
@@ -46,6 +46,7 @@ const Keyboard = (props) => {
         prevKey && prevKey.map((key) => {
             const keyboardID = document.getElementById(id);
             const keyboardTouchID = document.getElementById("Keyboard-" + id)
+            const keyboardTouch = keyboardTouchID.getElementsByTagName('div').namedItem(key)
             return(
                 //console.log(keyboardID),
                 key === "Mouse-RightClick" || key === "Mouse-LeftClick" || key === "Mouse-Scroll"  ?
@@ -53,14 +54,10 @@ const Keyboard = (props) => {
                         .getElementsByTagName('div')
                         .namedItem(key).classList
                         .remove("content-show")
-                : key === "no-keyboard" ?
-                    //console.log("Keyboard " + id + " contain 'no-keyboard' value")
-                    keyboardTouchID.classList.remove('no-keyboard-image')
-                :
-                    keyboardTouchID
-                        .getElementsByTagName('div')
-                        .namedItem(key)
-                        .classList.remove('key-show')
+                : 
+                    // if no touch hide keyboard else show keyboard and animation
+                    keyboardTouchID && keyboardTouchID.classList.add('no-keyboard-image'),
+                    keyboardTouch && keyboardTouch.classList.remove('key-show')
 
             );
         })
@@ -69,6 +66,7 @@ const Keyboard = (props) => {
             //const countArray = JSON.parse(JSON.stringify(keys)).length;
             const keyboardID = document.getElementById(id);
             const keyboardTouchID = document.getElementById("Keyboard-" + id)
+            const keyboardTouch = keyboardTouchID.getElementsByTagName('div').namedItem(key)
             return(
                 //console.log(key),
                     key === "Mouse-RightClick" || key === "Mouse-LeftClick" || key === "Mouse-Scroll"  ?
@@ -77,14 +75,9 @@ const Keyboard = (props) => {
                             .namedItem(key).classList
                             .add("content-show")
                     :
-                        key === "no-keyboard" ?
-                            //console.log("Keyboard " + id + " contain 'no-keyboard' value")
-                            keyboardTouchID.classList.add('no-keyboard-image')
-                        :
-                            keyboardTouchID
-                                .getElementsByTagName('div')
-                                .namedItem(key)
-                                .classList.add('key-show')
+                        // if no touch hide keyboard else show keyboard and animation
+                        keyboardTouchID && keyboardTouchID.classList.remove('no-keyboard-image'),
+                        keyboardTouch && keyboardTouch.classList.add('key-show')
             );
         })
 
@@ -120,7 +113,7 @@ const Keyboard = (props) => {
     return(
         <div id={id}>
             <hr className='hrcontent'/>
-            <div id={"Keyboard-" + id} className="keyboard-touch">
+            <div id={"Keyboard-" + id} className="keyboard-touch no-keyboard-image">
                 {/* LINE 1 */}
                 <div className="keyboard-line1">
                 <div id="Key-F1" className="touch1"></div>
@@ -290,7 +283,7 @@ const Keyboard = (props) => {
                 </div>
             </div>
             <div id={"menu-top-" + id} className="menu-top">
-                <TopMenu id={id} topMenu={topMenu} subMenu={subMenu} />
+                <TopMenu id={id} topMenu={topMenu} />
             </div>
 
             <hr className='hrcontent'/>
