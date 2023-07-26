@@ -1,5 +1,9 @@
 import React, { useEffect, useState, useRef } from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import './Keyboard.css';
+
 
 function usePrevious(value) {
     // create a new reference
@@ -105,6 +109,7 @@ const TopMenu = (props) => {
 
             <div id={"submenu" + id} className="submenu-top">
 
+                { /* MENU FICHIER */}
                 <div id="submenu-fichier" className="submenu-list submenu-fichier no-sub-menu">
                     <div id="nouveau" className="submenu-texte">Nouveau</div>
                     <div id="nouveau-modele" className="submenu-texte">Nouveau à partir d'un modèle</div>
@@ -129,6 +134,7 @@ const TopMenu = (props) => {
                     <div id="quitter" className="submenu-texte">Quitter</div>
                 </div>
 
+                { /* MENU EDITION */}
                 <div id="submenu-edition" className="submenu-list submenu-edition no-sub-menu">
                     <div id="annuler" className="submenu-texte">Annuler</div>
                     <div id="retablir" className="submenu-texte">Rétablir</div>
@@ -165,6 +171,36 @@ const TopMenu = (props) => {
                     <hr className="topmenu-hr" />
                     <div id="peripherique-saisie" className="submenu-texte">Périphériques de saisie...</div>
                     <div id="preferences" className="submenu-texte">Préférences</div>
+                </div>
+
+                { /* MENU AFFICHAGE */}
+                <div id="submenu-affichage" className="submenu-list submenu-affichage no-sub-menu">
+                    <div id="zoom" className="submenu-texte">Zoom</div>
+                    <div id="orientation" className="submenu-texte">Orientation</div>
+                    <div id="mode-affichage" className="submenu-texte">Mode d'affichage</div>
+                    <div id="mode-affichage-scinde" className="submenu-texte">Mode d'affichage scindé</div>
+                    <hr className="topmenu-hr" />
+                    <div id="niveaux-gris" className="submenu-texte">{<FontAwesomeIcon icon={["far", "square"]} />} Niveaux de gris</div>
+                    <div id="gestion-couleur" className="submenu-texte">{<FontAwesomeIcon icon={["far", "square"]} />} Gestion de la couleur</div>
+                    <div id="grille" className="submenu-texte">{<FontAwesomeIcon icon={["far", "square"]} />} Grille</div>
+                    <div id="guides" className="submenu-texte">{<FontAwesomeIcon icon={["far", "check-square"]} />} Guides</div>
+                    <hr className="topmenu-hr" />
+                    <div id="afficher" className="submenu-texte">Afficher/cacher</div>
+                    <div id="afficher-boites-dialogue" className="submenu-texte">Afficher/cacher les boîtes de dialogue</div>
+                    <div id="palette-commandes" className="submenu-texte">Palette de commandes</div>
+                    <hr className="topmenu-hr" />
+                    <div id="palettes" className="submenu-texte">Palettes...</div>
+                    <div id="messages" className="submenu-texte">Messages...</div>
+                    <hr className="topmenu-hr" />
+                    <div id="fenetre-precedente" className="submenu-texte">Fenêtre précédente</div>
+                    <div id="fenetre-suivante" className="submenu-texte">Fenêtre suivante</div>
+                    <hr className="topmenu-hr" />
+                    <div id="apercu-icone" className="submenu-texte">Aperçu d'icône</div>
+                    <div id="dupliquer-fenetre" className="submenu-texte">Dupliquer la fenêtre</div>
+                    <hr className="topmenu-hr" />
+                    <div id="plen-ecran" className="submenu-texte">Plein écran</div>
+                    <hr className="topmenu-hr" />
+                    <div id="ecran-large" className="submenu-texte">{<FontAwesomeIcon icon={["far", "check-square"]} />} Ecran large</div>
                 </div>
             
             </div>

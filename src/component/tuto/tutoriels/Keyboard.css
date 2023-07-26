@@ -685,3 +685,8 @@
     position: relative;
     left: 8vmin;
 }
+
+.submenu-affichage {
+    position: relative;
+    left: 16vmin;
+}
