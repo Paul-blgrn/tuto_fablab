@@ -231,32 +231,141 @@ const TopMenu = (props) => {
 
                 { /* MENU OBJET */}
                 <div id="submenu-objet" className="submenu-list submenu-objet no-sub-menu">
-                    <div id="objet-1" className="submenu-texte"></div>    
-                    <hr className="topmenu-hr" />
+                    <div id="objet-1" className="submenu-texte">Calques et objets...</div>    
+                    <div id="objet-2" className="submenu-texte">Fond et contour..</div>    
+                    <div id="objet-3" className="submenu-texte">Propriétés de l'objet...</div>    
+                    <div id="objet-4" className="submenu-texte">Symboles...</div>    
+                    <div id="objet-5" className="submenu-texte">Serveurs d'imprimés...</div>    
+                    <div id="objet-6" className="submenu-texte">Sélecteurs et CSS...</div>
+                    <hr className="topmenu-hr" />    
+                    <div id="objet-7" className="submenu-texte">Grouper</div>    
+                    <div id="objet-8" className="submenu-texte">Dégrouper</div>    
+                    <div id="objet-9" className="submenu-texte">Sortir les objets sélectionnés du groupe</div> 
+                    <hr className="topmenu-hr" />   
+                    <div id="objet-10" className="submenu-texte">Découpe</div>    
+                    <div id="objet-11" className="submenu-texte">Masque</div>    
+                    <div id="objet-12" className="submenu-texte">Motif</div>
+                    <hr className="topmenu-hr" />    
+                    <div id="objet-13" className="submenu-texte">Objets en marqueur</div>    
+                    <div id="objet-14" className="submenu-texte">Objets en guides</div>
+                    <hr className="topmenu-hr" />    
+                    <div id="objet-15" className="submenu-texte">Monter au premier plan</div>    
+                    <div id="objet-16" className="submenu-texte">Monter</div>    
+                    <div id="objet-17" className="submenu-texte">Descendre</div>    
+                    <div id="objet-18" className="submenu-texte">Descendre à l'arrière-plan</div>
+                    <hr className="topmenu-hr" />    
+                    <div id="objet-19" className="submenu-texte">Tourner de 90° dans le sens horaire</div>    
+                    <div id="objet-20" className="submenu-texte">Tourner de 90° dans le sens anti-horaire</div>    
+                    <div id="objet-21" className="submenu-texte">Retourner horizontalement</div>    
+                    <div id="objet-22" className="submenu-texte">Retourner verticalement</div>
+                    <hr className="topmenu-hr" />    
+                    <div id="objet-23" className="submenu-texte">Montrer tout</div>    
+                    <div id="objet-24" className="submenu-texte">Déverouiller tout</div>
+                    <hr className="topmenu-hr" />    
+                    <div id="objet-25" className="submenu-texte">Transformer...</div>    
+                    <div id="objet-26" className="submenu-texte">Aligner et distribuer...</div>    
                 </div>
 
                 { /* MENU CHEMIN */}
                 <div id="submenu-chemin" className="submenu-list submenu-chemin no-sub-menu">
-                    <div id="chemin-1" className="submenu-texte"></div> 
-                    <hr className="topmenu-hr" />
+                    <div id="chemin-1" className="submenu-texte">Objet en chemin</div> 
+                    <div id="chemin-2" className="submenu-texte">Contour en chemin</div> 
+                    <div id="chemin-3" className="submenu-texte">Vectoriser un objet matriciel...</div>
+                    <hr className="topmenu-hr" /> 
+                    <div id="chemin-4" className="submenu-texte">Union</div> 
+                    <div id="chemin-5" className="submenu-texte">Différence</div> 
+                    <div id="chemin-6" className="submenu-texte">Intersection</div> 
+                    <div id="chemin-7" className="submenu-texte">Exclusion</div> 
+                    <div id="chemin-8" className="submenu-texte">Division</div> 
+                    <div id="chemin-9" className="submenu-texte">Découper le chemin</div>
+                    <hr className="topmenu-hr" /> 
+                    <div id="chemin-10" className="submenu-texte">Combiner</div> 
+                    <div id="chemin-11" className="submenu-texte">Séparer</div> 
+                    <div id="chemin-12" className="submenu-texte">Découper le chemin</div>
+                    <hr className="topmenu-hr" /> 
+                    <div id="chemin-13" className="submenu-texte">Eroder</div> 
+                    <div id="chemin-14" className="submenu-texte">Dilater</div> 
+                    <div id="chemin-15" className="submenu-texte">Décalage dynamique</div> 
+                    <div id="chemin-16" className="submenu-texte">Décalage lié</div>
+                    <hr className="topmenu-hr" /> 
+                    <div id="chemin-17" className="submenu-texte">Remplir entre les chemins</div>
+                    <hr className="topmenu-hr" /> 
+                    <div id="chemin-18" className="submenu-texte">Simplifier</div> 
+                    <div id="chemin-19" className="submenu-texte">Inverser</div>
+                    <hr className="topmenu-hr" /> 
+                    <div id="chemin-20" className="submenu-texte">Effet de chemin...</div> 
+                    <div id="chemin-21" className="submenu-texte">Coller l'effet de chemin</div> 
+                    <div id="chemin-22" className="submenu-texte">Supprimer l'effet de chemin</div> 
                 </div>
 
                 { /* MENU TEXTE */}
                 <div id="submenu-texte" className="submenu-list submenu-texte2 no-sub-menu">
-                    <div id="texte-1" className="submenu-texte"></div> 
+                    <div id="texte-1" className="submenu-texte">Texte et police...</div> 
+                    <div id="texte-2" className="submenu-texte">Editeur de fontes SVG...</div> 
+                    <div id="texte-3" className="submenu-texte">Caractères Unicode...</div> 
                     <hr className="topmenu-hr" />
+                    <div id="texte4-" className="submenu-texte">Mettre suivant un chemin</div> 
+                    <div id="texte-5" className="submenu-texte">Retirer du chemin</div>
+                    <hr className="topmenu-hr" /> 
+                    <div id="texte-6" className="submenu-texte">Encadrer</div> 
+                    <div id="texte-7" className="submenu-texte">Définir des zones de soustraction</div> 
+                    <div id="texte-8" className="submenu-texte">Désencadrer</div> 
+                    <div id="texte-9" className="submenu-texte">Convertir en texte</div>
+                    <hr className="topmenu-hr" /> 
+                    <div id="texte-10" className="submenu-texte">Retirer les crénages manuels</div>
+                    <hr className="topmenu-hr" /> 
+                    <div id="texte-11" className="submenu-texte">Vérifier l'orthographe...</div> 
                 </div>
 
                 { /* MENU FILTRES */}
                 <div id="submenu-filtres" className="submenu-list submenu-filtres no-sub-menu">
-                    <div id="filtres-1" className="submenu-texte"></div> 
+                    <div id="filtres-1" className="submenu-texte">Biseaux</div> 
+                    <div id="filtres-2" className="submenu-texte">Bosselage</div> 
+                    <div id="filtres-3" className="submenu-texte">Couleur</div> 
+                    <div id="filtres-4" className="submenu-texte">Crêtes</div> 
+                    <div id="filtres-5" className="submenu-texte">Déformation</div> 
+                    <div id="filtres-6" className="submenu-texte">Dessin et peinture d'image</div> 
+                    <div id="filtres-7" className="submenu-texte">Effets d'image</div> 
+                    <div id="filtres-8" className="submenu-texte">Eparpiller</div> 
+                    <div id="filtres-9" className="submenu-texte">Flous</div> 
+                    <div id="filtres-10" className="submenu-texte">Fond et transparence</div> 
+                    <div id="filtres-11" className="submenu-texte">Matières</div> 
+                    <div id="filtres-12" className="submenu-texte">Morphologie</div> 
+                    <div id="filtres-13" className="submenu-texte">Ombrages 3D non réalistes</div> 
+                    <div id="filtres-14" className="submenu-texte">Ombres et lueurs</div> 
+                    <div id="filtres-15" className="submenu-texte">Outils pixel</div> 
+                    <div id="filtres-16" className="submenu-texte">Protubérances</div> 
+                    <div id="filtres-17" className="submenu-texte">Superpositions</div> 
+                    <div id="filtres-18" className="submenu-texte">Textures</div> 
                     <hr className="topmenu-hr" />
+                    <div id="filtres-19" className="submenu-texte">Editeur de filtres...</div> 
+                    <div id="filtres-20" className="submenu-texte">Supprimer les filtres</div> 
                 </div>
 
                 { /* MENU EXTENSIONS */}
                 <div id="submenu-extensions" className="submenu-list submenu-extensions no-sub-menu">
-                    <div id="extensions-1" className="submenu-texte"></div> 
+                    <div id="extensions-1" className="submenu-texte">Extension précédente</div> 
+                    <div id="extensions-2" className="submenu-texte">Paramètre de l'extension précédente...</div> 
                     <hr className="topmenu-hr" />
+                    <div id="extensions-3" className="submenu-texte">Couleur</div> 
+                    <div id="extensions-4" className="submenu-texte">Document</div> 
+                    <div id="extensions-5" className="submenu-texte">Exporter</div> 
+                    <div id="extensions-6" className="submenu-texte">Feuille de style</div> 
+                    <div id="extensions-7" className="submenu-texte">Gcodetools</div> 
+                    <div id="extensions-8" className="submenu-texte">Générer à partir du chemin</div> 
+                    <div id="extensions-9" className="submenu-texte">Images</div> 
+                    <div id="extensions-10" className="submenu-texte">Images matricielles</div> 
+                    <div id="extensions-11" className="submenu-texte">Ink/Stitch</div> 
+                    <div id="extensions-12" className="submenu-texte">JessyInk</div> 
+                    <div id="extensions-13" className="submenu-texte">Modifier les chemins</div> 
+                    <div id="extensions-14" className="submenu-texte">Organiser</div> 
+                    <div id="extensions-15" className="submenu-texte">Rendu</div> 
+                    <div id="extensions-16" className="submenu-texte">Texte</div> 
+                    <div id="extensions-17" className="submenu-texte">Typographie</div> 
+                    <div id="extensions-18" className="submenu-texte">Visualisation de chemin</div> 
+                    <div id="extensions-19" className="submenu-texte">Web</div> 
+                    <hr className="topmenu-hr" />
+                    <div id="extensions-20" className="submenu-texte">Gérer les extensions...</div> 
                 </div>
 
                 { /* MENU AIDE */}

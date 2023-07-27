@@ -657,7 +657,7 @@
     background-color: azure;
     width: 42vmin;
     padding: 0.2vmin;
-    border: 1px solid red;
+    border: 1px solid cornflowerblue;
     padding-top: 1vmin;
     padding-bottom: 2vmin;
 }
@@ -713,12 +713,12 @@
 
 .submenu-filtres {
     position: relative;
-    left: 55.8vmin;
+    left: 20vmin;
 }
 
 .submenu-extensions {
     position: relative;
-    left: 62.8vmin;
+    left: 31.7vmin;
 }
 
 .submenu-aide {

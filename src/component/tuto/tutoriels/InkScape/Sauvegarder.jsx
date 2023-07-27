@@ -11,6 +11,26 @@ const Sauvegarder = () => {
             ],
             "menu" : [],
             "topmenu" : [],
+        },
+        {
+            "id": 2,
+            "description": "Cliquez sur «Fichier» puis «Enregistrer»",
+            "keys": [],
+            "menu" : [],
+            "topmenu" : [
+                "fichier",
+                "fichier-6",
+            ],
+        },
+        {
+            "id": 3,
+            "description": "Cliquez sur «Fichier» puis «Enregistrer sous»",
+            "keys": [],
+            "menu" : [],
+            "topmenu" : [
+                "fichier",
+                "fichier-7",
+            ],
         }
     ];
 

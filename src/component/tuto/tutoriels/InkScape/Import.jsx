@@ -8,8 +8,8 @@ const Copy = () => {
             "keys": [],
             "menu" : [],
             "topmenu" : [
-                "aide",
-                "importer",
+                "fichier",
+                "fichier-10",
             ],
         },
         {
