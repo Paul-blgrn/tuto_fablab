@@ -11,6 +11,16 @@ const RedoAction = () => {
             ],
             "menu" : [],
             "topmenu" : [],
+        },
+        {
+            "id": 2,
+            "description": "Cliquez sur «Edition» puis «Rétablir»",
+            "keys": [],
+            "menu" : [],
+            "topmenu" : [
+                "edition",
+                "edition-2",
+            ],
         }
     ];
 

@@ -11,6 +11,16 @@ const Cancel = () => {
             ],
             "menu" : [],
             "topmenu" : [],
+        },
+        {
+            "id": 2,
+            "description": "Cliquez sur «Edition» puis «Annuler»",
+            "keys": [],
+            "menu" : [],
+            "topmenu" : [
+                "edition",
+                "edition-1",
+            ],
         }
     ];
 

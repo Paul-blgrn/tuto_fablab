@@ -33,6 +33,18 @@ const Zoom = () => {
             ],
             "menu" : [],
             "topmenu" : [],
+        },
+        {
+            "id": 4,
+            "description": "Cliquez sur «Zoom» puis choisissez votre niveau de zoom",
+            "keys": [],
+            "menu" : [],
+            "topmenu" : [
+                "affichage",
+                "affichage-1",
+                "zoom",
+                "zoom-1",
+            ],
         }
     ];
     return (

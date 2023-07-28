@@ -645,6 +645,11 @@
     width: 34vmin;
 }
 
+.submenu-hr {
+    width: 14vmin;
+    text-align: left;
+}
+
 .submenu-top {
     width: 80vmin;
     display: flex;
@@ -724,4 +729,22 @@
 .submenu-aide {
     position: relative;
     left: 36.9vmin;
+}
+
+.submenu-arrowright {
+    position: absolute;
+    right: 1vmin;
+    margin-top: 0.5vmin;
+}
+
+.submenu-zoom {
+    position: absolute;
+    left: 42.6vmin;
+    top: 2.1vmin;
+}
+
+.submenu-orientation {
+    position: absolute;
+    left: 42.6vmin;
+    top: 6.5vmin;
 }
