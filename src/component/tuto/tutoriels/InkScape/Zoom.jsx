@@ -44,6 +44,7 @@ const Zoom = () => {
                 "affichage-1",
                 "zoom",
                 "zoom-1",
+                "zoom-2",
             ],
         }
     ];

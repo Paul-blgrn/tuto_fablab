@@ -21,6 +21,15 @@ const RedoAction = () => {
                 "edition",
                 "edition-2",
             ],
+        },
+        {
+            "id": 3,
+            "description": "TEST",
+            "keys": [],
+            "menu" : [],
+            "topmenu" : [
+                "edition",
+            ],
         }
     ];
 

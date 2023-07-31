@@ -646,7 +646,7 @@
 }
 
 .submenu-hr {
-    width: 14vmin;
+    width: 30vmin;
     text-align: left;
 }
 
@@ -667,6 +667,19 @@
     padding-bottom: 2vmin;
 }
 
+.submenu-listsub {
+    border: 1px solid cornflowerblue;
+    background-color: azure;
+    padding-left: 1vmin;
+    padding-right: 1vmin;
+    padding-top: 1vmin;
+    padding-bottom: 2vmin;
+    display: flex;
+    flex-direction: column;
+    max-width: 42vmin;
+    min-width: 38vmin;
+}
+
 .submenu-texte {
     color: black;
     font-size: 2.17vmin;
@@ -679,6 +692,22 @@
     background-color: rgb(105, 105, 105);
     color: azure;
     cursor: pointer;
+}
+
+.submenu-iconspace {
+    margin-left: 3.8vmin;
+}
+
+.submenu-arrowright {
+    position: absolute;
+    right: 1.5vmin;
+    margin-top: 0.5vmin;
+}
+
+.submenu-left {
+    position: relative;
+    margin-top: 0.5vmin;
+    margin-right: 0.8vmin;
 }
 
 .submenu-fichier {
@@ -731,20 +760,78 @@
     left: 36.9vmin;
 }
 
-.submenu-arrowright {
-    position: absolute;
-    right: 1vmin;
-    margin-top: 0.5vmin;
-}
-
 .submenu-zoom {
     position: absolute;
     left: 42.6vmin;
-    top: 2.1vmin;
+    top: 1vmin;
+}
+
+
+
+/* MINI MENU */
+
+.submenu-fichier-recents {
+    position: absolute;
+    left: 42.6vmin;
+    top: 14.6vmin;
+}
+
+.submenu-coller-dimensions {
+    position: absolute;
+    left: 42.6vmin;
+    top: 40.8vmin;
+}
+
+.submenu-cloner {
+    position: absolute;
+    left: 42.6vmin;
+    top: 61.8vmin;
+}
+
+.submenu-selectionner-meme {
+    position: absolute;
+    left: 42.6vmin;
+    top: 91.8vmin;
+}
+
+.submenu-decoupe {
+    position: absolute;
+    left: 42.6vmin;
+    top: 49vmin;
+}
+
+.submenu-masque {
+    position: absolute;
+    left: 42.6vmin;
+    top: 53.5vmin;
+}
+
+.submenu-motif {
+    position: absolute;
+    left: 42.6vmin;
+    top: 58vmin;
 }
 
 .submenu-orientation {
     position: absolute;
     left: 42.6vmin;
-    top: 6.5vmin;
+    top: 5.5vmin;
+}
+
+.submenu-mode-affichage {
+    position: absolute;
+    left: 42.6vmin;
+    top: 11vmin;
+}
+
+.submenu-mode-affichage-scinde {
+    position: absolute;
+    left: 42.6vmin;
+    top: 15.5vmin;
+}
+
+.submenu-afficher-cacher {
+    position: absolute;
+    left: 42.6vmin;
+    top: 46vmin;
 }

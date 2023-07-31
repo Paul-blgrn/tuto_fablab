@@ -124,11 +124,27 @@ const TopMenu = (props) => {
                     <div id="fichier-1" className="submenu-texte">Nouveau</div>
                     <div id="fichier-2" className="submenu-texte">Nouveau à partir d'un modèle</div>
                     <div id="fichier-3" className="submenu-texte">Ouvrir...</div>
+
+                    {/* SUBMENU FICHIER RECENTS */}
                     <div id="fichier-4" className="submenu-texte">
                         Documents récents 
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-fichier-recents" className="submenu-listsub submenu-fichier-recents no-sub-menu">
+                            <div id="fichier-recents-1" className="submenu-texte">
+                                VotreFichier.svg
+                            </div>
+                            <div id="fichier-recents-2" className="submenu-texte">
+                                VotreFichier2.svg
+                            </div>
+                            <div id="fichier-recents-3" className="submenu-texte">
+                                VotreFichier3.svg
+                            </div>
+                            <div id="fichier-recents-4" className="submenu-texte">
+                                VotreFichier4.svg
+                            </div>
+                        </div>
                     </div>
                     <hr className="topmenu-hr" />
                     <div id="fichier-5" className="submenu-texte">Recharger</div>
@@ -151,61 +167,127 @@ const TopMenu = (props) => {
 
                 { /* MENU EDITION */}
                 <div id="submenu-edition" className="submenu-list submenu-edition no-sub-menu">
-                    <div id="edition-1" className="submenu-texte">Annuler</div>
-                    <div id="edition-2" className="submenu-texte">Rétablir</div>
-                    <div id="edition-3" className="submenu-texte">Historique des annulations</div>
+                    <div id="edition-1" className="submenu-texte submenu-iconspace">Annuler</div>
+                    <div id="edition-2" className="submenu-texte submenu-iconspace">Rétablir</div>
+                    <div id="edition-3" className="submenu-texte submenu-iconspace">Historique des annulations</div>
                     <hr className="topmenu-hr" />
-                    <div id="edition-4" className="submenu-texte">Couper</div>
-                    <div id="edition-5" className="submenu-texte">Copier</div>
-                    <div id="edition-6" className="submenu-texte">Coller</div>
-                    <div id="edition-7" className="submenu-texte">Coller sur place</div>
-                    <div id="edition-8" className="submenu-texte">Coller le style</div>
-                    <div id="edition-9" className="submenu-texte">
+                    <div id="edition-4" className="submenu-texte submenu-iconspace">Couper</div>
+                    <div id="edition-5" className="submenu-texte submenu-iconspace">Copier</div>
+                    <div id="edition-6" className="submenu-texte submenu-iconspace">Coller</div>
+                    <div id="edition-7" className="submenu-texte submenu-iconspace">Coller sur place</div>
+                    <div id="edition-8" className="submenu-texte submenu-iconspace">Coller le style</div>
+                    <div id="edition-9" className="submenu-texte submenu-iconspace">
                         Coller les dimensions
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-coller-dimensions" className="submenu-listsub submenu-coller-dimensions no-sub-menu">
+                            <div id="coller-dimensions-1" className="submenu-texte">
+                                Coller les dimensions
+                            </div>
+                            <div id="coller-dimensions-2" className="submenu-texte">
+                                Coller la largeur
+                            </div>
+                            <div id="coller-dimensions-3" className="submenu-texte">
+                                Coller la hauteur
+                            </div>
+                            <div id="coller-dimensions-4" className="submenu-texte">
+                                Coller les dimensions séparément
+                            </div>
+                            <div id="coller-dimensions-5" className="submenu-texte">
+                                Coller la largeur séparément
+                            </div>
+                            <div id="coller-dimensions-6" className="submenu-texte">
+                                Coller la hauteur séparément
+                            </div>
+                        </div>
                     </div>
                     <hr className="topmenu-hr" />
-                    <div id="edition-10" className="submenu-texte">Rechercher/remplacer</div>
+                    <div id="edition-10" className="submenu-texte submenu-iconspace">Rechercher/remplacer</div>
                     <hr className="topmenu-hr" />
-                    <div id="edition-11" className="submenu-texte">Dupliquer</div>
-                    <div id="edition-12" className="submenu-texte">
+                    <div id="edition-11" className="submenu-texte submenu-iconspace">Dupliquer</div>
+                    <div id="edition-12" className="submenu-texte submenu-iconspace">
                         Cloner
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-cloner" className="submenu-listsub submenu-cloner no-sub-menu">
+                            <div id="cloner-1" className="submenu-texte">
+                                Créer un clone
+                            </div>
+                            <div id="cloner-2" className="submenu-texte">
+                                Créer un pavage de clones...
+                            </div>
+                            <div id="cloner-3" className="submenu-texte">
+                                Délier le clone
+                            </div>
+                            <div id="cloner-4" className="submenu-texte">
+                                Délier les clones récursivement
+                            </div>
+                            <div id="cloner-5" className="submenu-texte">
+                                Relier à la copie
+                            </div>
+                            <div id="cloner-6" className="submenu-texte">
+                                Sélectionner l'original
+                            </div>
+                            <div id="cloner-7" className="submenu-texte">
+                                Cloner le chemin original (ECI)
+                            </div>
+                        </div>
                     </div>
-                    <div id="edition-13" className="submenu-texte">Créer une copie matricielle</div>
+                    <div id="edition-13" className="submenu-texte submenu-iconspace">Créer une copie matricielle</div>
                     <hr className="topmenu-hr" />
-                    <div id="edition-14" className="submenu-texte">Supprimer</div>
+                    <div id="edition-14" className="submenu-texte submenu-iconspace">Supprimer</div>
                     <hr className="topmenu-hr" />
-                    <div id="edition-15" className="submenu-texte">Sélectionner tout</div>
-                    <div id="edition-16" className="submenu-texte">Tout sélectionner dans tous les calques</div>
-                    <div id="edition-17" className="submenu-texte">
+                    <div id="edition-15" className="submenu-texte submenu-iconspace">Sélectionner tout</div>
+                    <div id="edition-16" className="submenu-texte submenu-iconspace">Tout sélectionner dans tous les calques</div>
+                    <div id="edition-17" className="submenu-texte  submenu-iconspace">
                         Sélectionner même
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-selectionner-meme" className="submenu-listsub submenu-selectionner-meme no-sub-menu">
+                            <div id="selectionner-meme-1" className="submenu-texte">
+                                Fond et contour
+                            </div>
+                            <div id="selectionner-meme-2" className="submenu-texte">
+                                Couleur du fond
+                            </div>
+                            <div id="selectionner-meme-3" className="submenu-texte">
+                                Couleur du contour
+                            </div>
+                            <div id="selectionner-meme-4" className="submenu-texte">
+                                Style du contour
+                            </div>
+                            <div id="selectionner-meme-5" className="submenu-texte">
+                                Type d'objet
+                            </div>
+                        </div>
                     </div>
-                    <div id="edition-18" className="submenu-texte">Inverser la sélection</div>
-                    <div id="edition-19" className="submenu-texte">Désélectionner</div>
+                    <div id="edition-18" className="submenu-texte submenu-iconspace">Inverser la sélection</div>
+                    <div id="edition-19" className="submenu-texte submenu-iconspace">Désélectionner</div>
                     <hr className="topmenu-hr" />
-                    <div id="edition-20" className="submenu-texte">Ajuster la taille de la page à la sélection</div>
+                    <div id="edition-20" className="submenu-texte submenu-iconspace">Ajuster la taille de la page à la sélection</div>
                     <hr className="topmenu-hr" />
-                    <div id="edition-21" className="submenu-texte">Créer des guides autour de la page</div>
+                    <div id="edition-21" className="submenu-texte submenu-iconspace">Créer des guides autour de la page</div>
                     <div id="edition-22" className="submenu-texte">{<FontAwesomeIcon icon={["far", "square"]} />} Verrouiller tous les guides</div>
-                    <div id="edition-23" className="submenu-texte">Supprimer tous les guides</div>
+                    <div id="edition-23" className="submenu-texte submenu-iconspace">Supprimer tous les guides</div>
                     <hr className="topmenu-hr" />
-                    <div id="edition-24" className="submenu-texte">Editeur XML...</div>
+                    <div id="edition-24" className="submenu-texte submenu-iconspace">Editeur XML...</div>
                     <hr className="topmenu-hr" />
-                    <div id="edition-25" className="submenu-texte">Périphériques de saisie...</div>
-                    <div id="edition-26" className="submenu-texte">Préférences</div>
+                    <div id="edition-25" className="submenu-texte submenu-iconspace">Périphériques de saisie...</div>
+                    <div id="edition-26" className="submenu-texte">
+                        {
+                            <FontAwesomeIcon className="submenu-left" icon={["fa", "fa-wrench"]} />
+                        } 
+                        Préférences
+                    </div>
                 </div>
 
-                { /* MENU AFFICHAGE */}
+                {/* MENU AFFICHAGE */}
                 <div id="submenu-affichage" className="submenu-list submenu-affichage no-sub-menu">
-                    <div id="affichage-1" className="submenu-texte">
+                    {/* SUBMENU ZOOM */}
+                    <div id="affichage-1" className="submenu-texte submenu-iconspace">
                         Zoom 
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
@@ -227,62 +309,434 @@ const TopMenu = (props) => {
                             <div id="zoom-11" className="submenu-texte">Zoom précédent</div>
                             <div id="zoom-12" className="submenu-texte">Zoom suivant</div>
                         </div>
-
-                        <div id="submenu-orientation" className="submenu-list submenu-orientation no-sub-menu">
+                    </div>
+                    
+                    {/* SUBMENU ORIENTATION */}
+                    <div id="affichage-2" className="submenu-texte submenu-iconspace">
+                        Orientation 
+                        {
+                            <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                        }
+                        <div id="submenu-orientation" className="submenu-listsub submenu-orientation no-sub-menu">
+                            <div id="orientation-1" className="submenu-texte submenu-iconspace">Tourner dans le sens horaire</div>    
+                            <div id="orientation-2" className="submenu-texte submenu-iconspace">Tourner dans le sens anti-horaire</div>    
+                            <div id="orientation-3" className="submenu-texte submenu-iconspace">Aucune rotation</div>    
+                            <div id="orientation-4" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-left" icon={["far", "check-square"]} />
+                                } 
+                                Verouiller la rotation
+                                </div>    
                             <hr className="submenu-hr" />
+                            <div id="orientation-5" className="submenu-texte submenu-iconspace">Retourner horizontalement</div>  
+                            <div id="orientation-6" className="submenu-texte submenu-iconspace">Retourner verticallement</div>  
+                            <div id="orientation-7" className="submenu-texte submenu-iconspace">Aucun retournement</div>  
                         </div>
                     </div>
-                    <div id="affichage-2" className="submenu-texte">Orientation {<FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />}</div>
-                    <div id="affichage-3" className="submenu-texte">Mode d'affichage {<FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />}</div>
-                    <div id="affichage-4" className="submenu-texte">Mode d'affichage scindé {<FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />}</div>
+
+                    {/* SUBMENU MODE AFFICHAGE */}
+                    <div id="affichage-3" className="submenu-texte submenu-iconspace">
+                        Mode d'affichage 
+                        {
+                            <FontAwesomeIcon 
+                                className="submenu-arrowright" 
+                                icon={
+                                        [
+                                            "fa", 
+                                            "fa-chevron-right"
+                                        ]
+                                    } 
+                            />
+                        }
+                        <div id="submenu-mode-affichage" className="submenu-listsub submenu-mode-affichage no-sub-menu">
+                            <div id="mode-affichage-1" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "circle"]} 
+                                    />
+                                }
+                                Normal
+                            </div>
+                            <div id="mode-affichage-2" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "circle"]} 
+                                    />
+                                }
+                                Contour
+                            </div>
+                            <div id="mode-affichage-3" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "circle"]} 
+                                    />
+                                }
+                                Sans filtre
+                            </div>
+                            <div id="mode-affichage-4" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "check-circle"]} 
+                                    />
+                                } 
+                                Traits fins visibles
+                            </div>
+                            <div id="mode-affichage-5" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "circle"]} 
+                                    />
+                                }     
+                                Superposition de contours
+                            </div>
+                            <div id="mode-affichage-6" className="submenu-texte submenu-iconspace">
+                                Cycler
+                            </div>
+                            <div id="mode-affichage-7" className="submenu-texte submenu-iconspace">
+                                Alterner
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* SUBMENU AFFICHAGE SCINDE */}
+                    <div id="affichage-4" className="submenu-texte submenu-iconspace">
+                        Mode d'affichage scindé 
+                        {
+                            <FontAwesomeIcon 
+                                className="submenu-arrowright" 
+                                icon={["fa", "fa-chevron-right"]} 
+                            />
+                        }
+                        <div id="submenu-mode-affichage-scinde" className="submenu-listsub submenu-mode-affichage-scinde no-sub-menu">
+                            <div id="mode-affichage-scinde-1" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "circle-check"]} 
+                                    />
+                                }
+                                Aucun
+                            </div>
+                            <div id="mode-affichage-scinde-2" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "circle"]} 
+                                    />
+                                }
+                                Diviser
+                            </div>
+                            <div id="mode-affichage-scinde-3" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "circle"]} 
+                                    />
+                                }
+                                Rayon X
+                            </div>
+                        </div>
+                    </div>
+                    
                     <hr className="topmenu-hr" />
-                    <div id="affichage-5" className="submenu-texte">{<FontAwesomeIcon icon={["far", "square"]} />} Niveaux de gris</div>
-                    <div id="affichage-6" className="submenu-texte">{<FontAwesomeIcon icon={["far", "square"]} />} Gestion de la couleur</div>
-                    <div id="affichage-7" className="submenu-texte">{<FontAwesomeIcon icon={["far", "square"]} />} Grille</div>
-                    <div id="affichage-8" className="submenu-texte">{<FontAwesomeIcon icon={["far", "check-square"]} />} Guides</div>
+                    
+                    {/* SUBMENU NIVEAUX GRIS */}
+                    <div id="affichage-5" className="submenu-texte">
+                        {
+                            <FontAwesomeIcon 
+                                className="submenu-left" 
+                                icon={["far", "square"]} 
+                            />
+                        }
+                        Niveaux de gris
+                    </div>
+                    
+                    {/* SUBMENU GESTION COULEUR */}
+                    <div id="affichage-6" className="submenu-texte">
+                        {
+                            <FontAwesomeIcon 
+                                className="submenu-left" 
+                                icon={["far", "square"]} 
+                            />
+                        } 
+                        Gestion de la couleur
+                    </div>
+                    
+                    {/* SUBMENU GRILLE */}
+                    <div id="affichage-7" className="submenu-texte">
+                        {
+                            <FontAwesomeIcon 
+                                className="submenu-left" 
+                                icon={["far", "square"]} 
+                            />
+                        } 
+                        Grille
+                    </div>
+                    
+                    {/* SUBMENU GUIDES */}
+                    <div id="affichage-8" className="submenu-texte">
+                        {
+                            <FontAwesomeIcon 
+                                className="submenu-left" 
+                                icon={["far", "check-square"]} 
+                            />
+                        } 
+                        Guides
+                    </div>
+
                     <hr className="topmenu-hr" />
-                    <div id="affichage-9" className="submenu-texte">Afficher/cacher {<FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />}</div>
-                    <div id="affichage-10" className="submenu-texte">Afficher/cacher les boîtes de dialogue</div>
-                    <div id="affichage-11" className="submenu-texte">Palette de commandes</div>
+
+                    {/* SUBMENU AFFICHER/CACHER */}
+                    <div id="affichage-9" className="submenu-texte submenu-iconspace">
+                        Afficher/cacher 
+                        {
+                            <FontAwesomeIcon 
+                                className="submenu-arrowright" 
+                                icon={["fa", "fa-chevron-right"]} 
+                            />
+                        }
+                        <div id="submenu-afficher-cacher" className="submenu-listsub submenu-afficher-cacher no-sub-menu">
+                            <div id="afficher-cacher-1" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "check-square"]} 
+                                    />
+                                } 
+                                Barre des commandes
+                            </div>
+                            <div id="afficher-cacher-2" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "check-square"]} 
+                                    />
+                                } 
+                                Barre de contrôle du magnétisme
+                            </div>
+                            <div id="afficher-cacher-3" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "check-square"]} 
+                                    />
+                                } 
+                                Barre de contrôle des outils
+                            </div>
+                            <div id="afficher-cacher-4" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "check-square"]} 
+                                    />
+                                } 
+                                Boite à outils
+                            </div>
+                            <div id="afficher-cacher-5" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "check-square"]} 
+                                    />
+                                } 
+                                Règles
+                            </div>
+                            <div id="afficher-cacher-6" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "check-square"]} 
+                                    />
+                                } 
+                                Barres de défilement
+                            </div>
+                            <div id="afficher-cacher-7" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "check-square"]} 
+                                    />
+                                } 
+                                Palette
+                            </div>
+                            <div id="afficher-cacher-8" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon 
+                                        className="submenu-left" 
+                                        icon={["far", "check-square"]} 
+                                    />
+                                } 
+                                Barre d'état
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* SUBMENU AFFICHER/CACHER BOITES DIALOGUES */}
+                    <div id="affichage-10" className="submenu-texte submenu-iconspace">
+                        Afficher/cacher les boîtes de dialogue
+                    </div>
+                    
+                    {/* SUBMENU PALETTE COMMANDE */}
+                    <div id="affichage-11" className="submenu-texte submenu-iconspace">
+                        Palette de commandes
+                    </div>
+                    
                     <hr className="topmenu-hr" />
-                    <div id="affichage-12" className="submenu-texte">Palettes...</div>
-                    <div id="affichage-13" className="submenu-texte">Messages...</div>
+                    
+                    {/* SUBMENU PALETTES */}
+                    <div id="affichage-12" className="submenu-texte submenu-iconspace">
+                        Palettes...
+                    </div>
+                    
+                    {/* SUBMENU MESSAGES */}
+                    <div id="affichage-13" className="submenu-texte submenu-iconspace">
+                        Messages...
+                    </div>
+                    
                     <hr className="topmenu-hr" />
-                    <div id="affichage-14" className="submenu-texte">Fenêtre précédente</div>
-                    <div id="affichage-15" className="submenu-texte">Fenêtre suivante</div>
+                    
+                    {/* SUBMENU FENETRE PRECEDENTE */}
+                    <div id="affichage-14" className="submenu-texte submenu-iconspace">
+                        Fenêtre précédente
+                    </div>
+                    
+                    {/* SUBMENU FENETRE SUIVANTE */}
+                    <div id="affichage-15" className="submenu-texte submenu-iconspace">
+                        Fenêtre suivante
+                    </div>
+                    
                     <hr className="topmenu-hr" />
-                    <div id="affichage-16" className="submenu-texte">Aperçu d'icône</div>
-                    <div id="affichage-17" className="submenu-texte">Dupliquer la fenêtre</div>
+                    
+                    {/* SUBMENU APERCU ICONE */}
+                    <div id="affichage-16" className="submenu-texte submenu-iconspace">
+                        Aperçu d'icône
+                    </div>
+                    
+                    {/* SUBMENU DUPLIQUER FENETRE */}
+                    <div id="affichage-17" className="submenu-texte submenu-iconspace">
+                        Dupliquer la fenêtre
+                    </div>
+                    
+                    
                     <hr className="topmenu-hr" />
-                    <div id="affichage-18" className="submenu-texte">Plein écran</div>
+                    
+                    {/* SUBMENU PLEIN ECRAN */}
+                    <div id="affichage-18" className="submenu-texte submenu-iconspace">
+                        Plein écran
+                    </div>
+                    
                     <hr className="topmenu-hr" />
-                    <div id="affichage-19" className="submenu-texte">{<FontAwesomeIcon icon={["far", "check-square"]} />} Ecran large</div>
+                    
+                    {/* SUBMENU ECRAN LARGE */}
+                    <div id="affichage-19" className="submenu-texte">
+                        {
+                            <FontAwesomeIcon 
+                                className="submenu-left" 
+                                icon={["far", "check-square"]} 
+                            />
+                        } 
+                        Ecran large
+                    </div>
                 </div>
 
                 { /* MENU CALQUE */}
                 <div id="submenu-calque" className="submenu-list submenu-calque no-sub-menu">
-                    <div id="calque-1" className="submenu-texte">Calques et objets...</div>
+                    {/* SUBMENU CALQUE ET OBJETS */}
+                    <div id="calque-1" className="submenu-texte">
+                        Calques et objets...
+                    </div>
+
                     <hr className="topmenu-hr" />
-                    <div id="calque-2" className="submenu-texte">Ajouter un calque...</div>
-                    <div id="calque-3" className="submenu-texte">Renommer le calque...</div>
+
+                    {/* SUBMENU AJOUTER CALQUE */}
+                    <div id="calque-2" className="submenu-texte">
+                        Ajouter un calque...
+                    </div>
+
+                    {/* SUBMENU RENOMMER CALQUE */}
+                    <div id="calque-3" className="submenu-texte">
+                        Renommer le calque...
+                    </div>
+
                     <hr className="topmenu-hr" />
-                    <div id="calque-4" className="submenu-texte">Afficher/masquer le calque actif</div>
-                    <div id="calque-5" className="submenu-texte">Verrouiller/déverrouiller le calque actif</div>
+
+                    {/* SUBMENU AFFICHER/MASQUER CALQUE ACTIF */}
+                    <div id="calque-4" className="submenu-texte">
+                        Afficher/masquer le calque actif
+                    </div>
+
+                    {/* SUBMENU VEROUILLER/DEVEROUILLER CALQUE ACTIF */}
+                    <div id="calque-5" className="submenu-texte">
+                        Verrouiller/déverrouiller le calque actif
+                    </div>
+                    
                     <hr className="topmenu-hr" />
-                    <div id="calque-6" className="submenu-texte">Passer au calque supérieur</div>
-                    <div id="calque-7" className="submenu-texte">Passer au calque inférieur</div>
+
+                    {/* SUBMENU CALQUE SUPERIEUR */}
+                    <div id="calque-6" className="submenu-texte">
+                        Passer au calque supérieur
+                    </div>
+                    
+                    {/* SUBMENU CALQUE INFERIEUR */}
+                    <div id="calque-7" className="submenu-texte">
+                        Passer au calque inférieur
+                    </div>
+                    
                     <hr className="topmenu-hr" />
-                    <div id="calque-8" className="submenu-texte">Déplacer la sélection au calque supérieur</div>
-                    <div id="calque-9" className="submenu-texte">Déplacer la sélection au calque inférieur</div>
-                    <div id="calque-10" className="submenu-texte">Déplacer la délection vers le calque...</div>
+
+                    {/* SUBMENU DEPLACER SELECTION CALQUE + */}
+                    <div id="calque-8" className="submenu-texte">
+                        Déplacer la sélection au calque supérieur
+                    </div>
+                    
+                    {/* SUBMENU DEPLACER SELECTION CALQUE - */}
+                    <div id="calque-9" className="submenu-texte">
+                        Déplacer la sélection au calque inférieur
+                    </div>
+                    
+                    {/* SUBMENU DEPLACER SELECTION VERS CALQUE */}
+                    <div id="calque-10" className="submenu-texte">
+                        Déplacer la sélection vers le calque...
+                    </div>
+                    
                     <hr className="topmenu-hr" />
-                    <div id="calque-11" className="submenu-texte">Calque au premier plan</div>
-                    <div id="calque-12" className="submenu-texte">Monter le calque</div>
-                    <div id="calque-13" className="submenu-texte">Descendre le calque</div>
-                    <div id="calque-14" className="submenu-texte">Calque à l'arrière-plan</div>
+
+                    {/* SUBMENU CALQUE PREMIER PLAN */}
+                    <div id="calque-11" className="submenu-texte">
+                        Calque au premier plan
+                    </div>
+
+                    {/* SUBMENU MONTER CALQUE */}
+                    <div id="calque-12" className="submenu-texte">
+                        Monter le calque
+                    </div>
+
+                    {/* SUBMENU DESCENDRE CALQUE */}
+                    <div id="calque-13" className="submenu-texte">
+                        Descendre le calque
+                    </div>
+
+                    {/* SUBMENU CALQUE ARRIERE PLAN */}
+                    <div id="calque-14" className="submenu-texte">
+                        Calque à l'arrière-plan
+                    </div>
+
                     <hr className="topmenu-hr" />
-                    <div id="calque-15" className="submenu-texte">Dupliquer le calque actif</div>
-                    <div id="calque-16" className="submenu-texte">Supprimer le calque actif</div>
+
+                    {/* SUBMENU DUPLIQUER CALQUE ACTIF */}
+                    <div id="calque-15" className="submenu-texte">
+                        Dupliquer le calque actif
+                    </div>
+
+                    {/* SUBMENU SUPPRIMER CALQUE ACTIF*/}
+                    <div id="calque-16" className="submenu-texte">
+                        Supprimer le calque actif
+                    </div>
                 </div>
 
                 { /* MENU OBJET */}
@@ -303,18 +757,48 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-decoupe" className="submenu-listsub submenu-decoupe no-sub-menu">
+                            <div id="decoupe-1" className="submenu-texte">
+                                Définir une découpe
+                            </div>
+                            <div id="decoupe-2" className="submenu-texte">
+                                Découpe inversée
+                            </div>
+                            <div id="decoupe-3" className="submenu-texte">
+                                Relâcher la découpe
+                            </div>
+                        </div>
                     </div>    
                     <div id="objet-11" className="submenu-texte">
                         Masque
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-masque" className="submenu-listsub submenu-masque no-sub-menu">
+                            <div id="masque-1" className="submenu-texte">
+                                Définir un masque
+                            </div>
+                            <div id="masque-2" className="submenu-texte">
+                                Définir un masque inversé (ECI)
+                            </div>
+                            <div id="masque-3" className="submenu-texte">
+                                Retirer le masque
+                            </div>
+                        </div>
                     </div>    
                     <div id="objet-12" className="submenu-texte">
                         Motif
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-motif" className="submenu-listsub submenu-motif no-sub-menu">
+                            <div id="motif-1" className="submenu-texte">
+                                Objet en motif
+                            </div>
+                            <div id="motif-2" className="submenu-texte">
+                                Motif en objets
+                            </div>
+                        </div>
                     </div>
                     <hr className="topmenu-hr" />    
                     <div id="objet-13" className="submenu-texte">Objets en marqueur</div>    
