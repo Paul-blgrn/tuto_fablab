@@ -28,7 +28,9 @@ const RedoAction = () => {
             "keys": [],
             "menu" : [],
             "topmenu" : [
-                "edition",
+                "filtres",
+                "filtres-18",
+                "textures",
             ],
         }
     ];

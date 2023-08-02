@@ -835,3 +835,111 @@
     left: 42.6vmin;
     top: 46vmin;
 }
+
+.submenu-filtres-biseaux {
+    position: absolute;
+    left: 42.6vmin;
+    top: 0vmin;
+}
+
+.submenu-filtres-bosselage {
+    position: absolute;
+    left: 42.6vmin;
+    top: 5.5vmin;
+}
+
+.submenu-filtres-couleur {
+    position: absolute;
+    left: 42.6vmin;
+    top: 10vmin;
+}
+
+.submenu-filtres-cretes {
+    position: absolute;
+    left: 42.6vmin;
+    top: 14.6vmin;
+}
+
+.submenu-filtres-deformation {
+    position: absolute;
+    left: 42.6vmin;
+    top: 19.1vmin;
+}
+
+.submenu-filtres-peinture-image {
+    position: absolute;
+    left: 42.6vmin;
+    top: 23.6vmin;
+}
+
+.submenu-filtres-effet-image {
+    position: absolute;
+    left: 42.6vmin;
+    top: 28.1vmin;
+}
+
+.submenu-filtres-eparpiller {
+    position: absolute;
+    left: 42.6vmin;
+    top: 32.6vmin;
+}
+
+.submenu-filtres-flous {
+    position: absolute;
+    left: 42.6vmin;
+    top: 37vmin;
+}
+
+.submenu-filtres-transparence {
+    position: absolute;
+    left: 42.6vmin;
+    top: 41.6vmin;
+}
+
+.submenu-filtres-matieres {
+    position: absolute;
+    left: 42.6vmin;
+    top: 46vmin;
+}
+
+.submenu-filtres-morphologie {
+    position: absolute;
+    left: 42.6vmin;
+    top: 50.8vmin;
+}
+
+.submenu-filtres-ombrages-3d {
+    position: absolute;
+    left: 42.6vmin;
+    top: 55.2vmin;
+}
+
+.submenu-filtres-ombres-lueurs {
+    position: absolute;
+    left: 42.6vmin;
+    top: 59.8vmin;
+}
+
+.submenu-filtres-outil-pixel {
+    position: absolute;
+    left: 42.6vmin;
+    top: 64.2vmin;
+}
+
+.submenu-filtres-protuberances {
+    position: absolute;
+    left: 42.6vmin;
+    top: 68.6vmin;
+}
+
+.submenu-filtres-superpositions {
+    position: absolute;
+    left: 42.6vmin;
+    top: 73.2vmin;
+}
+
+.submenu-filtres-textures {
+    position: absolute;
+    left: 42.6vmin;
+    top: 77.8vmin;
+}
