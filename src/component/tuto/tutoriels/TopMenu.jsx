@@ -1388,8 +1388,28 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-extension-color" className="submenu-listsub submenu-extension-color no-sub-menu">
-                        
+                        <div id="submenu-extensions-couleur" className="submenu-listsub submenu-extensions-couleur no-sub-menu">
+                            <div id="extensions-couleur-1" className="submenu-texte">Ajuster TSL...</div>
+                            <div id="extensions-couleur-2" className="submenu-texte">Aléatoire...</div>
+                            <div id="extensions-couleur-3" className="submenu-texte">Augmenter la luminosité</div>
+                            <div id="extensions-couleur-4" className="submenu-texte">Augmenter la saturation</div>
+                            <div id="extensions-couleur-5" className="submenu-texte">Augmenter la teinte</div>
+                            <div id="extensions-couleur-6" className="submenu-texte">Désaturer</div>
+                            <div id="extensions-couleur-7" className="submenu-texte">Diminuer la luminosité</div>
+                            <div id="extensions-couleur-8" className="submenu-texte">Diminuer la saturation</div>
+                            <div id="extensions-couleur-9" className="submenu-texte">Diminuer la teinte</div>
+                            <div id="extensions-couleur-10" className="submenu-texte">Liste tout</div>
+                            <div id="extensions-couleur-11" className="submenu-texte">Négatif</div>
+                            <div id="extensions-couleur-12" className="submenu-texte">Niveaux de gris</div>
+                            <div id="extensions-couleur-13" className="submenu-texte">Noir et blanc..</div>
+                            <div id="extensions-couleur-14" className="submenu-texte">Permuter RVB</div>
+                            <div id="extensions-couleur-15" className="submenu-texte">Personnalisée...</div>
+                            <div id="extensions-couleur-16" className="submenu-texte">Plus clair</div>
+                            <div id="extensions-couleur-17" className="submenu-texte">plus foncé</div>
+                            <div id="extensions-couleur-18" className="submenu-texte">Remplacer une couleur...</div>
+                            <div id="extensions-couleur-19" className="submenu-texte">Supprimer le bleu</div>
+                            <div id="extensions-couleur-20" className="submenu-texte">Supprimer le rouge</div>
+                            <div id="extensions-couleur-21" className="submenu-texte">Supprimer le vert</div>
                         </div>
                     </div> 
 
@@ -1399,6 +1419,12 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-extensions-document" className="submenu-listsub submenu-extensions-document no-sub-menu">
+                            <div id="extensions-document-1" className="submenu-texte">Info DOC</div>
+                            <div id="extensions-document-2" className="submenu-texte">PPP de 90 à 96</div>
+                            <div id="extensions-document-3" className="submenu-texte">PPP de 96 à 90</div>
+                            <div id="extensions-document-4" className="submenu-texte">SVG Adobe Illustrator...</div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU EXPORTER */}
@@ -1407,6 +1433,13 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-extensions-exporter" className="submenu-listsub submenu-extensions-exporter no-sub-menu">
+                            <div id="extensions-exporter-1" className="submenu-texte">Exporter des découpes par calque...</div>
+                            <div id="extensions-exporter-2" className="submenu-texte">Fichier de pré-traitement - Enregistrer sous...</div>
+                            <div id="extensions-exporter-3" className="submenu-texte">Guillotine...</div>
+                            <div id="extensions-exporter-4" className="submenu-texte">Impression Windows 32 bits</div>
+                            <div id="extensions-exporter-5" className="submenu-texte">Traceur...</div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU FEUILLE DE STYLE */}
@@ -1415,6 +1448,9 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-extensions-feuille-style" className="submenu-listsub submenu-extensions-feuille-style no-sub-menu">
+                            <div id="extensions-feuille-style-1" className="submenu-texte">Fusionner les styles dans du CSS...</div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU GCODETOOLS */}
@@ -1423,6 +1459,18 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-extensions-gcodetools" className="submenu-listsub submenu-extensions-gcodetools no-sub-menu">
+                            <div id="extensions-gcodetools-1" className="submenu-texte">À propos...</div>
+                            <div id="extensions-gcodetools-2" className="submenu-texte">Bibliothèque d'outils...</div>
+                            <div id="extensions-gcodetools-3" className="submenu-texte">Chemin vers G-code...</div>
+                            <div id="extensions-gcodetools-4" className="submenu-texte">Graffiti...</div>
+                            <div id="extensions-gcodetools-5" className="submenu-texte">Gravure...</div>
+                            <div id="extensions-gcodetools-6" className="submenu-texte">Points d'orientation...</div>
+                            <div id="extensions-gcodetools-7" className="submenu-texte">Points DXF...</div>
+                            <div id="extensions-gcodetools-8" className="submenu-texte">Préparer le chemin pour plasma...</div>
+                            <div id="extensions-gcodetools-9" className="submenu-texte">Tour...</div>
+                            <div id="extensions-gcodetools-10" className="submenu-texte">Zone...</div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU GENERER A PATIR DU CHEMIN */}
@@ -1431,6 +1479,16 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="submenu-extensions-generer" className="submenu-listsub submenu-extensions-generer no-sub-menu">
+                            <div id="extensions-generer-1" className="submenu-texte">Diagramme de Voronoï...</div>
+                            <div id="extensions-generer-2" className="submenu-texte">Éparpiller...</div>
+                            <div id="extensions-generer-3" className="submenu-texte">Extrusion...</div>
+                            <div id="extensions-generer-4" className="submenu-texte">Halo intérieur-extérieur...</div>
+                            <div id="extensions-generer-5" className="submenu-texte">Interpoler...</div>
+                            <div id="extensions-generer-6" className="submenu-texte">Motif de Voronoï...</div>
+                            <div id="extensions-generer-7" className="submenu-texte">Motif le long d'un chemin...</div>
+                            <div id="extensions-generer-8" className="submenu-texte">Mouvement...</div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU IMAGES */}

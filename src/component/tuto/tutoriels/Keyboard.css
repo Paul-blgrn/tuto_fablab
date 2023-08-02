@@ -943,3 +943,39 @@
     left: 42.6vmin;
     top: 77.8vmin;
 }
+
+.submenu-extensions-couleur {
+    position: absolute;
+    left: 42.6vmin;
+    top: 14vmin;
+}
+
+.submenu-extensions-document {
+    position: absolute;
+    left: 42.6vmin;
+    top: 18.2vmin;
+}
+
+.submenu-extensions-exporter {
+    position: absolute;
+    left: 42.6vmin;
+    top: 22.8vmin;
+}
+
+.submenu-extensions-feuille-style {
+    position: absolute;
+    left: 42.6vmin;
+    top: 27.3vmin;
+}
+
+.submenu-extensions-gcodetools {
+    position: absolute;
+    left: 42.6vmin;
+    top: 31.9vmin;
+}
+
+.submenu-extensions-generer {
+    position: absolute;
+    left: 42.6vmin;
+    top: 36.4vmin;
+}
