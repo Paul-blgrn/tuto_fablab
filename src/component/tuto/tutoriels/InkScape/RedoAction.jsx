@@ -29,9 +29,9 @@ const RedoAction = () => {
             "menu" : [],
             "topmenu" : [
                 "extensions",
-                "extensions-8",
-                "extensions-generer",
-                "extensions-generer-1",
+                "extensions-11",
+                "extensions-inkstitch",
+                "extensions-inkstitch-1",
             ],
         }
     ];

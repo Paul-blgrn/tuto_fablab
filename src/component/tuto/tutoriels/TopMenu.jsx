@@ -42,43 +42,39 @@ const TopMenu = (props) => {
 
             const menuSub = document.getElementById("submenu" + id);
             const targetSubMenu = menuSub.getElementsByTagName('div').namedItem("submenu-" + key)
+            const targetMiniMenu = menuSub.getElementsByTagName('div').namedItem("minimenu-" + key)
 
-            const topAnim = topMenuID.getElementsByTagName('div').namedItem(key)
-            const subAnim = menuSub.getElementsByTagName('div').namedItem(key);
-
-            const miniMenu = document.getElementById("submenu-" + key)
+            //const miniMenuID = document.getElementById("minimenu-" + key);
+            const selectMinimenuID = topMenuID.getElementsByTagName('div').namedItem(key)
             return(
-                //console.log(key),
-
                 // delete hide class
                 topMenu2ID && topMenu2ID.classList.add("no-top-menu"),
 
-                // submenu of a submenu (show content if selected)
-                miniMenu && miniMenu.classList.add("no-sub-menu"),
-
-                // hide menu
+                // show menu
                 targetSubMenu && targetSubMenu.classList.add("no-sub-menu"),
+                targetMiniMenu && targetMiniMenu.classList.add("no-sub-menu"),
 
-                // remove animation class topmenu
-                topAnim && topAnim.classList.remove("top-menu-animate"),
-
-                // remove animation class submenu
-                subAnim && subAnim.classList.remove("top-menu-animate")
+                targetMiniMenu && selectMinimenuID && selectMinimenuID.classList.remove("top-menu-animate")
             );
         })
 
         topmenu && topmenu.map((key) => {
             //console.log(key)
+
+            // return menu ID (keyboard side)
             const topMenuID = document.getElementById("menu-top-" + id);
+            
+            // return topmenu ID (menu side)
             const topMenu2ID = document.getElementById("menu-top2-" + id);
 
             const menuSub = document.getElementById("submenu" + id);
             const targetSubMenu = menuSub.getElementsByTagName('div').namedItem("submenu-" + key)
+            const targetMiniMenu = menuSub.getElementsByTagName('div').namedItem("minimenu-" + key)
 
-            const topAnim = topMenuID.getElementsByTagName('div').namedItem(key)
-            const subAnim = menuSub.getElementsByTagName('div').namedItem(key);
-
-            const miniMenu = document.getElementById("submenu-" + key)
+            //const miniMenuID = document.getElementById("minimenu-" + key);
+            const selectMinimenuID = topMenuID.getElementsByTagName('div').namedItem(key)
+            const miniMenuParent = menuSub.getElementsByTagName('div').namedItem("minimenu-" + key);
+            
             return(
                 //targetMiniMenu && console.log(targetMiniMenu),
 
@@ -87,15 +83,12 @@ const TopMenu = (props) => {
 
                 // show menu
                 targetSubMenu && targetSubMenu.classList.remove("no-sub-menu"),
+                targetMiniMenu && targetMiniMenu.classList.remove("no-sub-menu"),
 
-                // submenu of a submenu (show content if selected)
-                miniMenu && miniMenu.classList.remove("no-sub-menu"),
+                targetMiniMenu === selectMinimenuID && selectMinimenuID.classList.add("top-menu-animate"),
+                miniMenuParent && console.log(miniMenuParent.children)
 
-                // add animation class
-                topAnim && topAnim.classList.add("top-menu-animate"),
 
-                // remove animation class submenu
-                subAnim && subAnim.classList.add("top-menu-animate")
                 
             );
         })
@@ -131,7 +124,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-fichier-recents" className="submenu-listsub submenu-fichier-recents no-sub-menu">
+                        <div id="minimenu-fichier-recents" className="submenu-listsub submenu-fichier-recents no-sub-menu">
                             <div id="fichier-recents-1" className="submenu-texte">
                                 VotreFichier.svg
                             </div>
@@ -181,7 +174,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-coller-dimensions" className="submenu-listsub submenu-coller-dimensions no-sub-menu">
+                        <div id="minimenu-coller-dimensions" className="submenu-listsub submenu-coller-dimensions no-sub-menu">
                             <div id="coller-dimensions-1" className="submenu-texte">
                                 Coller les dimensions
                             </div>
@@ -211,7 +204,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-cloner" className="submenu-listsub submenu-cloner no-sub-menu">
+                        <div id="minimenu-edition-cloner" className="submenu-listsub submenu-cloner no-sub-menu">
                             <div id="cloner-1" className="submenu-texte">
                                 Créer un clone
                             </div>
@@ -246,7 +239,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-selectionner-meme" className="submenu-listsub submenu-selectionner-meme no-sub-menu">
+                        <div id="minimenu-edition-selectionner-meme" className="submenu-listsub submenu-selectionner-meme no-sub-menu">
                             <div id="selectionner-meme-1" className="submenu-texte">
                                 Fond et contour
                             </div>
@@ -292,7 +285,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-zoom" className="submenu-list submenu-zoom no-sub-menu">
+                        <div id="minimenu-affichage-zoom" className="submenu-list submenu-zoom no-sub-menu">
                             <div id="zoom-1" className="submenu-texte">Zoomer</div>
                             <div id="zoom-2" className="submenu-texte">Dézoomer</div>
                             <hr className="submenu-hr" />
@@ -317,7 +310,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-orientation" className="submenu-listsub submenu-orientation no-sub-menu">
+                        <div id="minimenu-affichage-orientation" className="submenu-listsub submenu-orientation no-sub-menu">
                             <div id="orientation-1" className="submenu-texte submenu-iconspace">Tourner dans le sens horaire</div>    
                             <div id="orientation-2" className="submenu-texte submenu-iconspace">Tourner dans le sens anti-horaire</div>    
                             <div id="orientation-3" className="submenu-texte submenu-iconspace">Aucune rotation</div>    
@@ -348,7 +341,7 @@ const TopMenu = (props) => {
                                     } 
                             />
                         }
-                        <div id="submenu-mode-affichage" className="submenu-listsub submenu-mode-affichage no-sub-menu">
+                        <div id="minimenu-affichage-mode-affichage" className="submenu-listsub submenu-mode-affichage no-sub-menu">
                             <div id="mode-affichage-1" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
@@ -412,7 +405,7 @@ const TopMenu = (props) => {
                                 icon={["fa", "fa-chevron-right"]} 
                             />
                         }
-                        <div id="submenu-mode-affichage-scinde" className="submenu-listsub submenu-mode-affichage-scinde no-sub-menu">
+                        <div id="minimenu-affichage-mode-affichage-scinde" className="submenu-listsub submenu-mode-affichage-scinde no-sub-menu">
                             <div id="mode-affichage-scinde-1" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
@@ -500,7 +493,7 @@ const TopMenu = (props) => {
                                 icon={["fa", "fa-chevron-right"]} 
                             />
                         }
-                        <div id="submenu-afficher-cacher" className="submenu-listsub submenu-afficher-cacher no-sub-menu">
+                        <div id="minimenu-affichage-afficher-cacher" className="submenu-listsub submenu-afficher-cacher no-sub-menu">
                             <div id="afficher-cacher-1" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
@@ -757,7 +750,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-decoupe" className="submenu-listsub submenu-decoupe no-sub-menu">
+                        <div id="minimenu-objet-decoupe" className="submenu-listsub submenu-decoupe no-sub-menu">
                             <div id="decoupe-1" className="submenu-texte">
                                 Définir une découpe
                             </div>
@@ -774,7 +767,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-masque" className="submenu-listsub submenu-masque no-sub-menu">
+                        <div id="minimenu-objet-masque" className="submenu-listsub submenu-masque no-sub-menu">
                             <div id="masque-1" className="submenu-texte">
                                 Définir un masque
                             </div>
@@ -791,7 +784,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-motif" className="submenu-listsub submenu-motif no-sub-menu">
+                        <div id="minimenu-objet-motif" className="submenu-listsub submenu-motif no-sub-menu">
                             <div id="motif-1" className="submenu-texte">
                                 Objet en motif
                             </div>
@@ -880,7 +873,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-biseaux" className="submenu-listsub submenu-filtres-biseaux no-sub-menu">
+                        <div id="minimenu-filtres-biseaux" className="submenu-listsub submenu-filtres-biseaux no-sub-menu">
                             <div id="biseaux-1" className="submenu-texte">
                                 Biseau mat
                             </div>
@@ -965,7 +958,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-bosselage" className="submenu-listsub submenu-filtres-bosselage no-sub-menu">
+                        <div id="minimenu-filtres-bosselage" className="submenu-listsub submenu-filtres-bosselage no-sub-menu">
                             <div id="bosselage-1" className="submenu-texte">Acrylique épaisse</div>
                             <div id="bosselage-2" className="submenu-texte">Bosselage à deux lumières simple</div>
                             <div id="bosselage-3" className="submenu-texte">Bosselage bulleux</div>
@@ -1005,7 +998,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-couleur" className="submenu-listsub submenu-filtres-couleur no-sub-menu">
+                        <div id="minimenu-filtres-couleur" className="submenu-listsub submenu-filtres-couleur no-sub-menu">
                             <div id="couleur-1" className="submenu-texte">Brillance...</div>
                             <div id="couleur-2" className="submenu-texte">Canaux de peinture</div>
                             <div id="couleur-3" className="submenu-texte">Colorer...</div>
@@ -1042,7 +1035,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-cretes" className="submenu-listsub submenu-filtres-cretes no-sub-menu">
+                        <div id="minimenu-filtres-cretes" className="submenu-listsub submenu-filtres-cretes no-sub-menu">
                             <div id="cretes-1" className="submenu-texte">Arrête mate</div>
                             <div id="cretes-2" className="submenu-texte">Arrête métalisée</div>
                             <div id="cretes-3" className="submenu-texte">Bulle brillante</div>
@@ -1059,7 +1052,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-deformation" className="submenu-listsub submenu-filtres-deformation no-sub-menu">
+                        <div id="minimenu-filtres-deformation" className="submenu-listsub submenu-filtres-deformation no-sub-menu">
                             <div id="deformation-1" className="submenu-texte">Agitation dilatée</div>
                             <div id="deformation-2" className="submenu-texte">Agitation interne</div>
                             <div id="deformation-3" className="submenu-texte">Agitation...</div>
@@ -1079,7 +1072,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-peinture-image" className="submenu-listsub submenu-filtres-peinture-image no-sub-menu">
+                        <div id="minimenu-filtres-peinture-image" className="submenu-listsub submenu-filtres-peinture-image no-sub-menu">
                             <div id="peinture-image-1" className="submenu-texte">Affiche couleur amusante</div>
                             <div id="peinture-image-2" className="submenu-texte">Chromolitho alternatif</div>
                             <div id="peinture-image-3" className="submenu-texte">Chromolitho...</div>
@@ -1115,7 +1108,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-effet-image" className="submenu-listsub submenu-filtres-effet-image no-sub-menu">
+                        <div id="minimenu-filtres-effet-image" className="submenu-listsub submenu-filtres-effet-image no-sub-menu">
                             <div id="effet-image-1" className="submenu-texte">Détection de bords...</div>
                             <div id="effet-image-2" className="submenu-texte">Grain photo</div>
                             <div id="effet-image-3" className="submenu-texte">Lentille à portrait</div>
@@ -1131,7 +1124,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-eparpiller" className="submenu-listsub submenu-filtres-eparpiller no-sub-menu">
+                        <div id="minimenu-filtres-eparpiller" className="submenu-listsub submenu-filtres-eparpiller no-sub-menu">
                             <div id="eparpiller-1" className="submenu-texte">Aérosol</div>
                             <div id="eparpiller-2" className="submenu-texte">Cubes</div>
                             <div id="eparpiller-3" className="submenu-texte">Feuilles</div>
@@ -1145,7 +1138,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-flous" className="submenu-listsub submenu-filtres-flous no-sub-menu">
+                        <div id="minimenu-filtres-flous" className="submenu-listsub submenu-filtres-flous no-sub-menu">
                             <div id="flous-1" className="submenu-texte">Apparition</div>
                             <div id="flous-2" className="submenu-texte">Estompage du pourtour...</div>
                             <div id="flous-3" className="submenu-texte">Évanescence</div>
@@ -1163,7 +1156,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-transparence" className="submenu-listsub submenu-filtres-transparence no-sub-menu">
+                        <div id="minimenu-filtres-transparence" className="submenu-listsub submenu-filtres-transparence no-sub-menu">
                             <div id="transparence-1" className="submenu-texte">Aplatir la transparence</div>
                             <div id="transparence-2" className="submenu-texte">Carte de saturation</div>
                             <div id="transparence-3" className="submenu-texte">Découpe rapide</div>
@@ -1184,7 +1177,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-matieres" className="submenu-listsub submenu-filtres-matieres no-sub-menu">
+                        <div id="minimenu-filtres-matieres" className="submenu-listsub submenu-filtres-matieres no-sub-menu">
                             <div id="matieres-1" className="submenu-texte">Bijou en émail</div>
                             <div id="matieres-2" className="submenu-texte">Bois 3D</div>
                             <div id="matieres-3" className="submenu-texte">Cire d'abeille irisée</div>
@@ -1208,7 +1201,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-morphologie" className="submenu-listsub submenu-filtres-morphologie no-sub-menu">
+                        <div id="minimenu-filtres-morphologie" className="submenu-listsub submenu-filtres-morphologie no-sub-menu">
                             <div id="morphologie-1" className="submenu-texte">Adoucissement...</div>
                             <div id="morphologie-2" className="submenu-texte">Chaud dedans</div>
                             <div id="morphologie-3" className="submenu-texte">Contour...</div>
@@ -1226,7 +1219,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-ombrages-3d" className="submenu-listsub submenu-filtres-ombrages-3d no-sub-menu">
+                        <div id="minimenu-filtres-ombrages-3d" className="submenu-listsub submenu-filtres-ombrages-3d no-sub-menu">
                             <div id="ombrages-3d-1" className="submenu-texte">Aluminium</div>
                             <div id="ombrages-3d-2" className="submenu-texte">Bande dessinée</div>
                             <div id="ombrages-3d-3" className="submenu-texte">Bosselage alluminium</div>
@@ -1255,7 +1248,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-ombres-lueurs" className="submenu-listsub submenu-filtres-ombres-lueurs no-sub-menu">
+                        <div id="minimenu-filtres-ombres-lueurs" className="submenu-listsub submenu-filtres-ombres-lueurs no-sub-menu">
                             <div id="ombres-lueurs-1" className="submenu-texte">Découpe et flou</div>
                             <div id="ombres-lueurs-2" className="submenu-texte">Dedans et dehors</div>
                             <div id="ombres-lueurs-3" className="submenu-texte">Émergence</div>
@@ -1271,7 +1264,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-outil-pixel" className="submenu-listsub submenu-filtres-outil-pixel no-sub-menu">
+                        <div id="minimenu-filtres-outil-pixel" className="submenu-listsub submenu-filtres-outil-pixel no-sub-menu">
                             <div id="outil-pixel-1" className="submenu-texte">Pixéliser</div>
                         </div>
                     </div> 
@@ -1282,7 +1275,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-protuberances" className="submenu-listsub submenu-filtres-protuberances no-sub-menu">
+                        <div id="minimenu-filtres-protuberances" className="submenu-listsub submenu-filtres-protuberances no-sub-menu">
                             <div id="protuberances-1" className="submenu-texte">Bavure d'encre</div>
                             <div id="protuberances-2" className="submenu-texte">Chewing-gum</div>
                             <div id="protuberances-3" className="submenu-texte">Crête neigeuse...</div>
@@ -1297,7 +1290,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-superpositions" className="submenu-listsub submenu-filtres-superpositions no-sub-menu">
+                        <div id="minimenu-filtres-superpositions" className="submenu-listsub submenu-filtres-superpositions no-sub-menu">
                             <div id="superpositions-1" className="submenu-texte">Bruit croisé</div>
                             <div id="superpositions-2" className="submenu-texte">Bruit croisé B</div>
                             <div id="superpositions-3" className="submenu-texte">Carnaval</div>
@@ -1341,7 +1334,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-filtres-textures" className="submenu-listsub submenu-filtres-textures no-sub-menu">
+                        <div id="minimenu-filtres-textures" className="submenu-listsub submenu-filtres-textures no-sub-menu">
                             <div id="textures-1" className="submenu-texte">Aquarelle</div>
                             <div id="textures-2" className="submenu-texte">Arc-en-ciel déformé</div>
                             <div id="textures-3" className="submenu-texte">Arc-en-ciel fondu</div>
@@ -1388,7 +1381,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-extensions-couleur" className="submenu-listsub submenu-extensions-couleur no-sub-menu">
+                        <div id="minimenu-extensions-couleur" className="submenu-listsub submenu-extensions-couleur no-sub-menu">
                             <div id="extensions-couleur-1" className="submenu-texte">Ajuster TSL...</div>
                             <div id="extensions-couleur-2" className="submenu-texte">Aléatoire...</div>
                             <div id="extensions-couleur-3" className="submenu-texte">Augmenter la luminosité</div>
@@ -1419,7 +1412,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-extensions-document" className="submenu-listsub submenu-extensions-document no-sub-menu">
+                        <div id="minimenu-extensions-document" className="submenu-listsub submenu-extensions-document no-sub-menu">
                             <div id="extensions-document-1" className="submenu-texte">Info DOC</div>
                             <div id="extensions-document-2" className="submenu-texte">PPP de 90 à 96</div>
                             <div id="extensions-document-3" className="submenu-texte">PPP de 96 à 90</div>
@@ -1433,7 +1426,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-extensions-exporter" className="submenu-listsub submenu-extensions-exporter no-sub-menu">
+                        <div id="minimenu-extensions-exporter" className="submenu-listsub submenu-extensions-exporter no-sub-menu">
                             <div id="extensions-exporter-1" className="submenu-texte">Exporter des découpes par calque...</div>
                             <div id="extensions-exporter-2" className="submenu-texte">Fichier de pré-traitement - Enregistrer sous...</div>
                             <div id="extensions-exporter-3" className="submenu-texte">Guillotine...</div>
@@ -1448,7 +1441,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-extensions-feuille-style" className="submenu-listsub submenu-extensions-feuille-style no-sub-menu">
+                        <div id="minimenu-extensions-feuille-style" className="submenu-listsub submenu-extensions-feuille-style no-sub-menu">
                             <div id="extensions-feuille-style-1" className="submenu-texte">Fusionner les styles dans du CSS...</div>
                         </div>
                     </div> 
@@ -1459,7 +1452,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-extensions-gcodetools" className="submenu-listsub submenu-extensions-gcodetools no-sub-menu">
+                        <div id="minimenu-extensions-gcodetools" className="submenu-listsub submenu-extensions-gcodetools no-sub-menu">
                             <div id="extensions-gcodetools-1" className="submenu-texte">À propos...</div>
                             <div id="extensions-gcodetools-2" className="submenu-texte">Bibliothèque d'outils...</div>
                             <div id="extensions-gcodetools-3" className="submenu-texte">Chemin vers G-code...</div>
@@ -1479,7 +1472,7 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="submenu-extensions-generer" className="submenu-listsub submenu-extensions-generer no-sub-menu">
+                        <div id="minimenu-extensions-generer" className="submenu-listsub submenu-extensions-generer no-sub-menu">
                             <div id="extensions-generer-1" className="submenu-texte">Diagramme de Voronoï...</div>
                             <div id="extensions-generer-2" className="submenu-texte">Éparpiller...</div>
                             <div id="extensions-generer-3" className="submenu-texte">Extrusion...</div>
@@ -1497,6 +1490,17 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="minimenu-extensions-images" className="submenu-listsub submenu-extensions-images no-sub-menu">
+                            <div id="extensions-images-1" className="submenu-texte">
+                                Définir les attributs de l'image...
+                            </div>
+                            <div id="extensions-images-2" className="submenu-texte">
+                                Extraire les images...
+                            </div>
+                            <div id="extensions-images-3" className="submenu-texte">
+                                Incorporer les images...
+                            </div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU IMAGES MATRICIELLES */}
@@ -1505,6 +1509,110 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="minimenu-extensions-imagesM" className="submenu-listsub submenu-extensions-imagesM no-sub-menu">
+                            <div id="extensions-imagesM-1" className="submenu-texte">
+                                Adoucir les parasites
+                            </div>
+                            <div id="extensions-imagesM-2" className="submenu-texte">
+                                Ajouter du bruit...
+                            </div>
+                            <div id="extensions-imagesM-3" className="submenu-texte">
+                                Ajouter TSV...
+                            </div>
+                            <div id="extensions-imagesM-4" className="submenu-texte">
+                                Améliorer
+                            </div>
+                            <div id="extensions-imagesM-5" className="submenu-texte">
+                                Colorer...
+                            </div>
+                            <div id="extensions-imagesM-6" className="submenu-texte">
+                                Composante...
+                            </div>
+                            <div id="extensions-imagesM-7" className="submenu-texte">
+                                Contours...
+                            </div>
+                            <div id="extensions-imagesM-8" className="submenu-texte">
+                                Contraste...
+                            </div>
+                            <div id="extensions-imagesM-9" className="submenu-texte">
+                                Cycle des couleurs...
+                            </div>
+                            <div id="extensions-imagesM-10" className="submenu-texte">
+                                Dispersion...
+                            </div>
+                            <div id="extensions-imagesM-11" className="submenu-texte">
+                                Égaliser
+                            </div>
+                            <div id="extensions-imagesM-12" className="submenu-texte">
+                                Embrosser...
+                            </div>
+                            <div id="extensions-imagesM-13" className="submenu-texte">
+                                Flou gaussien...
+                            </div>
+                            <div id="extensions-imagesM-14" className="submenu-texte">
+                                Flou...
+                            </div>
+                            <div id="extensions-imagesM-15" className="submenu-texte">
+                                Fusain...
+                            </div>
+                            <div id="extensions-imagesM-16" className="submenu-texte">
+                                Imploser...
+                            </div>
+                            <div id="extensions-imagesM-17" className="submenu-texte">
+                                Inverser
+                            </div>
+                            <div id="extensions-imagesM-18" className="submenu-texte">
+                                Masque de netteté...
+                            </div>
+                            <div id="extensions-imagesM-19" className="submenu-texte">
+                                Médiane...
+                            </div>
+                            <div id="extensions-imagesM-20" className="submenu-texte">
+                                Netteté...
+                            </div>
+                            <div id="extensions-imagesM-21" className="submenu-texte">
+                                Niveau (par composante)...
+                            </div>
+                            <div id="extensions-imagesM-22" className="submenu-texte">
+                                Niveau...
+                            </div>
+                            <div id="extensions-imagesM-23" className="submenu-texte">
+                                Normaliser
+                            </div>
+                            <div id="extensions-imagesM-24" className="submenu-texte">
+                                Ombre...
+                            </div>
+                            <div id="extensions-imagesM-25" className="submenu-texte">
+                                Onde...
+                            </div>
+                            <div id="extensions-imagesM-26" className="submenu-texte">
+                                Opacité...
+                            </div>
+                            <div id="extensions-imagesM-27" className="submenu-texte">
+                                Peinture à l'huile...
+                            </div>
+                            <div id="extensions-imagesM-28" className="submenu-texte">
+                                Ré-échantillonnage...
+                            </div>
+                            <div id="extensions-imagesM-29" className="submenu-texte">
+                                Réduire le bruit...
+                            </div>
+                            <div id="extensions-imagesM-30" className="submenu-texte">
+                                Relief...
+                            </div>
+                            <div id="extensions-imagesM-31" className="submenu-texte">
+                                Rogner...
+                            </div>
+                            <div id="extensions-imagesM-32" className="submenu-texte">
+                                Seuil adaptatif...
+                            </div>
+                            <div id="extensions-imagesM-33" className="submenu-texte">
+                                Solariser...
+                            </div>
+                            <div id="extensions-imagesM-34" className="submenu-texte">
+                                Tourbillon...
+                            </div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU INK/STITCH */}
@@ -1513,6 +1621,14 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        <div id="minimenu-extensions-inkstitch" className="submenu-listsub submenu-extensions-inkstitch no-sub-menu">
+                            <div id="extensions-inkstitch-1" className="submenu-texte">
+                                Tourbillon...
+                            </div>
+                            <div id="extensions-inkstitch-2" className="submenu-texte">
+                                Tourbillon...
+                            </div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU JESSYINK */}

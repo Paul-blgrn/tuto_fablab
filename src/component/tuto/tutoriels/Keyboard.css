@@ -979,3 +979,21 @@
     left: 42.6vmin;
     top: 36.4vmin;
 }
+
+.submenu-extensions-images {
+    position: absolute;
+    left: 42.6vmin;
+    top: 40.5vmin;
+}
+
+.submenu-extensions-imagesM {
+    position: absolute;
+    left: 42.6vmin;
+    top: 44.8vmin;
+}
+
+.submenu-extensions-inkstitch {
+    position: absolute;
+    left: 42.6vmin;
+    top: 48vmin;
+}
