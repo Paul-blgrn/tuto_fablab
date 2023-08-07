@@ -31,7 +31,7 @@ const RedoAction = () => {
                 "extensions",
                 "extensions-11",
                 "extensions-inkstitch",
-                "extensions-inkstitch-1",
+                "extensions-inkstitch-2",
             ],
         }
     ];

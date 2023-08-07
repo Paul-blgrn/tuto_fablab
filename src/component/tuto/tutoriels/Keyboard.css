@@ -600,14 +600,14 @@
     display: none;
     visibility: hidden;
     background-color: none;
-    background: none;
+    opacity: 0;
 }
 
 .no-sub-menu {
     display: none;
     visibility: hidden;
     background-color: none;
-    background: none;
+    opacity: 0;
 }
 
 .menu-top {

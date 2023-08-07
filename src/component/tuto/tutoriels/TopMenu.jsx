@@ -54,7 +54,7 @@ const TopMenu = (props) => {
                 targetSubMenu && targetSubMenu.classList.add("no-sub-menu"),
                 targetMiniMenu && targetMiniMenu.classList.add("no-sub-menu"),
 
-                targetMiniMenu && selectMinimenuID && selectMinimenuID.classList.remove("top-menu-animate")
+                selectMinimenuID && selectMinimenuID.classList.remove("top-menu-animate")
             );
         })
 
@@ -71,13 +71,9 @@ const TopMenu = (props) => {
             const targetSubMenu = menuSub.getElementsByTagName('div').namedItem("submenu-" + key)
             const targetMiniMenu = menuSub.getElementsByTagName('div').namedItem("minimenu-" + key)
 
-            //const miniMenuID = document.getElementById("minimenu-" + key);
             const selectMinimenuID = topMenuID.getElementsByTagName('div').namedItem(key)
-            const miniMenuParent = menuSub.getElementsByTagName('div').namedItem("minimenu-" + key);
             
             return(
-                //targetMiniMenu && console.log(targetMiniMenu),
-
                 // delete hide class
                 topMenu2ID && topMenu2ID.classList.remove("no-top-menu"),
 
@@ -85,11 +81,8 @@ const TopMenu = (props) => {
                 targetSubMenu && targetSubMenu.classList.remove("no-sub-menu"),
                 targetMiniMenu && targetMiniMenu.classList.remove("no-sub-menu"),
 
-                targetMiniMenu === selectMinimenuID && selectMinimenuID.classList.add("top-menu-animate"),
-                miniMenuParent && console.log(miniMenuParent.children)
-
-
-                
+                selectMinimenuID && selectMinimenuID.classList.add("top-menu-animate")
+                //selectMinimenuID && console.log(key)       
             );
         })
     
