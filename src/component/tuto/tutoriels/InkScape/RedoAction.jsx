@@ -28,10 +28,10 @@ const RedoAction = () => {
             "keys": [],
             "menu" : [],
             "topmenu" : [
-                "extensions",
-                "extensions-11",
-                "extensions-inkstitch",
-                "extensions-inkstitch-2",
+                "filtres",
+                "filtres-7",
+                "filtres-effet-image",
+                "filtres-effet-image-1",
             ],
         }
     ];

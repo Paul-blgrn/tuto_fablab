@@ -167,23 +167,23 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="minimenu-coller-dimensions" className="submenu-listsub submenu-coller-dimensions no-sub-menu">
-                            <div id="coller-dimensions-1" className="submenu-texte">
+                        <div id="minimenu-edition-coller-dimensions" className="submenu-listsub submenu-edition-coller-dimensions no-sub-menu">
+                            <div id="edition-coller-dimensions-1" className="submenu-texte">
                                 Coller les dimensions
                             </div>
-                            <div id="coller-dimensions-2" className="submenu-texte">
+                            <div id="edition-coller-dimensions-2" className="submenu-texte">
                                 Coller la largeur
                             </div>
-                            <div id="coller-dimensions-3" className="submenu-texte">
+                            <div id="edition-coller-dimensions-3" className="submenu-texte">
                                 Coller la hauteur
                             </div>
-                            <div id="coller-dimensions-4" className="submenu-texte">
+                            <div id="edition-coller-dimensions-4" className="submenu-texte">
                                 Coller les dimensions séparément
                             </div>
-                            <div id="coller-dimensions-5" className="submenu-texte">
+                            <div id="edition-coller-dimensions-5" className="submenu-texte">
                                 Coller la largeur séparément
                             </div>
-                            <div id="coller-dimensions-6" className="submenu-texte">
+                            <div id="edition-coller-dimensions-6" className="submenu-texte">
                                 Coller la hauteur séparément
                             </div>
                         </div>
@@ -278,22 +278,22 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="minimenu-affichage-zoom" className="submenu-list submenu-zoom no-sub-menu">
-                            <div id="zoom-1" className="submenu-texte">Zoomer</div>
-                            <div id="zoom-2" className="submenu-texte">Dézoomer</div>
+                        <div id="minimenu-affichage-zoom" className="submenu-list submenu-affichage-zoom no-sub-menu">
+                            <div id="affichage-zoom-1" className="submenu-texte">Zoomer</div>
+                            <div id="affichage-zoom-2" className="submenu-texte">Dézoomer</div>
                             <hr className="submenu-hr" />
-                            <div id="zoom-3" className="submenu-texte">Zoomer à 1:1</div>
-                            <div id="zoom-4" className="submenu-texte">Zoomer à 1:2</div>
-                            <div id="zoom-5" className="submenu-texte">Zoomer à 2:1</div>
+                            <div id="affichage-zoom-3" className="submenu-texte">Zoomer à 1:1</div>
+                            <div id="affichage-zoom-4" className="submenu-texte">Zoomer à 1:2</div>
+                            <div id="affichage-zoom-5" className="submenu-texte">Zoomer à 2:1</div>
                             <hr className="submenu-hr" />
-                            <div id="zoom-6" className="submenu-texte">Sélection</div>
-                            <div id="zoom-7" className="submenu-texte">Dessin</div>
-                            <div id="zoom-8" className="submenu-texte">Page</div>
-                            <div id="zoom-9" className="submenu-texte">Lageur de la page</div>
-                            <div id="zoom-10" className="submenu-texte">Centrer la page</div>
+                            <div id="affichage-zoom-6" className="submenu-texte">Sélection</div>
+                            <div id="affichage-zoom-7" className="submenu-texte">Dessin</div>
+                            <div id="affichage-zoom-8" className="submenu-texte">Page</div>
+                            <div id="affichage-zoom-9" className="submenu-texte">Lageur de la page</div>
+                            <div id="affichage-zoom-10" className="submenu-texte">Centrer la page</div>
                             <hr className="submenu-hr" />
-                            <div id="zoom-11" className="submenu-texte">Zoom précédent</div>
-                            <div id="zoom-12" className="submenu-texte">Zoom suivant</div>
+                            <div id="affichage-zoom-11" className="submenu-texte">Zoom précédent</div>
+                            <div id="affichage-zoom-12" className="submenu-texte">Zoom suivant</div>
                         </div>
                     </div>
                     
@@ -303,20 +303,20 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="minimenu-affichage-orientation" className="submenu-listsub submenu-orientation no-sub-menu">
-                            <div id="orientation-1" className="submenu-texte submenu-iconspace">Tourner dans le sens horaire</div>    
-                            <div id="orientation-2" className="submenu-texte submenu-iconspace">Tourner dans le sens anti-horaire</div>    
-                            <div id="orientation-3" className="submenu-texte submenu-iconspace">Aucune rotation</div>    
-                            <div id="orientation-4" className="submenu-texte">
+                        <div id="minimenu-affichage-orientation" className="submenu-listsub submenu-affichage-orientation no-sub-menu">
+                            <div id="affichage-orientation-1" className="submenu-texte submenu-iconspace">Tourner dans le sens horaire</div>    
+                            <div id="affichage-orientation-2" className="submenu-texte submenu-iconspace">Tourner dans le sens anti-horaire</div>    
+                            <div id="affichage-orientation-3" className="submenu-texte submenu-iconspace">Aucune rotation</div>    
+                            <div id="affichage-orientation-4" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon className="submenu-left" icon={["far", "check-square"]} />
                                 } 
                                 Verouiller la rotation
                                 </div>    
                             <hr className="submenu-hr" />
-                            <div id="orientation-5" className="submenu-texte submenu-iconspace">Retourner horizontalement</div>  
-                            <div id="orientation-6" className="submenu-texte submenu-iconspace">Retourner verticallement</div>  
-                            <div id="orientation-7" className="submenu-texte submenu-iconspace">Aucun retournement</div>  
+                            <div id="affichage-orientation-5" className="submenu-texte submenu-iconspace">Retourner horizontalement</div>  
+                            <div id="affichage-orientation-6" className="submenu-texte submenu-iconspace">Retourner verticallement</div>  
+                            <div id="affichage-orientation-7" className="submenu-texte submenu-iconspace">Aucun retournement</div>  
                         </div>
                     </div>
 
@@ -334,8 +334,8 @@ const TopMenu = (props) => {
                                     } 
                             />
                         }
-                        <div id="minimenu-affichage-mode-affichage" className="submenu-listsub submenu-mode-affichage no-sub-menu">
-                            <div id="mode-affichage-1" className="submenu-texte">
+                        <div id="minimenu-affichage-mode-affichage" className="submenu-listsub submenu-affichage-mode-affichage no-sub-menu">
+                            <div id="affichage-mode-affichage-1" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -344,7 +344,7 @@ const TopMenu = (props) => {
                                 }
                                 Normal
                             </div>
-                            <div id="mode-affichage-2" className="submenu-texte">
+                            <div id="affichage-mode-affichage-2" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -353,7 +353,7 @@ const TopMenu = (props) => {
                                 }
                                 Contour
                             </div>
-                            <div id="mode-affichage-3" className="submenu-texte">
+                            <div id="affichage-mode-affichage-3" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -362,7 +362,7 @@ const TopMenu = (props) => {
                                 }
                                 Sans filtre
                             </div>
-                            <div id="mode-affichage-4" className="submenu-texte">
+                            <div id="affichage-mode-affichage-4" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -371,7 +371,7 @@ const TopMenu = (props) => {
                                 } 
                                 Traits fins visibles
                             </div>
-                            <div id="mode-affichage-5" className="submenu-texte">
+                            <div id="affichage-mode-affichage-5" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -380,10 +380,10 @@ const TopMenu = (props) => {
                                 }     
                                 Superposition de contours
                             </div>
-                            <div id="mode-affichage-6" className="submenu-texte submenu-iconspace">
+                            <div id="affichage-mode-affichage-6" className="submenu-texte submenu-iconspace">
                                 Cycler
                             </div>
-                            <div id="mode-affichage-7" className="submenu-texte submenu-iconspace">
+                            <div id="affichage-mode-affichage-7" className="submenu-texte submenu-iconspace">
                                 Alterner
                             </div>
                         </div>
@@ -486,8 +486,8 @@ const TopMenu = (props) => {
                                 icon={["fa", "fa-chevron-right"]} 
                             />
                         }
-                        <div id="minimenu-affichage-afficher-cacher" className="submenu-listsub submenu-afficher-cacher no-sub-menu">
-                            <div id="afficher-cacher-1" className="submenu-texte">
+                        <div id="minimenu-affichage-afficher-cacher" className="submenu-listsub submenu-affichage-afficher-cacher no-sub-menu">
+                            <div id="affichage-afficher-cacher-1" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -496,7 +496,7 @@ const TopMenu = (props) => {
                                 } 
                                 Barre des commandes
                             </div>
-                            <div id="afficher-cacher-2" className="submenu-texte">
+                            <div id="affichage-afficher-cacher-2" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -505,7 +505,7 @@ const TopMenu = (props) => {
                                 } 
                                 Barre de contrôle du magnétisme
                             </div>
-                            <div id="afficher-cacher-3" className="submenu-texte">
+                            <div id="affichage-afficher-cacher-3" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -514,7 +514,7 @@ const TopMenu = (props) => {
                                 } 
                                 Barre de contrôle des outils
                             </div>
-                            <div id="afficher-cacher-4" className="submenu-texte">
+                            <div id="affichage-afficher-cacher-4" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -523,7 +523,7 @@ const TopMenu = (props) => {
                                 } 
                                 Boite à outils
                             </div>
-                            <div id="afficher-cacher-5" className="submenu-texte">
+                            <div id="affichage-afficher-cacher-5" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -532,7 +532,7 @@ const TopMenu = (props) => {
                                 } 
                                 Règles
                             </div>
-                            <div id="afficher-cacher-6" className="submenu-texte">
+                            <div id="affichage-afficher-cacher-6" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -541,7 +541,7 @@ const TopMenu = (props) => {
                                 } 
                                 Barres de défilement
                             </div>
-                            <div id="afficher-cacher-7" className="submenu-texte">
+                            <div id="affichage-afficher-cacher-7" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -550,7 +550,7 @@ const TopMenu = (props) => {
                                 } 
                                 Palette
                             </div>
-                            <div id="afficher-cacher-8" className="submenu-texte">
+                            <div id="affichage-afficher-cacher-8" className="submenu-texte">
                                 {
                                     <FontAwesomeIcon 
                                         className="submenu-left" 
@@ -743,14 +743,14 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="minimenu-objet-decoupe" className="submenu-listsub submenu-decoupe no-sub-menu">
-                            <div id="decoupe-1" className="submenu-texte">
+                        <div id="minimenu-objet-decoupe" className="submenu-listsub submenu-objet-decoupe no-sub-menu">
+                            <div id="objet-decoupe-1" className="submenu-texte">
                                 Définir une découpe
                             </div>
-                            <div id="decoupe-2" className="submenu-texte">
+                            <div id="objet-decoupe-2" className="submenu-texte">
                                 Découpe inversée
                             </div>
-                            <div id="decoupe-3" className="submenu-texte">
+                            <div id="objet-decoupe-3" className="submenu-texte">
                                 Relâcher la découpe
                             </div>
                         </div>
@@ -760,14 +760,14 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="minimenu-objet-masque" className="submenu-listsub submenu-masque no-sub-menu">
-                            <div id="masque-1" className="submenu-texte">
+                        <div id="minimenu-objet-masque" className="submenu-listsub submenu-objet-masque no-sub-menu">
+                            <div id="objet-masque-1" className="submenu-texte">
                                 Définir un masque
                             </div>
-                            <div id="masque-2" className="submenu-texte">
+                            <div id="objet-masque-2" className="submenu-texte">
                                 Définir un masque inversé (ECI)
                             </div>
-                            <div id="masque-3" className="submenu-texte">
+                            <div id="objet-masque-3" className="submenu-texte">
                                 Retirer le masque
                             </div>
                         </div>
@@ -777,11 +777,11 @@ const TopMenu = (props) => {
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
-                        <div id="minimenu-objet-motif" className="submenu-listsub submenu-motif no-sub-menu">
-                            <div id="motif-1" className="submenu-texte">
+                        <div id="minimenu-objet-motif" className="submenu-listsub submenu-objet-motif no-sub-menu">
+                            <div id="objet-motif-1" className="submenu-texte">
                                 Objet en motif
                             </div>
-                            <div id="motif-2" className="submenu-texte">
+                            <div id="objet-motif-2" className="submenu-texte">
                                 Motif en objets
                             </div>
                         </div>
@@ -867,79 +867,79 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-biseaux" className="submenu-listsub submenu-filtres-biseaux no-sub-menu">
-                            <div id="biseaux-1" className="submenu-texte">
+                            <div id="filtres-biseaux-1" className="submenu-texte">
                                 Biseau mat
                             </div>
-                            <div id="biseaux-2" className="submenu-texte">
+                            <div id="filtres-biseaux-2" className="submenu-texte">
                                 Bouton
                             </div>
-                            <div id="biseaux-3" className="submenu-texte">
+                            <div id="filtres-biseaux-3" className="submenu-texte">
                                 Contour en arête
                             </div>
-                            <div id="biseaux-4" className="submenu-texte">
+                            <div id="filtres-biseaux-4" className="submenu-texte">
                                 Contour surélevé
                             </div>
-                            <div id="biseaux-5" className="submenu-texte">
+                            <div id="filtres-biseaux-5" className="submenu-texte">
                                 Éclairage combiné
                             </div>
-                            <div id="biseaux-6" className="submenu-texte">
+                            <div id="filtres-biseaux-6" className="submenu-texte">
                                 Éclairage diffus...
                             </div>
-                            <div id="biseaux-7" className="submenu-texte">
+                            <div id="filtres-biseaux-7" className="submenu-texte">
                                 Éclairage spéculaire...
                             </div>
-                            <div id="biseaux-8" className="submenu-texte">
+                            <div id="filtres-biseaux-8" className="submenu-texte">
                                 Éclosion
                             </div>
-                            <div id="biseaux-9" className="submenu-texte">
+                            <div id="filtres-biseaux-9" className="submenu-texte">
                                 Gel fondant
                             </div>
-                            <div id="biseaux-10" className="submenu-texte">
+                            <div id="filtres-biseaux-10" className="submenu-texte">
                                 Gel fondant mat
                             </div>
-                            <div id="biseaux-11" className="submenu-texte">
+                            <div id="filtres-biseaux-11" className="submenu-texte">
                                 Get mat...
                             </div>
-                            <div id="biseaux-12" className="submenu-texte">
+                            <div id="filtres-biseaux-12" className="submenu-texte">
                                 Gel tout usages
                             </div>
-                            <div id="biseaux-13" className="submenu-texte">
+                            <div id="filtres-biseaux-13" className="submenu-texte">
                                 Huile grasse
                             </div>
-                            <div id="biseaux-14" className="submenu-texte">
+                            <div id="filtres-biseaux-14" className="submenu-texte">
                                 Métal brillant
                             </div>
-                            <div id="biseaux-15" className="submenu-texte">
+                            <div id="filtres-biseaux-15" className="submenu-texte">
                                 Métal fondu
                             </div>
-                            <div id="biseaux-16" className="submenu-texte">
+                            <div id="filtres-biseaux-16" className="submenu-texte">
                                 Métal luisant
                             </div>
-                            <div id="biseaux-17" className="submenu-texte">
+                            <div id="filtres-biseaux-17" className="submenu-texte">
                                 Métal moulé
                             </div>
-                            <div id="biseaux-18" className="submenu-texte">
+                            <div id="filtres-biseaux-18" className="submenu-texte">
                                 Microscope électronique
                             </div>
-                            <div id="biseaux-19" className="submenu-texte">
+                            <div id="filtres-biseaux-19" className="submenu-texte">
                                 Néon
                             </div>
-                            <div id="biseaux-20" className="submenu-texte">
+                            <div id="filtres-biseaux-20" className="submenu-texte">
                                 Pièce de puzzle
                             </div>
-                            <div id="biseaux-21" className="submenu-texte">
+                            <div id="filtres-biseaux-21" className="submenu-texte">
                                 Plastique profondément coloré
                             </div>
-                            <div id="biseaux-22" className="submenu-texte">
+                            <div id="filtres-biseaux-22" className="submenu-texte">
                                 Tôle emboutie
                             </div>
-                            <div id="biseaux-23" className="submenu-texte">
+                            <div id="filtres-biseaux-23" className="submenu-texte">
                                 Verre solaire
                             </div>
-                            <div id="biseaux-24" className="submenu-texte">
+                            <div id="filtres-biseaux-24" className="submenu-texte">
                                 Verre translucide
                             </div>
-                            <div id="biseaux-25" className="submenu-texte">
+                            <div id="filtres-biseaux-25" className="submenu-texte">
                                 Vitrail
                             </div>
                         </div>
@@ -952,36 +952,36 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-bosselage" className="submenu-listsub submenu-filtres-bosselage no-sub-menu">
-                            <div id="bosselage-1" className="submenu-texte">Acrylique épaisse</div>
-                            <div id="bosselage-2" className="submenu-texte">Bosselage à deux lumières simple</div>
-                            <div id="bosselage-3" className="submenu-texte">Bosselage bulleux</div>
-                            <div id="bosselage-4" className="submenu-texte">Bosselage bulleur mat</div>
-                            <div id="bosselage-5" className="submenu-texte">Bosselage cireux...</div>
-                            <div id="bosselage-6" className="submenu-texte">Bosselage convoluté</div>
-                            <div id="bosselage-7" className="submenu-texte">Bosselage diffus simple</div>
-                            <div id="bosselage-8" className="submenu-texte">Bosselage gélatineux</div>
-                            <div id="bosselage-9" className="submenu-texte">Bosselage papier</div>
-                            <div id="bosselage-10" className="submenu-texte">Bosselage sombre</div>
-                            <div id="bosselage-11" className="submenu-texte">Bosselage spéculaire simple</div>
-                            <div id="bosselage-12" className="submenu-texte">Bosselage toilé</div>
-                            <div id="bosselage-13" className="submenu-texte">Bosselage toilé mat</div>
-                            <div id="bosselage-14" className="submenu-texte">Bosselage velouté</div>
-                            <div id="bosselage-15" className="submenu-texte">Bosselage...</div>
-                            <div id="bosselage-16" className="submenu-texte">Cuir repoussé</div>
-                            <div id="bosselage-17" className="submenu-texte">Gravure bosselée</div>
-                            <div id="bosselage-18" className="submenu-texte">Impression en relief</div>
-                            <div id="bosselage-19" className="submenu-texte">Masque de bosselage bulleux</div>
-                            <div id="bosselage-20" className="submenu-texte">Masque de bosselage toilé</div>
-                            <div id="bosselage-21" className="submenu-texte">Masque de bosselage TSL</div>
-                            <div id="bosselage-22" className="submenu-texte">Papier alluminium</div>
-                            <div id="bosselage-23" className="submenu-texte">Pâte à modeler</div>
-                            <div id="bosselage-24" className="submenu-texte">Peinture épaisse</div>
-                            <div id="bosselage-25" className="submenu-texte">Peinture sur toile brute</div>
-                            <div id="bosselage-26" className="submenu-texte">Plastifier</div>
-                            <div id="bosselage-27" className="submenu-texte">Plâtre</div>
-                            <div id="bosselage-28" className="submenu-texte">Plâtre coloré</div>
-                            <div id="bosselage-29" className="submenu-texte">Toile de lin</div>
-                            <div id="bosselage-30" className="submenu-texte">Vernis ridé</div>
+                            <div id="filtres-bosselage-1" className="submenu-texte">Acrylique épaisse</div>
+                            <div id="filtres-bosselage-2" className="submenu-texte">Bosselage à deux lumières simple</div>
+                            <div id="filtres-bosselage-3" className="submenu-texte">Bosselage bulleux</div>
+                            <div id="filtres-bosselage-4" className="submenu-texte">Bosselage bulleur mat</div>
+                            <div id="filtres-bosselage-5" className="submenu-texte">Bosselage cireux...</div>
+                            <div id="filtres-bosselage-6" className="submenu-texte">Bosselage convoluté</div>
+                            <div id="filtres-bosselage-7" className="submenu-texte">Bosselage diffus simple</div>
+                            <div id="filtres-bosselage-8" className="submenu-texte">Bosselage gélatineux</div>
+                            <div id="filtres-bosselage-9" className="submenu-texte">Bosselage papier</div>
+                            <div id="filtres-bosselage-10" className="submenu-texte">Bosselage sombre</div>
+                            <div id="filtres-bosselage-11" className="submenu-texte">Bosselage spéculaire simple</div>
+                            <div id="filtres-bosselage-12" className="submenu-texte">Bosselage toilé</div>
+                            <div id="filtres-bosselage-13" className="submenu-texte">Bosselage toilé mat</div>
+                            <div id="filtres-bosselage-14" className="submenu-texte">Bosselage velouté</div>
+                            <div id="filtres-bosselage-15" className="submenu-texte">Bosselage...</div>
+                            <div id="filtres-bosselage-16" className="submenu-texte">Cuir repoussé</div>
+                            <div id="filtres-bosselage-17" className="submenu-texte">Gravure bosselée</div>
+                            <div id="filtres-bosselage-18" className="submenu-texte">Impression en relief</div>
+                            <div id="filtres-bosselage-19" className="submenu-texte">Masque de bosselage bulleux</div>
+                            <div id="filtres-bosselage-20" className="submenu-texte">Masque de bosselage toilé</div>
+                            <div id="filtres-bosselage-21" className="submenu-texte">Masque de bosselage TSL</div>
+                            <div id="filtres-bosselage-22" className="submenu-texte">Papier alluminium</div>
+                            <div id="filtres-bosselage-23" className="submenu-texte">Pâte à modeler</div>
+                            <div id="filtres-bosselage-24" className="submenu-texte">Peinture épaisse</div>
+                            <div id="filtres-bosselage-25" className="submenu-texte">Peinture sur toile brute</div>
+                            <div id="filtres-bosselage-26" className="submenu-texte">Plastifier</div>
+                            <div id="filtres-bosselage-27" className="submenu-texte">Plâtre</div>
+                            <div id="filtres-bosselage-28" className="submenu-texte">Plâtre coloré</div>
+                            <div id="filtres-bosselage-29" className="submenu-texte">Toile de lin</div>
+                            <div id="filtres-bosselage-30" className="submenu-texte">Vernis ridé</div>
                         </div>
                     </div> 
 
@@ -992,33 +992,33 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-couleur" className="submenu-listsub submenu-filtres-couleur no-sub-menu">
-                            <div id="couleur-1" className="submenu-texte">Brillance...</div>
-                            <div id="couleur-2" className="submenu-texte">Canaux de peinture</div>
-                            <div id="couleur-3" className="submenu-texte">Colorer...</div>
-                            <div id="couleur-4" className="submenu-texte">Couleur douces</div>
-                            <div id="couleur-5" className="submenu-texte">Décalage de couleur...</div>
-                            <div id="couleur-6" className="submenu-texte">Décolore en noir ou blanc...</div>
-                            <div id="couleur-7" className="submenu-texte">Déplacement des canaux CMJ...</div>
-                            <div id="couleur-8" className="submenu-texte">Déplacement des canaux RVB...</div>
-                            <div id="couleur-9" className="submenu-texte">Duochrome...</div>
-                            <div id="couleur-10" className="submenu-texte">Éclairage...</div>
-                            <div id="couleur-11" className="submenu-texte">Extraire un canal...</div>
-                            <div id="couleur-12" className="submenu-texte">Fluorescence</div>
-                            <div id="couleur-13" className="submenu-texte">Fondu...</div>
-                            <div id="couleur-14" className="submenu-texte">Inverser...</div>
-                            <div id="couleur-15" className="submenu-texte">Lumière noire</div>
-                            <div id="couleur-16" className="submenu-texte">Luminosité et contraste...</div>
-                            <div id="couleur-17" className="submenu-texte">Mélanger les opposés</div>
-                            <div id="couleur-18" className="submenu-texte">Niveaux de gris...</div>
-                            <div id="couleur-19" className="submenu-texte">Peinture par canal...</div>
-                            <div id="couleur-20" className="submenu-texte">Perception des couleurs...</div>
-                            <div id="couleur-21" className="submenu-texte">Quadritone fantaisie...</div>
-                            <div id="couleur-22" className="submenu-texte">Simuler CMJ</div>
-                            <div id="couleur-23" className="submenu-texte">Solariser...</div>
-                            <div id="couleur-24" className="submenu-texte">Teinte vers blanc</div>
-                            <div id="couleur-25" className="submenu-texte">Transfert de composantes...</div>
-                            <div id="couleur-26" className="submenu-texte">Trichrome</div>
-                            <div id="couleur-27" className="submenu-texte">Tritone...</div>
+                            <div id="filtres-couleur-1" className="submenu-texte">Brillance...</div>
+                            <div id="filtres-couleur-2" className="submenu-texte">Canaux de peinture</div>
+                            <div id="filtres-couleur-3" className="submenu-texte">Colorer...</div>
+                            <div id="filtres-couleur-4" className="submenu-texte">Couleur douces</div>
+                            <div id="filtres-couleur-5" className="submenu-texte">Décalage de couleur...</div>
+                            <div id="filtres-couleur-6" className="submenu-texte">Décolore en noir ou blanc...</div>
+                            <div id="filtres-couleur-7" className="submenu-texte">Déplacement des canaux CMJ...</div>
+                            <div id="filtres-couleur-8" className="submenu-texte">Déplacement des canaux RVB...</div>
+                            <div id="filtres-couleur-9" className="submenu-texte">Duochrome...</div>
+                            <div id="filtres-couleur-10" className="submenu-texte">Éclairage...</div>
+                            <div id="filtres-couleur-11" className="submenu-texte">Extraire un canal...</div>
+                            <div id="filtres-couleur-12" className="submenu-texte">Fluorescence</div>
+                            <div id="filtres-couleur-13" className="submenu-texte">Fondu...</div>
+                            <div id="filtres-couleur-14" className="submenu-texte">Inverser...</div>
+                            <div id="filtres-couleur-15" className="submenu-texte">Lumière noire</div>
+                            <div id="filtres-couleur-16" className="submenu-texte">Luminosité et contraste...</div>
+                            <div id="filtres-couleur-17" className="submenu-texte">Mélanger les opposés</div>
+                            <div id="filtres-couleur-18" className="submenu-texte">Niveaux de gris...</div>
+                            <div id="filtres-couleur-19" className="submenu-texte">Peinture par canal...</div>
+                            <div id="filtres-couleur-20" className="submenu-texte">Perception des couleurs...</div>
+                            <div id="filtres-couleur-21" className="submenu-texte">Quadritone fantaisie...</div>
+                            <div id="filtres-couleur-22" className="submenu-texte">Simuler CMJ</div>
+                            <div id="filtres-couleur-23" className="submenu-texte">Solariser...</div>
+                            <div id="filtres-couleur-24" className="submenu-texte">Teinte vers blanc</div>
+                            <div id="filtres-couleur-25" className="submenu-texte">Transfert de composantes...</div>
+                            <div id="filtres-couleur-26" className="submenu-texte">Trichrome</div>
+                            <div id="filtres-couleur-27" className="submenu-texte">Tritone...</div>
                         </div>
                     </div> 
 
@@ -1029,13 +1029,13 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-cretes" className="submenu-listsub submenu-filtres-cretes no-sub-menu">
-                            <div id="cretes-1" className="submenu-texte">Arrête mate</div>
-                            <div id="cretes-2" className="submenu-texte">Arrête métalisée</div>
-                            <div id="cretes-3" className="submenu-texte">Bulle brillante</div>
-                            <div id="cretes-4" className="submenu-texte">Dragée</div>
-                            <div id="cretes-5" className="submenu-texte">Gel réfringent A</div>
-                            <div id="cretes-6" className="submenu-texte">Gel réfringent B</div>
-                            <div id="cretes-7" className="submenu-texte">Membrane fine</div>
+                            <div id="filtres-cretes-1" className="submenu-texte">Arrête mate</div>
+                            <div id="filtres-cretes-2" className="submenu-texte">Arrête métalisée</div>
+                            <div id="filtres-cretes-3" className="submenu-texte">Bulle brillante</div>
+                            <div id="filtres-cretes-4" className="submenu-texte">Dragée</div>
+                            <div id="filtres-cretes-5" className="submenu-texte">Gel réfringent A</div>
+                            <div id="filtres-cretes-6" className="submenu-texte">Gel réfringent B</div>
+                            <div id="filtres-cretes-7" className="submenu-texte">Membrane fine</div>
                         </div>
                     </div> 
 
@@ -1046,16 +1046,16 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-deformation" className="submenu-listsub submenu-filtres-deformation no-sub-menu">
-                            <div id="deformation-1" className="submenu-texte">Agitation dilatée</div>
-                            <div id="deformation-2" className="submenu-texte">Agitation interne</div>
-                            <div id="deformation-3" className="submenu-texte">Agitation...</div>
-                            <div id="deformation-4" className="submenu-texte">Barbouillage de pixels</div>
-                            <div id="deformation-5" className="submenu-texte">Clapotis</div>
-                            <div id="deformation-6" className="submenu-texte">Éponge et craie</div>
-                            <div id="deformation-7" className="submenu-texte">Estompage du pourtour...</div>
-                            <div id="deformation-8" className="submenu-texte">Ondulation</div>
-                            <div id="deformation-9" className="submenu-texte">Pourtour déchiré</div>
-                            <div id="deformation-10" className="submenu-texte">Tourbillon</div>
+                            <div id="filtres-deformation-1" className="submenu-texte">Agitation dilatée</div>
+                            <div id="filtres-deformation-2" className="submenu-texte">Agitation interne</div>
+                            <div id="filtres-deformation-3" className="submenu-texte">Agitation...</div>
+                            <div id="filtres-deformation-4" className="submenu-texte">Barbouillage de pixels</div>
+                            <div id="filtres-deformation-5" className="submenu-texte">Clapotis</div>
+                            <div id="filtres-deformation-6" className="submenu-texte">Éponge et craie</div>
+                            <div id="filtres-deformation-7" className="submenu-texte">Estompage du pourtour...</div>
+                            <div id="filtres-deformation-8" className="submenu-texte">Ondulation</div>
+                            <div id="filtres-deformation-9" className="submenu-texte">Pourtour déchiré</div>
+                            <div id="filtres-deformation-10" className="submenu-texte">Tourbillon</div>
                         </div>
                     </div> 
 
@@ -1066,32 +1066,32 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-peinture-image" className="submenu-listsub submenu-filtres-peinture-image no-sub-menu">
-                            <div id="peinture-image-1" className="submenu-texte">Affiche couleur amusante</div>
-                            <div id="peinture-image-2" className="submenu-texte">Chromolitho alternatif</div>
-                            <div id="peinture-image-3" className="submenu-texte">Chromolitho...</div>
-                            <div id="peinture-image-4" className="submenu-texte">Contour lumineux</div>
-                            <div id="peinture-image-5" className="submenu-texte">Crayon</div>
-                            <div id="peinture-image-6" className="submenu-texte">Dessin d'image de base</div>
-                            <div id="peinture-image-7" className="submenu-texte">Dessin de poster</div>
-                            <div id="peinture-image-8" className="submenu-texte">Dessin liquide</div>
-                            <div id="peinture-image-9" className="submenu-texte">Dessin néon...</div>
-                            <div id="peinture-image-10" className="submenu-texte">Dessin transparent liquide</div>
-                            <div id="peinture-image-11" className="submenu-texte">Dessin...</div>
-                            <div id="peinture-image-12" className="submenu-texte">Électrisation...</div>
-                            <div id="peinture-image-13" className="submenu-texte">Encre marbrée...</div>
-                            <div id="peinture-image-14" className="submenu-texte">Gravure croisée...</div>
-                            <div id="peinture-image-15" className="submenu-texte">Gravure par point...</div>
-                            <div id="peinture-image-16" className="submenu-texte">Gravure transparente</div>
-                            <div id="peinture-image-17" className="submenu-texte">Gravure transparente B</div>
-                            <div id="peinture-image-18" className="submenu-texte">Litho</div>
-                            <div id="peinture-image-19" className="submenu-texte">Patron</div>
-                            <div id="peinture-image-20" className="submenu-texte">Peinture à l'huile...</div>
-                            <div id="peinture-image-21" className="submenu-texte">Peinture et poster...</div>
-                            <div id="peinture-image-22" className="submenu-texte">Poster d'agitation</div>
-                            <div id="peinture-image-23" className="submenu-texte">Poster de bruit croisé</div>
-                            <div id="peinture-image-24" className="submenu-texte">Poster de bruit croisé B</div>
-                            <div id="peinture-image-25" className="submenu-texte">Postérisation simple...</div>
-                            <div id="peinture-image-26" className="submenu-texte">Vieille carte postale</div>
+                            <div id="filtres-peinture-image-1" className="submenu-texte">Affiche couleur amusante</div>
+                            <div id="filtres-peinture-image-2" className="submenu-texte">Chromolitho alternatif</div>
+                            <div id="filtres-peinture-image-3" className="submenu-texte">Chromolitho...</div>
+                            <div id="filtres-peinture-image-4" className="submenu-texte">Contour lumineux</div>
+                            <div id="filtres-peinture-image-5" className="submenu-texte">Crayon</div>
+                            <div id="filtres-peinture-image-6" className="submenu-texte">Dessin d'image de base</div>
+                            <div id="filtres-peinture-image-7" className="submenu-texte">Dessin de poster</div>
+                            <div id="filtres-peinture-image-8" className="submenu-texte">Dessin liquide</div>
+                            <div id="filtres-peinture-image-9" className="submenu-texte">Dessin néon...</div>
+                            <div id="filtres-peinture-image-10" className="submenu-texte">Dessin transparent liquide</div>
+                            <div id="filtres-peinture-image-11" className="submenu-texte">Dessin...</div>
+                            <div id="filtres-peinture-image-12" className="submenu-texte">Électrisation...</div>
+                            <div id="filtres-peinture-image-13" className="submenu-texte">Encre marbrée...</div>
+                            <div id="filtres-peinture-image-14" className="submenu-texte">Gravure croisée...</div>
+                            <div id="filtres-peinture-image-15" className="submenu-texte">Gravure par point...</div>
+                            <div id="filtres-peinture-image-16" className="submenu-texte">Gravure transparente</div>
+                            <div id="filtres-peinture-image-17" className="submenu-texte">Gravure transparente B</div>
+                            <div id="filtres-peinture-image-18" className="submenu-texte">Litho</div>
+                            <div id="filtres-peinture-image-19" className="submenu-texte">Patron</div>
+                            <div id="filtres-peinture-image-20" className="submenu-texte">Peinture à l'huile...</div>
+                            <div id="filtres-peinture-image-21" className="submenu-texte">Peinture et poster...</div>
+                            <div id="filtres-peinture-image-22" className="submenu-texte">Poster d'agitation</div>
+                            <div id="filtres-peinture-image-23" className="submenu-texte">Poster de bruit croisé</div>
+                            <div id="filtres-peinture-image-24" className="submenu-texte">Poster de bruit croisé B</div>
+                            <div id="filtres-peinture-image-25" className="submenu-texte">Postérisation simple...</div>
+                            <div id="filtres-peinture-image-26" className="submenu-texte">Vieille carte postale</div>
                         </div>
                     </div> 
 
@@ -1102,12 +1102,12 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-effet-image" className="submenu-listsub submenu-filtres-effet-image no-sub-menu">
-                            <div id="effet-image-1" className="submenu-texte">Détection de bords...</div>
-                            <div id="effet-image-2" className="submenu-texte">Grain photo</div>
-                            <div id="effet-image-3" className="submenu-texte">Lentille à portrait</div>
-                            <div id="effet-image-4" className="submenu-texte">Netteté</div>
-                            <div id="effet-image-5" className="submenu-texte">Netteté renforcée</div>
-                            <div id="effet-image-6" className="submenu-texte">Vieillissement</div>
+                            <div id="filtres-effet-image-1" className="submenu-texte">Détection de bords...</div>
+                            <div id="filtres-effet-image-2" className="submenu-texte">Grain photo</div>
+                            <div id="filtres-effet-image-3" className="submenu-texte">Lentille à portrait</div>
+                            <div id="filtres-effet-image-4" className="submenu-texte">Netteté</div>
+                            <div id="filtres-effet-image-5" className="submenu-texte">Netteté renforcée</div>
+                            <div id="filtres-effet-image-6" className="submenu-texte">Vieillissement</div>
                         </div>
                     </div> 
 
@@ -1118,10 +1118,10 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-eparpiller" className="submenu-listsub submenu-filtres-eparpiller no-sub-menu">
-                            <div id="eparpiller-1" className="submenu-texte">Aérosol</div>
-                            <div id="eparpiller-2" className="submenu-texte">Cubes</div>
-                            <div id="eparpiller-3" className="submenu-texte">Feuilles</div>
-                            <div id="eparpiller-4" className="submenu-texte">Pointillisme</div>
+                            <div id="filtres-eparpiller-1" className="submenu-texte">Aérosol</div>
+                            <div id="filtres-eparpiller-2" className="submenu-texte">Cubes</div>
+                            <div id="filtres-eparpiller-3" className="submenu-texte">Feuilles</div>
+                            <div id="filtres-eparpiller-4" className="submenu-texte">Pointillisme</div>
                         </div>
                     </div> 
 
@@ -1132,14 +1132,14 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-flous" className="submenu-listsub submenu-filtres-flous no-sub-menu">
-                            <div id="flous-1" className="submenu-texte">Apparition</div>
-                            <div id="flous-2" className="submenu-texte">Estompage du pourtour...</div>
-                            <div id="flous-3" className="submenu-texte">Évanescence</div>
-                            <div id="flous-4" className="submenu-texte">Flou croisé...</div>
-                            <div id="flous-5" className="submenu-texte">Flou double</div>
-                            <div id="flous-6" className="submenu-texte">Flou...</div>
-                            <div id="flous-7" className="submenu-texte">Hors focale...</div>
-                            <div id="flous-8" className="submenu-texte">Nettoyage des bords...</div>
+                            <div id="filtres-flous-1" className="submenu-texte">Apparition</div>
+                            <div id="filtres-flous-2" className="submenu-texte">Estompage du pourtour...</div>
+                            <div id="filtres-flous-3" className="submenu-texte">Évanescence</div>
+                            <div id="filtres-flous-4" className="submenu-texte">Flou croisé...</div>
+                            <div id="filtres-flous-5" className="submenu-texte">Flou double</div>
+                            <div id="filtres-flous-6" className="submenu-texte">Flou...</div>
+                            <div id="filtres-flous-7" className="submenu-texte">Hors focale...</div>
+                            <div id="filtres-flous-8" className="submenu-texte">Nettoyage des bords...</div>
                         </div>
                     </div> 
 
@@ -1150,17 +1150,17 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-transparence" className="submenu-listsub submenu-filtres-transparence no-sub-menu">
-                            <div id="transparence-1" className="submenu-texte">Aplatir la transparence</div>
-                            <div id="transparence-2" className="submenu-texte">Carte de saturation</div>
-                            <div id="transparence-3" className="submenu-texte">Découpe rapide</div>
-                            <div id="transparence-4" className="submenu-texte">Fondre...</div>
-                            <div id="transparence-5" className="submenu-texte">Gomme lumière postérisée</div>
-                            <div id="transparence-6" className="submenu-texte">Gomme lumière...</div>
-                            <div id="transparence-7" className="submenu-texte">Monochrome transparent</div>
-                            <div id="transparence-8" className="submenu-texte">Opacité...</div>
-                            <div id="transparence-9" className="submenu-texte">Remplir le fond</div>
-                            <div id="transparence-10" className="submenu-texte">Silhouette...</div>
-                            <div id="transparence-11" className="submenu-texte">transparence par canal...</div>
+                            <div id="filtres-transparence-1" className="submenu-texte">Aplatir la transparence</div>
+                            <div id="filtres-transparence-2" className="submenu-texte">Carte de saturation</div>
+                            <div id="filtres-transparence-3" className="submenu-texte">Découpe rapide</div>
+                            <div id="filtres-transparence-4" className="submenu-texte">Fondre...</div>
+                            <div id="filtres-transparence-5" className="submenu-texte">Gomme lumière postérisée</div>
+                            <div id="filtres-transparence-6" className="submenu-texte">Gomme lumière...</div>
+                            <div id="filtres-transparence-7" className="submenu-texte">Monochrome transparent</div>
+                            <div id="filtres-transparence-8" className="submenu-texte">Opacité...</div>
+                            <div id="filtres-transparence-9" className="submenu-texte">Remplir le fond</div>
+                            <div id="filtres-transparence-10" className="submenu-texte">Silhouette...</div>
+                            <div id="filtres-transparence-11" className="submenu-texte">transparence par canal...</div>
                         </div>
                     </div> 
 
@@ -1171,20 +1171,20 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-matieres" className="submenu-listsub submenu-filtres-matieres no-sub-menu">
-                            <div id="matieres-1" className="submenu-texte">Bijou en émail</div>
-                            <div id="matieres-2" className="submenu-texte">Bois 3D</div>
-                            <div id="matieres-3" className="submenu-texte">Cire d'abeille irisée</div>
-                            <div id="matieres-4" className="submenu-texte">Fourrure de léopard</div>
-                            <div id="matieres-5" className="submenu-texte">lave fissurée</div>
-                            <div id="matieres-6" className="submenu-texte">Marbre en 3D</div>
-                            <div id="matieres-7" className="submenu-texte">Métal érodé</div>
-                            <div id="matieres-8" className="submenu-texte">Métal souple</div>
-                            <div id="matieres-9" className="submenu-texte">Nacre en 3D</div>
-                            <div id="matieres-10" className="submenu-texte">Pâte d'or</div>
-                            <div id="matieres-11" className="submenu-texte">Peau de lézard</div>
-                            <div id="matieres-12" className="submenu-texte">Peinture écaillée</div>
-                            <div id="matieres-13" className="submenu-texte">Peinture métallisée</div>
-                            <div id="matieres-14" className="submenu-texte">Projection d'or</div>
+                            <div id="filtres-matieres-1" className="submenu-texte">Bijou en émail</div>
+                            <div id="filtres-matieres-2" className="submenu-texte">Bois 3D</div>
+                            <div id="filtres-matieres-3" className="submenu-texte">Cire d'abeille irisée</div>
+                            <div id="filtres-matieres-4" className="submenu-texte">Fourrure de léopard</div>
+                            <div id="filtres-matieres-5" className="submenu-texte">lave fissurée</div>
+                            <div id="filtres-matieres-6" className="submenu-texte">Marbre en 3D</div>
+                            <div id="filtres-matieres-7" className="submenu-texte">Métal érodé</div>
+                            <div id="filtres-matieres-8" className="submenu-texte">Métal souple</div>
+                            <div id="filtres-matieres-9" className="submenu-texte">Nacre en 3D</div>
+                            <div id="filtres-matieres-10" className="submenu-texte">Pâte d'or</div>
+                            <div id="filtres-matieres-11" className="submenu-texte">Peau de lézard</div>
+                            <div id="filtres-matieres-12" className="submenu-texte">Peinture écaillée</div>
+                            <div id="filtres-matieres-13" className="submenu-texte">Peinture métallisée</div>
+                            <div id="filtres-matieres-14" className="submenu-texte">Projection d'or</div>
                         </div>
                     </div> 
 
@@ -1195,14 +1195,14 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-morphologie" className="submenu-listsub submenu-filtres-morphologie no-sub-menu">
-                            <div id="morphologie-1" className="submenu-texte">Adoucissement...</div>
-                            <div id="morphologie-2" className="submenu-texte">Chaud dedans</div>
-                            <div id="morphologie-3" className="submenu-texte">Contour...</div>
-                            <div id="morphologie-4" className="submenu-texte">Contours discrets</div>
-                            <div id="morphologie-5" className="submenu-texte">Flou postérisé</div>
-                            <div id="morphologie-6" className="submenu-texte">Froid dehors</div>
-                            <div id="morphologie-7" className="submenu-texte">Table de contours</div>
-                            <div id="morphologie-8" className="submenu-texte">Trou noir</div>
+                            <div id="filtres-morphologie-1" className="submenu-texte">Adoucissement...</div>
+                            <div id="filtres-morphologie-2" className="submenu-texte">Chaud dedans</div>
+                            <div id="filtres-morphologie-3" className="submenu-texte">Contour...</div>
+                            <div id="filtres-morphologie-4" className="submenu-texte">Contours discrets</div>
+                            <div id="filtres-morphologie-5" className="submenu-texte">Flou postérisé</div>
+                            <div id="filtres-morphologie-6" className="submenu-texte">Froid dehors</div>
+                            <div id="filtres-morphologie-7" className="submenu-texte">Table de contours</div>
+                            <div id="filtres-morphologie-8" className="submenu-texte">Trou noir</div>
                         </div>
                     </div> 
 
@@ -1213,25 +1213,25 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-ombrages-3d" className="submenu-listsub submenu-filtres-ombrages-3d no-sub-menu">
-                            <div id="ombrages-3d-1" className="submenu-texte">Aluminium</div>
-                            <div id="ombrages-3d-2" className="submenu-texte">Bande dessinée</div>
-                            <div id="ombrages-3d-3" className="submenu-texte">Bosselage alluminium</div>
-                            <div id="ombrages-3d-4" className="submenu-texte">Bosselage chromé</div>
-                            <div id="ombrages-3d-5" className="submenu-texte">Bosselage du contour</div>
-                            <div id="ombrages-3d-6" className="submenu-texte">Bosselage ombré</div>
-                            <div id="ombrages-3d-7" className="submenu-texte">Chrome</div>
-                            <div id="ombrages-3d-8" className="submenu-texte">Chrome profond</div>
-                            <div id="ombrages-3d-9" className="submenu-texte">Crème BD</div>
-                            <div id="ombrages-3d-10" className="submenu-texte">Déco net</div>
-                            <div id="ombrages-3d-11" className="submenu-texte">Décoloration BD</div>
-                            <div id="ombrages-3d-12" className="submenu-texte">Dessin à la brosse</div>
-                            <div id="ombrages-3d-13" className="submenu-texte">Ébauche BD</div>
-                            <div id="ombrages-3d-14" className="submenu-texte">Gel réfringent</div>
-                            <div id="ombrages-3d-15" className="submenu-texte">Métal brossé</div>
-                            <div id="ombrages-3d-16" className="submenu-texte">Métal profond</div>
-                            <div id="ombrages-3d-17" className="submenu-texte">Métal tranchant</div>
-                            <div id="ombrages-3d-18" className="submenu-texte">Opaline</div>
-                            <div id="ombrages-3d-19" className="submenu-texte">Opaline</div>
+                            <div id="filtres-ombrages-3d-1" className="submenu-texte">Aluminium</div>
+                            <div id="filtres-ombrages-3d-2" className="submenu-texte">Bande dessinée</div>
+                            <div id="filtres-ombrages-3d-3" className="submenu-texte">Bosselage alluminium</div>
+                            <div id="filtres-ombrages-3d-4" className="submenu-texte">Bosselage chromé</div>
+                            <div id="filtres-ombrages-3d-5" className="submenu-texte">Bosselage du contour</div>
+                            <div id="filtres-ombrages-3d-6" className="submenu-texte">Bosselage ombré</div>
+                            <div id="filtres-ombrages-3d-7" className="submenu-texte">Chrome</div>
+                            <div id="filtres-ombrages-3d-8" className="submenu-texte">Chrome profond</div>
+                            <div id="filtres-ombrages-3d-9" className="submenu-texte">Crème BD</div>
+                            <div id="filtres-ombrages-3d-10" className="submenu-texte">Déco net</div>
+                            <div id="filtres-ombrages-3d-11" className="submenu-texte">Décoloration BD</div>
+                            <div id="filtres-ombrages-3d-12" className="submenu-texte">Dessin à la brosse</div>
+                            <div id="filtres-ombrages-3d-13" className="submenu-texte">Ébauche BD</div>
+                            <div id="filtres-ombrages-3d-14" className="submenu-texte">Gel réfringent</div>
+                            <div id="filtres-ombrages-3d-15" className="submenu-texte">Métal brossé</div>
+                            <div id="filtres-ombrages-3d-16" className="submenu-texte">Métal profond</div>
+                            <div id="filtres-ombrages-3d-17" className="submenu-texte">Métal tranchant</div>
+                            <div id="filtres-ombrages-3d-18" className="submenu-texte">Opaline</div>
+                            <div id="filtres-ombrages-3d-19" className="submenu-texte">Opaline</div>
                         </div>
                     </div> 
 
@@ -1242,12 +1242,12 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-ombres-lueurs" className="submenu-listsub submenu-filtres-ombres-lueurs no-sub-menu">
-                            <div id="ombres-lueurs-1" className="submenu-texte">Découpe et flou</div>
-                            <div id="ombres-lueurs-2" className="submenu-texte">Dedans et dehors</div>
-                            <div id="ombres-lueurs-3" className="submenu-texte">Émergence</div>
-                            <div id="ombres-lueurs-4" className="submenu-texte">Incrsutation</div>
-                            <div id="ombres-lueurs-5" className="submenu-texte">Ombre et lumière</div>
-                            <div id="ombres-lueurs-6" className="submenu-texte">Ombre portée...</div>
+                            <div id="filtres-ombres-lueurs-1" className="submenu-texte">Découpe et flou</div>
+                            <div id="filtres-ombres-lueurs-2" className="submenu-texte">Dedans et dehors</div>
+                            <div id="filtres-ombres-lueurs-3" className="submenu-texte">Émergence</div>
+                            <div id="filtres-ombres-lueurs-4" className="submenu-texte">Incrsutation</div>
+                            <div id="filtres-ombres-lueurs-5" className="submenu-texte">Ombre et lumière</div>
+                            <div id="filtres-ombres-lueurs-6" className="submenu-texte">Ombre portée...</div>
                         </div>
                     </div> 
 
@@ -1258,7 +1258,7 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-outil-pixel" className="submenu-listsub submenu-filtres-outil-pixel no-sub-menu">
-                            <div id="outil-pixel-1" className="submenu-texte">Pixéliser</div>
+                            <div id="filtres-outil-pixel-1" className="submenu-texte">Pixéliser</div>
                         </div>
                     </div> 
 
@@ -1269,11 +1269,11 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-protuberances" className="submenu-listsub submenu-filtres-protuberances no-sub-menu">
-                            <div id="protuberances-1" className="submenu-texte">Bavure d'encre</div>
-                            <div id="protuberances-2" className="submenu-texte">Chewing-gum</div>
-                            <div id="protuberances-3" className="submenu-texte">Crête neigeuse...</div>
-                            <div id="protuberances-4" className="submenu-texte">Feu</div>
-                            <div id="protuberances-5" className="submenu-texte">Ruissellement</div>
+                            <div id="filtres-protuberances-1" className="submenu-texte">Bavure d'encre</div>
+                            <div id="filtres-protuberances-2" className="submenu-texte">Chewing-gum</div>
+                            <div id="filtres-protuberances-3" className="submenu-texte">Crête neigeuse...</div>
+                            <div id="filtres-protuberances-4" className="submenu-texte">Feu</div>
+                            <div id="filtres-protuberances-5" className="submenu-texte">Ruissellement</div>
                         </div>
                     </div> 
 
@@ -1284,40 +1284,40 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-superpositions" className="submenu-listsub submenu-filtres-superpositions no-sub-menu">
-                            <div id="superpositions-1" className="submenu-texte">Bruit croisé</div>
-                            <div id="superpositions-2" className="submenu-texte">Bruit croisé B</div>
-                            <div id="superpositions-3" className="submenu-texte">Carnaval</div>
-                            <div id="superpositions-4" className="submenu-texte">Cellules vivantes</div>
-                            <div id="superpositions-5" className="submenu-texte">Duotone turbulent</div>
-                            <div id="superpositions-6" className="submenu-texte">Écossais</div>
-                            <div id="superpositions-7" className="submenu-texte">Écossais</div>
-                            <div id="superpositions-8" className="submenu-texte">Écossais ondoyant</div>
-                            <div id="superpositions-9" className="submenu-texte">Fil barbelé</div>
-                            <div id="superpositions-10" className="submenu-texte">Fond turbulent...</div>
-                            <div id="superpositions-11" className="submenu-texte">Foule</div>
-                            <div id="superpositions-12" className="submenu-texte">Fourrure de tigre</div>
-                            <div id="superpositions-13" className="submenu-texte">Fromage bleu</div>
-                            <div id="superpositions-14" className="submenu-texte">Fromage suisse</div>
-                            <div id="superpositions-15" className="submenu-texte">Givre</div>
-                            <div id="superpositions-16" className="submenu-texte">Gomme lumière craquelée</div>
-                            <div id="superpositions-17" className="submenu-texte">Jardin des délices</div>
-                            <div id="superpositions-18" className="submenu-texte">Liquide</div>
-                            <div id="superpositions-19" className="submenu-texte">Liquide agité</div>
-                            <div id="superpositions-20" className="submenu-texte">Monochrome transparent craquelé</div>
-                            <div id="superpositions-21" className="submenu-texte">Montagnes d'Écosse</div>
-                            <div id="superpositions-22" className="submenu-texte">Moucheture</div>
-                            <div id="superpositions-23" className="submenu-texte">Nappe de pétrole</div>
-                            <div id="superpositions-24" className="submenu-texte">Nuages</div>
-                            <div id="superpositions-25" className="submenu-texte">Silhouette marbrée</div>
-                            <div id="superpositions-26" className="submenu-texte">Tampon en caoutchouc</div>
-                            <div id="superpositions-27" className="submenu-texte">Transparence agitée</div>
-                            <div id="superpositions-28" className="submenu-texte">Transparence barbouillée</div>
-                            <div id="superpositions-29" className="submenu-texte">Transparence pointilliste</div>
-                            <div id="superpositions-30" className="submenu-texte">Transparence toilée</div>
-                            <div id="superpositions-31" className="submenu-texte">Turbulence alpha</div>
-                            <div id="superpositions-32" className="submenu-texte">Turbulence colorée</div>
-                            <div id="superpositions-33" className="submenu-texte">Turbulence postérisée</div>
-                            <div id="superpositions-34" className="submenu-texte">Zèbre</div>
+                            <div id="filtres-superpositions-1" className="submenu-texte">Bruit croisé</div>
+                            <div id="filtres-superpositions-2" className="submenu-texte">Bruit croisé B</div>
+                            <div id="filtres-superpositions-3" className="submenu-texte">Carnaval</div>
+                            <div id="filtres-superpositions-4" className="submenu-texte">Cellules vivantes</div>
+                            <div id="filtres-superpositions-5" className="submenu-texte">Duotone turbulent</div>
+                            <div id="filtres-superpositions-6" className="submenu-texte">Écossais</div>
+                            <div id="filtres-superpositions-7" className="submenu-texte">Écossais</div>
+                            <div id="filtres-superpositions-8" className="submenu-texte">Écossais ondoyant</div>
+                            <div id="filtres-superpositions-9" className="submenu-texte">Fil barbelé</div>
+                            <div id="filtres-superpositions-10" className="submenu-texte">Fond turbulent...</div>
+                            <div id="filtres-superpositions-11" className="submenu-texte">Foule</div>
+                            <div id="filtres-superpositions-12" className="submenu-texte">Fourrure de tigre</div>
+                            <div id="filtres-superpositions-13" className="submenu-texte">Fromage bleu</div>
+                            <div id="filtres-superpositions-14" className="submenu-texte">Fromage suisse</div>
+                            <div id="filtres-superpositions-15" className="submenu-texte">Givre</div>
+                            <div id="filtres-superpositions-16" className="submenu-texte">Gomme lumière craquelée</div>
+                            <div id="filtres-superpositions-17" className="submenu-texte">Jardin des délices</div>
+                            <div id="filtres-superpositions-18" className="submenu-texte">Liquide</div>
+                            <div id="filtres-superpositions-19" className="submenu-texte">Liquide agité</div>
+                            <div id="filtres-superpositions-20" className="submenu-texte">Monochrome transparent craquelé</div>
+                            <div id="filtres-superpositions-21" className="submenu-texte">Montagnes d'Écosse</div>
+                            <div id="filtres-superpositions-22" className="submenu-texte">Moucheture</div>
+                            <div id="filtres-superpositions-23" className="submenu-texte">Nappe de pétrole</div>
+                            <div id="filtres-superpositions-24" className="submenu-texte">Nuages</div>
+                            <div id="filtres-superpositions-25" className="submenu-texte">Silhouette marbrée</div>
+                            <div id="filtres-superpositions-26" className="submenu-texte">Tampon en caoutchouc</div>
+                            <div id="filtres-superpositions-27" className="submenu-texte">Transparence agitée</div>
+                            <div id="filtres-superpositions-28" className="submenu-texte">Transparence barbouillée</div>
+                            <div id="filtres-superpositions-29" className="submenu-texte">Transparence pointilliste</div>
+                            <div id="filtres-superpositions-30" className="submenu-texte">Transparence toilée</div>
+                            <div id="filtres-superpositions-31" className="submenu-texte">Turbulence alpha</div>
+                            <div id="filtres-superpositions-32" className="submenu-texte">Turbulence colorée</div>
+                            <div id="filtres-superpositions-33" className="submenu-texte">Turbulence postérisée</div>
+                            <div id="filtres-superpositions-34" className="submenu-texte">Zèbre</div>
                         </div>
                     </div> 
 
@@ -1328,28 +1328,28 @@ const TopMenu = (props) => {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
                         <div id="minimenu-filtres-textures" className="submenu-listsub submenu-filtres-textures no-sub-menu">
-                            <div id="textures-1" className="submenu-texte">Aquarelle</div>
-                            <div id="textures-2" className="submenu-texte">Arc-en-ciel déformé</div>
-                            <div id="textures-3" className="submenu-texte">Arc-en-ciel fondu</div>
-                            <div id="textures-4" className="submenu-texte">Arc-en-ciel teinté</div>
-                            <div id="textures-5" className="submenu-texte">Buvard</div>
-                            <div id="textures-6" className="submenu-texte">Confiture</div>
-                            <div id="textures-7" className="submenu-texte">Criblé</div>
-                            <div id="textures-8" className="submenu-texte">Éclaté</div>
-                            <div id="textures-9" className="submenu-texte">Écorce</div>
-                            <div id="textures-10" className="submenu-texte">Feutre</div>
-                            <div id="textures-11" className="submenu-texte">Gouache</div>
-                            <div id="textures-12" className="submenu-texte">Impression à la cire</div>
-                            <div id="textures-13" className="submenu-texte">Mur de pierres</div>
-                            <div id="textures-14" className="submenu-texte">Papier à grain</div>
-                            <div id="textures-15" className="submenu-texte">Peinture à l'encre</div>
-                            <div id="textures-16" className="submenu-texte">Plastique chiffonné</div>
-                            <div id="textures-17" className="submenu-texte">Plastique écrasé</div>
-                            <div id="textures-18" className="submenu-texte">Pourtour brûlé</div>
-                            <div id="textures-19" className="submenu-texte">Relief organique</div>
-                            <div id="textures-20" className="submenu-texte">Tache d'encre...</div>
-                            <div id="textures-21" className="submenu-texte">Tapis de soie</div>
-                            <div id="textures-22" className="submenu-texte">Verre martelé</div>
+                            <div id="filtres-textures-1" className="submenu-texte">Aquarelle</div>
+                            <div id="filtres-textures-2" className="submenu-texte">Arc-en-ciel déformé</div>
+                            <div id="filtres-textures-3" className="submenu-texte">Arc-en-ciel fondu</div>
+                            <div id="filtres-textures-4" className="submenu-texte">Arc-en-ciel teinté</div>
+                            <div id="filtres-textures-5" className="submenu-texte">Buvard</div>
+                            <div id="filtres-textures-6" className="submenu-texte">Confiture</div>
+                            <div id="filtres-textures-7" className="submenu-texte">Criblé</div>
+                            <div id="filtres-textures-8" className="submenu-texte">Éclaté</div>
+                            <div id="filtres-textures-9" className="submenu-texte">Écorce</div>
+                            <div id="filtres-textures-10" className="submenu-texte">Feutre</div>
+                            <div id="filtres-textures-11" className="submenu-texte">Gouache</div>
+                            <div id="filtres-textures-12" className="submenu-texte">Impression à la cire</div>
+                            <div id="filtres-textures-13" className="submenu-texte">Mur de pierres</div>
+                            <div id="filtres-textures-14" className="submenu-texte">Papier à grain</div>
+                            <div id="filtres-textures-15" className="submenu-texte">Peinture à l'encre</div>
+                            <div id="filtres-textures-16" className="submenu-texte">Plastique chiffonné</div>
+                            <div id="filtres-textures-17" className="submenu-texte">Plastique écrasé</div>
+                            <div id="filtres-textures-18" className="submenu-texte">Pourtour brûlé</div>
+                            <div id="filtres-textures-19" className="submenu-texte">Relief organique</div>
+                            <div id="filtres-textures-20" className="submenu-texte">Tache d'encre...</div>
+                            <div id="filtres-textures-21" className="submenu-texte">Tapis de soie</div>
+                            <div id="filtres-textures-22" className="submenu-texte">Verre martelé</div>
                         </div>
                     </div> 
                     <hr className="topmenu-hr" />
@@ -1616,76 +1616,622 @@ const TopMenu = (props) => {
                         }
                         <div id="minimenu-extensions-inkstitch" className="submenu-listsub submenu-extensions-inkstitch no-sub-menu">
                             <div id="extensions-inkstitch-1" className="submenu-texte">
-                                Tourbillon...
+                                A propos...
                             </div>
                             <div id="extensions-inkstitch-2" className="submenu-texte">
-                                Tourbillon...
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }   
+                                Commandes
+                                <div id="minimenu-extensions-inkstitch-commandes" className="submenu-listsub submenu-extensions-inkstitch-commandes no-sub-menu">
+                                    <div id="extensions-inkstitch-commandes-1" className="submenu-texte">
+                                        {
+                                            <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                        }     
+                                        Affichage
+                                        <div id="minimenu-extensions-inkstitch-commandes-affichage" className="submenu-listsub extensions-inkstitch-commandes-affichage no-sub-menu">
+                                            <div id="extensions-inkstitch-commandes-affichage-1" className="submenu-texte">
+                                                Afficher / masquer les commandes des objets
+                                            </div>
+                                            <div id="extensions-inkstitch-commandes-affichage-2" className="submenu-texte">
+                                                Mise à l'échelle des symboles de commande...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="extensions-inkstitch-commandes-2" className="submenu-texte">
+                                        Ajouter des commandes à des calques...
+                                    </div>
+                                    <div id="extensions-inkstitch-commandes-3" className="submenu-texte">
+                                        Ajouter des commandes...
+                                    </div>
+                                    <div id="extensions-inkstitch-commandes-4" className="submenu-texte">
+                                        Attacer des commandes à des objets sélectionnés...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-inkstitch-3" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }     
+                                Edition
+                                <div id="minimenu-extensions-inkstitch-edition" className="submenu-listsub extensions-inkstitch-edition no-sub-menu">
+                                    <div id="extensions-inkstitch-edition-1" className="submenu-texte">
+                                        Dupliquer les paramètres
+                                    </div>
+                                    <div id="extensions-inkstitch-edition-2" className="submenu-texte">
+                                        Réempiler les objets dans l'ordre de leur sélection
+                                    </div>
+                                    <div id="extensions-inkstitch-edition-3" className="submenu-texte">
+                                        Sélection vers ligne-guide
+                                    </div>
+                                    <div id="extensions-inkstitch-edition-4" className="submenu-texte">
+                                        Sélection vers texture
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-inkstitch-4" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                Gestion des couleurs de fil
+                                <div id="minimenu-extensions-inkstitch-fil" className="submenu-listsub extensions-inkstitch-fil no-sub-menu">
+                                    <div id="extensions-inkstitch-fil-1" className="submenu-texte">
+                                        Appliquer la liste de fils...
+                                    </div>
+                                    <div id="extensions-inkstitch-fil-2" className="submenu-texte">
+                                        {
+                                            <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                        }
+                                        Générer palette
+                                        <div id="minimenu-extensions-inkstitch-fil-palette" className="submenu-listsub extensions-inkstitch-fil-palette no-sub-menu">
+                                            <div id="extensions-inkstitch-fil-palette-1" className="submenu-texte">
+                                                Générer palette de couleurs...
+                                            </div>
+                                            <div id="extensions-inkstitch-fil-palette-2" className="submenu-texte">
+                                                Séparer le texte...
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="extensions-inkstitch-fil-3" className="submenu-texte">
+                                        Installer des palettes de couleurs de fils à broder pour Inkscape
+                                    </div>
+                                    <div id="extensions-inkstitch-fil-4" className="submenu-texte">
+                                        Installer une pallette Personnalisée...
+                                    </div>
+                                    <div id="extensions-inkstitch-fil-5" className="submenu-texte">
+                                        Palette vers texte...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-inkstitch-5" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                Gestion des polices
+                                <div id="minimenu-extensions-inkstitch-police" className="submenu-listsub extensions-inkstitch-police no-sub-menu">
+                                    <div id="extensions-inkstitch-police-1" className="submenu-texte">
+                                        Forcer des points d'arrêt...
+                                    </div>
+                                    <div id="extensions-inkstitch-police-2" className="submenu-texte">
+                                        Générer JSON...
+                                    </div>
+                                    <div id="extensions-inkstitch-police-3" className="submenu-texte">
+                                        Lettres vers police...
+                                    </div>
+                                    <div id="extensions-inkstitch-police-4" className="submenu-texte">
+                                        Répertoire de police personnalisé...
+                                    </div>
+                                    <div id="extensions-inkstitch-police-5" className="submenu-texte">
+                                        Supprimer le crénage...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-inkstitch-6" className="submenu-texte">
+                                Lettrage
+                            </div>
+                            <div id="extensions-inkstitch-7" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }    
+                                Outils: Remplissage
+                                <div id="minimenu-extensions-inkstitch-remplissage" className="submenu-listsub extensions-inkstitch-remplissage no-sub-menu">
+                                    <div id="extensions-inkstitch-remplissage-1" className="submenu-texte">
+                                        Briser des objets de remplissage...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-inkstitch-8" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }    
+                                Outils: Satin
+                                <div id="minimenu-extensions-inkstitch-satin" className="submenu-listsub extensions-inkstitch-satin no-sub-menu">
+                                    <div id="extensions-inkstitch-satin-1" className="submenu-texte">
+                                        Agencement automatique de colonnes satin...
+                                    </div>
+                                    <div id="extensions-inkstitch-satin-2" className="submenu-texte">
+                                        Convertir le satin en trait...
+                                    </div>
+                                    <div id="extensions-inkstitch-satin-3" className="submenu-texte">
+                                        Convertir ligne en satin
+                                    </div>
+                                    <div id="extensions-inkstitch-satin-4" className="submenu-texte">
+                                        Intervertir les rails satin
+                                    </div>
+                                    <div id="extensions-inkstitch-satin-5" className="submenu-texte">
+                                        Scinder colonne satin
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-inkstitch-9" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                Outils: Trait
+                                <div id="minimenu-extensions-inkstitch-trait" className="submenu-listsub extensions-inkstitch-trait no-sub-menu">
+                                    <div id="extensions-inkstitch-trait-1" className="submenu-texte">
+                                        Agencement automatique de Points Droits...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-inkstitch-10" className="submenu-texte">
+                                Paramètres
+                            </div>
+                            <div id="extensions-inkstitch-11" className="submenu-texte">
+                                Préférences...
+                            </div>
+                            <div id="extensions-inkstitch-12" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }    
+                                Résolution de problèmes
+                                <div id="minimenu-extensions-inkstitch-probleme" className="submenu-listsub extensions-inkstitch-probleme no-sub-menu">
+                                    <div id="extensions-inkstitch-probleme-1" className="submenu-texte">
+                                        Dépistage de problèmes avec des objets
+                                    </div>
+                                    <div id="extensions-inkstitch-probleme-2" className="submenu-texte">
+                                        Nettoyer le document...
+                                    </div>
+                                    <div id="extensions-inkstitch-probleme-3" className="submenu-texte">
+                                        Supprimer tous les paramètres de broderie...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-inkstitch-13" className="submenu-texte">
+                                Segmentation Richelieu...
+                            </div>
+                            <div id="extensions-inkstitch-14" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }    
+                                Visualiser et exporter
+                                <div id="minimenu-extensions-inkstitch-visualiser" className="submenu-listsub extensions-inkstitch-visualiser no-sub-menu">
+                                    <div id="extensions-inkstitch-visualiser-1" className="submenu-texte">
+                                        Annuler l'aperçu du plan de broderie
+                                    </div>
+                                    <div id="extensions-inkstitch-visualiser-2" className="submenu-texte">
+                                        Broder...
+                                    </div>
+                                    <div id="extensions-inkstitch-visualiser-3" className="submenu-texte">
+                                        Carte de densité...
+                                    </div>
+                                    <div id="extensions-inkstitch-visualiser-4" className="submenu-texte">
+                                        Export PDF
+                                    </div>
+                                    <div id="extensions-inkstitch-visualiser-5" className="submenu-texte">
+                                        Prévisualisation du plan de broderie...
+                                    </div>
+                                    <div id="extensions-inkstitch-visualiser-6" className="submenu-texte">
+                                        Simulateur / Aperçu réaliste
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div> 
 
                     { /* SUBMENU JESSYINK */}
                     <div id="extensions-12" className="submenu-texte">
-                        JessyInk
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        JessyInk
+                        <div id="minimenu-extensions-jessyink" className="submenu-listsub submenu-extensions-jessyink no-sub-menu">
+                            <div id="extensions-jessyink-1" className="submenu-texte">
+                                Désinstallation/suppression...
+                            </div>
+                            <div id="extensions-jessyink-2" className="submenu-texte">
+                                Diapositive maîtresse...
+                            </div>
+                            <div id="extensions-jessyink-3" className="submenu-texte">
+                                Effets...
+                            </div>
+                            <div id="extensions-jessyink-4" className="submenu-texte">
+                                Gestion de la souris...
+                            </div>
+                            <div id="extensions-jessyink-5" className="submenu-texte">
+                                Installation/mise à jour...
+                            </div>
+                            <div id="extensions-jessyink-6" className="submenu-texte">
+                                Raccourcis clavier...
+                            </div>
+                            <div id="extensions-jessyink-7" className="submenu-texte">
+                                Résumé...
+                            </div>
+                            <div id="extensions-jessyink-8" className="submenu-texte">
+                                Textes automatiques...
+                            </div>
+                            <div id="extensions-jessyink-9" className="submenu-texte">
+                                Transitions...
+                            </div>
+                            <div id="extensions-jessyink-10" className="submenu-texte">
+                                Vidéo...
+                            </div>
+                            <div id="extensions-jessyink-11" className="submenu-texte">
+                                Vue...
+                            </div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU MODIFIER LES CHEMINS */}
                     <div id="extensions-13" className="submenu-texte">
-                        Modifier les chemins
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        Modifier les chemins
+                        <div id="minimenu-extensions-chemins" className="submenu-listsub submenu-extensions-chemins no-sub-menu">
+                            <div id="extensions-chemins-1" className="submenu-texte">
+                                Absolu
+                            </div>
+                            <div id="extensions-chemins-2" className="submenu-texte">
+                                Ajouter des noeuds...
+                            </div>
+                            <div id="extensions-chemins-3" className="submenu-texte">
+                                Aligner au pixel...
+                            </div>
+                            <div id="extensions-chemins-4" className="submenu-texte">
+                                Aplatir les courbes de Bézier...
+                            </div>
+                            <div id="extensions-chemins-5" className="submenu-texte">
+                                Colorer les marqueurs...
+                            </div>
+                            <div id="extensions-chemins-6" className="submenu-texte">
+                                Contour 3D...
+                            </div>
+                            <div id="extensions-chemins-7" className="submenu-texte">
+                                Convertir en tirets
+                            </div>
+                            <div id="extensions-chemins-8" className="submenu-texte">
+                                Déplacer les noeuds aléatoirement...
+                            </div>
+                            <div id="extensions-chemins-9" className="submenu-texte">
+                                Élastique...
+                            </div>
+                            <div id="extensions-chemins-10" className="submenu-texte">
+                                Enveloppe
+                            </div>
+                            <div id="extensions-chemins-11" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                Filet
+                                <div id="minimenu-extensions-chemins-filet" className="submenu-listsub submenu-extensions-chemins-filet no-sub-menu">
+                                    <div id="extensions-chemins-filet-1" className="submenu-texte">
+                                        Chemin en filet de dégradé...
+                                    </div>
+                                    <div id="extensions-chemins-filet-2" className="submenu-texte">
+                                        Filet de dégradé en chemin...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-chemins-12" className="submenu-texte">
+                                Interpoler l'attribut dans un groupe...
+                            </div>
+                            <div id="extensions-chemins-13" className="submenu-texte">
+                                Perspective
+                            </div>
+                            <div id="extensions-chemins-14" className="submenu-texte">
+                                Rendre les segments droits...
+                            </div>
+                            <div id="extensions-chemins-15" className="submenu-texte">
+                                Tourbillon...
+                            </div>
+                            <div id="extensions-chemins-16" className="submenu-texte">
+                                Transformer en fractale...
+                            </div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU ORGANISER */}
                     <div id="extensions-14" className="submenu-texte">
-                        Organiser
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        Organiser
+                        <div id="minimenu-extensions-organiser" className="submenu-listsub submenu-extensions-organiser no-sub-menu">
+                            <div id="extensions-organiser-1" className="submenu-texte">
+                                Dégrouper récursivement...
+                            </div>
+                            <div id="extensions-organiser-2" className="submenu-texte">
+                                Réempiler...
+                            </div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU RENDU */}
                     <div id="extensions-15" className="submenu-texte">
-                        Rendu
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        Rendu
+                        <div id="minimenu-extensions-rendu" className="submenu-listsub submenu-extensions-rendu no-sub-menu">
+                            <div id="extensions-rendu-1" className="submenu-texte">
+                                Arbre aléatoire...
+                            </div>
+                            <div id="extensions-rendu-2" className="submenu-texte">
+                                Boîte à plier...
+                            </div>
+                            <div id="extensions-rendu-3" className="submenu-texte">
+                                Cadre...
+                            </div>
+                            <div id="extensions-rendu-4" className="submenu-texte">
+                                Calendrier...
+                            </div>
+                            <div id="extensions-rendu-5" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                Codes-barres
+                                <div id="minimenu-extensions-rendu-codesbarres" className="submenu-listsub submenu-extensions-rendu-codesbarres no-sub-menu">
+                                    <div id="extensions-rendu-codesbarres-1" className="submenu-texte">
+                                        Classique...
+                                    </div>
+                                    <div id="extensions-rendu-codesbarres-2" className="submenu-texte">
+                                        Datamatrix...
+                                    </div>
+                                    <div id="extensions-rendu-codesbarres-3" className="submenu-texte">
+                                        QR Code...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-rendu-6" className="submenu-texte">
+                                Courbes paramétriques...
+                            </div>
+                            <div id="extensions-rendu-7" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                Engrenage
+                                <div id="minimenu-extensions-rendu-engrenage" className="submenu-listsub submenu-extensions-rendu-engrenage no-sub-menu">
+                                    <div id="extensions-rendu-engrenage-1" className="submenu-texte">
+                                        Crémaillère...
+                                    </div>
+                                    <div id="extensions-rendu-engrenage-2" className="submenu-texte">
+                                        Engrenage...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-rendu-8" className="submenu-texte">
+                                Générateur de guides...
+                            </div>
+                            <div id="extensions-rendu-9" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                Grilles
+                                <div id="minimenu-extensions-rendu-grilles" className="submenu-listsub submenu-extensions-rendu-grilles no-sub-menu">
+                                    <div id="extensions-rendu-grilles-1" className="submenu-texte">
+                                        Grille cartésienne...
+                                    </div>
+                                    <div id="extensions-rendu-grilles-2" className="submenu-texte">
+                                        Grille isométrique...
+                                    </div>
+                                    <div id="extensions-rendu-grilles-3" className="submenu-texte">
+                                        Grille polaire...
+                                    </div>
+                                    <div id="extensions-rendu-grilles-4" className="submenu-texte">
+                                        Grille...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-rendu-10" className="submenu-texte">
+                                Jolis graphiques...
+                            </div>
+                            <div id="extensions-rendu-11" className="submenu-texte">
+                                LaTeX (pdflatex)...
+                            </div>
+                            <div id="extensions-rendu-12" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                Mise en page
+                                <div id="minimenu-extensions-rendu-miseenpage" className="submenu-listsub submenu-extensions-rendu-miseenpage no-sub-menu">
+                                    <div id="extensions-rendu-miseenpage-1" className="submenu-texte">
+                                        Couverture dos carré collé...
+                                    </div>
+                                    <div id="extensions-rendu-miseenpage-2" className="submenu-texte">
+                                        Marques d'impression...
+                                    </div>
+                                    <div id="extensions-rendu-miseenpage-3" className="submenu-texte">
+                                        Mise en page multicadres...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-rendu-13" className="submenu-texte">
+                                Polyèdre 3D...
+                            </div>
+                            <div id="extensions-rendu-14" className="submenu-texte">
+                                Soupe alphabet...
+                            </div>
+                            <div id="extensions-rendu-15" className="submenu-texte">
+                                Sphère fil de fer...
+                            </div>
+                            <div id="extensions-rendu-16" className="submenu-texte">
+                                Spirographe...
+                            </div>
+                            <div id="extensions-rendu-17" className="submenu-texte">
+                                Système de Lindenmayer...
+                            </div>
+                            <div id="extensions-rendu-18" className="submenu-texte">
+                                Tracer à partir d'un triangle...
+                            </div>
+                            <div id="extensions-rendu-19" className="submenu-texte">
+                                Traceur de fonction...
+                            </div>
+                            <div id="extensions-rendu-20" className="submenu-texte">
+                                Triangle...
+                            </div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU TEXTE */}
                     <div id="extensions-16" className="submenu-texte"> 
-                        Texte
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        Texte
+                        <div id="minimenu-extensions-texte" className="submenu-listsub submenu-extensions-texte no-sub-menu">
+                            <div id="extensions-texte-1" className="submenu-texte">
+                                Convertir en Braille
+                            </div>
+                            <div id="extensions-texte-2" className="submenu-texte">
+                                Diviser du texte...
+                            </div>
+                            <div id="extensions-texte-3" className="submenu-texte">
+                                Extraire...
+                            </div>
+                            <div id="extensions-texte-4" className="submenu-texte">
+                                Fusionner...
+                            </div>
+                            <div id="extensions-texte-5" className="submenu-texte">
+                                Lorem ipsum...
+                            </div>
+                            <div id="extensions-texte-6" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                Modifier la casse
+                                <div id="minimenu-extensions-texte-casse" className="submenu-listsub submenu-extensions-texte-casse no-sub-menu">
+                                    <div id="extensions-texte-casse-1" className="submenu-texte">
+                                        cAssE ALÉatOIRe
+                                    </div>
+                                    <div id="extensions-texte-casse-2" className="submenu-texte">
+                                        Casse des phrases
+                                    </div>
+                                    <div id="extensions-texte-casse-3" className="submenu-texte">
+                                        Casse du titre
+                                    </div>
+                                    <div id="extensions-texte-casse-4" className="submenu-texte">
+                                        iNVERSER lA cASSE
+                                    </div>
+                                    <div id="extensions-texte-casse-5" className="submenu-texte">
+                                        MAJUSCULES
+                                    </div>
+                                    <div id="extensions-texte-casse-6" className="submenu-texte">
+                                        minuscules
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-texte-7" className="submenu-texte">
+                                Remplacer la police...
+                            </div>
+                            <div id="extensions-texte-8" className="submenu-texte">
+                                Texte Hershey...
+                            </div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU TYPOGRAPHIE */}
                     <div id="extensions-17" className="submenu-texte">
-                        Typographie
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        Typographie
+                        <div id="minimenu-extensions-typographie" className="submenu-listsub submenu-extensions-typographie no-sub-menu">
+                            <div id="extensions-typographie-1" className="submenu-texte">
+                                (1) Paramétrer le canevas typographique...
+                            </div>
+                            <div id="extensions-typographie-2" className="submenu-texte">
+                                (2) Ajouter un calque de glyphe...
+                            </div>
+                            <div id="extensions-typographie-3" className="submenu-texte">
+                                (3) Convertir les calques de glyphe en police SVG
+                            </div>
+                            <div id="extensions-typographie-4" className="submenu-texte">
+                                Convertir la fonte SVG en calques de glyphes...
+                            </div>
+                            <div id="extensions-typographie-5" className="submenu-texte">
+                                Voir le glyphe précédent
+                            </div>
+                            <div id="extensions-typographie-6" className="submenu-texte">
+                                Voir le glyphe suivant
+                            </div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU VISUALISATION DE CHEMIN */}
                     <div id="extensions-18" className="submenu-texte">
-                        Visualisation de chemin
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        Visualisation de chemin
+                        <div id="minimenu-extensions-chemin" className="submenu-listsub submenu-extensions-chemin no-sub-menu">
+                            <div id="extensions-chemin-1" className="submenu-texte">
+                                Dessiner les poignées
+                            </div>
+                            <div id="extensions-chemin-2" className="submenu-texte">
+                                Dimensions...
+                            </div>
+                            <div id="extensions-chemin-3" className="submenu-texte">
+                                Mesurer un chemin...
+                            </div>
+                            <div id="extensions-chemin-4" className="submenu-texte">
+                                Numéroter les noeuds...
+                            </div>
+                        </div>
                     </div> 
 
                     { /* SUBMENU WEB */}
                     <div id="extensions-19" className="submenu-texte">
-                        Web
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        web
+                        <div id="minimenu-extensions-web" className="submenu-listsub submenu-extensions-web no-sub-menu">
+                            <div id="extensions-web-1" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                Découpe
+                                <div id="minimenu-extensions-web-decoupe" className="submenu-listsub submenu-extensions-web-decoupe no-sub-menu">
+                                    <div id="extensions-web-decoupe-1" className="submenu-texte">
+                                        Créer un rectangle de découpe...
+                                    </div>
+                                    <div id="extensions-web-decoupe-2" className="submenu-texte">
+                                        Définir un groupe de composants...
+                                    </div>
+                                    <div id="extensions-web-decoupe-3" className="submenu-texte">
+                                        Exporter les composants et le code HTML+CSS...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-web-2" className="submenu-texte">
+                                {
+                                    <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
+                                }
+                                JavaScript
+                                <div id="minimenu-extensions-web-javascript" className="submenu-listsub submenu-extensions-web-javascript no-sub-menu">
+                                    <div id="extensions-web-javascript-1" className="submenu-texte">
+                                        Définir les attributs...
+                                    </div>
+                                    <div id="extensions-web-javascript-2" className="submenu-texte">
+                                        Transmettre les attributs...
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="extensions-web-3" className="submenu-texte">
+                                Maquette web interactive...
+                            </div>
+                        </div>
                     </div> 
 
                     <hr className="topmenu-hr" />
@@ -1696,25 +2242,62 @@ const TopMenu = (props) => {
 
                 { /* MENU AIDE */}
                 <div id="submenu-aide" className="submenu-list submenu-aide no-sub-menu">
-                    <div id="aide-1" className="submenu-texte">Manuel d'inkscape</div>
-                    <div id="aide-2" className="submenu-texte">Référence des raccourcis clavier et souris</div>
-                    <div id="aide-3" className="submenu-texte">Poser une question</div>
-                    <div id="aide-4" className="submenu-texte">
-                        Didacticiels
+                    <div id="aide-1" className="submenu-texte submenu-iconspace">Manuel d'inkscape</div>
+                    <div id="aide-2" className="submenu-texte submenu-iconspace">Référence des raccourcis clavier et souris</div>
+                    <div id="aide-3" className="submenu-texte submenu-iconspace">Poser une question</div>
+                    <div id="aide-4" className="submenu-texte submenu-iconspace">
                         {
                             <FontAwesomeIcon className="submenu-arrowright" icon={["fa", "fa-chevron-right"]} />
                         }
+                        Didacticiels
+                        <div id="minimenu-aide-didacticiel" className="submenu-listsub submenu-aide-didacticiel no-sub-menu">
+                            <div id="aide-didacticiel-1" className="submenu-texte">
+                                Inkscape: Basique
+                            </div>
+                            <div id="aide-didacticiel-2" className="submenu-texte">
+                                Inkscape: Formes
+                            </div>
+                            <div id="aide-didacticiel-3" className="submenu-texte">
+                                Inkscape: Avancé
+                            </div>
+                            <div id="aide-didacticiel-4" className="submenu-texte">
+                                Inkscape: Vectorisation
+                            </div>
+                            <div id="aide-didacticiel-5" className="submenu-texte">
+                                Inkscape: Vectoriser du pixel art
+                            </div>
+                            <div id="aide-didacticiel-6" className="submenu-texte">
+                                Inkscape: Calligraphie
+                            </div>
+                            <div id="aide-didacticiel-7" className="submenu-texte">
+                                Inkscape: Interpolation
+                            </div>
+                            <div id="aide-didacticiel-8" className="submenu-texte">
+                                Rudiments de design
+                            </div>
+                            <div id="aide-didacticiel-9" className="submenu-texte">
+                                Trucs et astuces
+                            </div>
+                        </div>
                     </div>
-                    <div id="aide-5" className="submenu-texte">Option de la ligne de commande</div>
-                    <div id="aide-6" className="submenu-texte">FAQ</div>
-                    <div id="aide-7" className="submenu-texte">Nouveautés de cette version</div>
-                    <div id="aide-8" className="submenu-texte">Signaler un problème</div>
-                    <div id="aide-9" className="submenu-texte">Faire un don</div>
-                    <div id="aide-10" className="submenu-texte">Spécification de SVG 1.1</div>
-                    <div id="aide-11" className="submenu-texte">Spécification de SVG 2</div>
+                    <div id="aide-5" className="submenu-texte submenu-iconspace">Option de la ligne de commande</div>
+                    <div id="aide-6" className="submenu-texte submenu-iconspace">FAQ</div>
+                    <div id="aide-7" className="submenu-texte submenu-iconspace">Nouveautés de cette version</div>
+                    <div id="aide-8" className="submenu-texte submenu-iconspace">Signaler un problème</div>
+                    <div id="aide-9" className="submenu-texte submenu-iconspace">Faire un don</div>
+                    <div id="aide-10" className="submenu-texte submenu-iconspace">Spécification de SVG 1.1</div>
+                    <div id="aide-11" className="submenu-texte submenu-iconspace">Spécification de SVG 2</div>
                     <hr className="topmenu-hr" />
-                    <div id="aide-12" className="submenu-texte">Gestion de la mémoire</div>
-                    <div id="aide-13" className="submenu-texte">À propos d'inkscape</div>
+                    <div id="aide-12" className="submenu-texte submenu-iconspace">Gestion de la mémoire</div>
+                    <div id="aide-13" className="submenu-texte">
+                        {
+                            <FontAwesomeIcon 
+                                className="submenu-left" 
+                                icon={["fa", "fa-info-circle"]} 
+                            />
+                        }
+                        À propos d'inkscape
+                    </div>
                 </div>
             
             </div>

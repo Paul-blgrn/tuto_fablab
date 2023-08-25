@@ -712,7 +712,7 @@
 
 .submenu-fichier {
     position: relative;
-    left: 0.4vmin;
+    left: 0.8vmin;
 }
 
 .submenu-edition {
@@ -722,32 +722,32 @@
 
 .submenu-affichage {
     position: relative;
-    left: 16vmin;
+    left: 16.2vmin;
 }
 
 .submenu-calque{
     position: relative;
-    left: 26.2vmin;
+    left: 26.7vmin;
 }
 
 .submenu-objet{
     position: relative;
-    left: 34vmin;
+    left: 34.5vmin;
 }
 
 .submenu-chemin {
     position: relative;
-    left: 41.2vmin;
+    left: 40.8vmin;
 }
 
 .submenu-texte2 {
     position: relative;
-    left: 49.5vmin;
+    left: 12.7vmin;
 }
 
 .submenu-filtres {
     position: relative;
-    left: 20vmin;
+    left: 19.8vmin;
 }
 
 .submenu-extensions {
@@ -757,13 +757,13 @@
 
 .submenu-aide {
     position: relative;
-    left: 36.9vmin;
+    left: 36.5vmin;
 }
 
-.submenu-zoom {
+.submenu-affichage-zoom {
     position: absolute;
     left: 42.6vmin;
-    top: 1vmin;
+    top: 0.9vmin;
 }
 
 
@@ -773,55 +773,55 @@
 .submenu-fichier-recents {
     position: absolute;
     left: 42.6vmin;
-    top: 14.6vmin;
+    top: 14.2vmin;
 }
 
-.submenu-coller-dimensions {
+.submenu-edition-coller-dimensions {
     position: absolute;
     left: 42.6vmin;
-    top: 40.8vmin;
+    top: 40.2vmin;
 }
 
 .submenu-cloner {
     position: absolute;
     left: 42.6vmin;
-    top: 61.8vmin;
+    top: 61vmin;
 }
 
 .submenu-selectionner-meme {
     position: absolute;
     left: 42.6vmin;
-    top: 91.8vmin;
+    top: 93.5vmin;
 }
 
-.submenu-decoupe {
+.submenu-objet-decoupe {
     position: absolute;
     left: 42.6vmin;
-    top: 49vmin;
+    top: 48.3vmin;
 }
 
-.submenu-masque {
+.submenu-objet-masque {
     position: absolute;
     left: 42.6vmin;
-    top: 53.5vmin;
+    top: 52.8vmin;
 }
 
-.submenu-motif {
+.submenu-objet-motif {
     position: absolute;
     left: 42.6vmin;
-    top: 58vmin;
+    top: 57.2vmin;
 }
 
-.submenu-orientation {
+.submenu-affichage-orientation {
     position: absolute;
     left: 42.6vmin;
     top: 5.5vmin;
 }
 
-.submenu-mode-affichage {
+.submenu-affichage-mode-affichage {
     position: absolute;
     left: 42.6vmin;
-    top: 11vmin;
+    top: 10vmin;
 }
 
 .submenu-mode-affichage-scinde {
@@ -830,16 +830,16 @@
     top: 15.5vmin;
 }
 
-.submenu-afficher-cacher {
+.submenu-affichage-afficher-cacher {
     position: absolute;
     left: 42.6vmin;
-    top: 46vmin;
+    top: 44.5vmin;
 }
 
 .submenu-filtres-biseaux {
     position: absolute;
     left: 42.6vmin;
-    top: 0vmin;
+    top: 0.9vmin;
 }
 
 .submenu-filtres-bosselage {
@@ -857,25 +857,25 @@
 .submenu-filtres-cretes {
     position: absolute;
     left: 42.6vmin;
-    top: 14.6vmin;
+    top: 14.3vmin;
 }
 
 .submenu-filtres-deformation {
     position: absolute;
     left: 42.6vmin;
-    top: 19.1vmin;
+    top: 18.8vmin;
 }
 
 .submenu-filtres-peinture-image {
     position: absolute;
     left: 42.6vmin;
-    top: 23.6vmin;
+    top: 23.3vmin;
 }
 
 .submenu-filtres-effet-image {
     position: absolute;
     left: 42.6vmin;
-    top: 28.1vmin;
+    top: 27.7vmin;
 }
 
 .submenu-filtres-eparpiller {
@@ -996,4 +996,172 @@
     position: absolute;
     left: 42.6vmin;
     top: 48vmin;
+}
+
+.submenu-extensions-inkstitch-commandes {
+    position: absolute;
+    left: 40.2vmin;
+    top: 5.5vmin;
+}
+
+.extensions-inkstitch-commandes-affichage {
+    position: absolute;
+    left: 40.3vmin;
+    top: 1vmin;
+}
+
+.extensions-inkstitch-edition {
+    position: absolute;
+    left: 40.2vmin;
+    top: 10vmin;
+}
+
+.extensions-inkstitch-fil {
+    position: absolute;
+    left: 40.2vmin;
+    top: 14.5vmin;
+}
+
+.extensions-inkstitch-fil-palette {
+    position: absolute;
+    left: 40.3vmin;
+    top: 5.5vmin;
+}
+
+.extensions-inkstitch-police {
+    position: absolute;
+    left: 40.2vmin;
+    top: 19vmin;
+}
+
+.extensions-inkstitch-remplissage {
+    position: absolute;
+    left: 40.2vmin;
+    top: 27.8vmin;
+}
+
+.extensions-inkstitch-satin {
+    position: absolute;
+    left: 40.2vmin;
+    top: 32.2vmin;
+}
+
+.extensions-inkstitch-trait {
+    position: absolute;
+    left: 40.2vmin;
+    top: 36.5vmin;
+}
+
+.extensions-inkstitch-probleme {
+    position: absolute;
+    left: 40.2vmin;
+    top: 50vmin;
+}
+
+.extensions-inkstitch-visualiser {
+    position: absolute;
+    left: 40.2vmin;
+    top: 59vmin;
+}
+
+.submenu-extensions-jessyink {
+    position: absolute;
+    left: 42.6vmin;
+    top: 53.6vmin;
+}
+
+.submenu-extensions-chemins {
+    position: absolute;
+    left: 42.6vmin;
+    top: 58.2vmin;
+}
+
+.submenu-extensions-chemins-filet {
+    position: absolute;
+    left: 40.2vmin;
+    top: 45.6vmin;
+}
+
+.submenu-extensions-organiser {
+    position: absolute;
+    left: 42.6vmin;
+    top: 62.5vmin;
+}
+
+.submenu-extensions-rendu {
+    position: absolute;
+    left: 42.6vmin;
+    top: 67.1vmin;
+}
+
+.submenu-extensions-rendu-codesbarres {
+    position: absolute;
+    left: 40.2vmin;
+    top: 19vmin;
+}
+
+.submenu-extensions-rendu-engrenage {
+    position: absolute;
+    left: 40.2vmin;
+    top: 27.5vmin;
+}
+
+.submenu-extensions-rendu-grilles {
+    position: absolute;
+    left: 40.2vmin;
+    top: 36.5vmin;
+}
+
+.submenu-extensions-rendu-miseenpage {
+    position: absolute;
+    left: 40.2vmin;
+    top: 50vmin;
+}
+
+.submenu-extensions-texte {
+    position: absolute;
+    left: 42.6vmin;
+    top: 71.5vmin;
+}
+
+.submenu-extensions-texte-casse {
+    position: absolute;
+    left: 40.2vmin;
+    top: 23.2vmin;
+}
+
+.submenu-extensions-typographie {
+    position: absolute;
+    left: 42.6vmin;
+    top: 76vmin;
+}
+
+.submenu-extensions-chemin {
+    position: absolute;
+    left: 42.6vmin;
+    top: 80.4vmin;
+}
+
+.submenu-extensions-web {
+    position: absolute;
+    left: 42.6vmin;
+    top: 84.8vmin;
+}
+
+.submenu-extensions-web-decoupe {
+    position: absolute;
+    left: 40.2vmin;
+    top: 1vmin;
+}
+
+.submenu-extensions-web-javascript {
+    position: absolute;
+    left: 40.2vmin;
+    top: 5.5vmin;
+}
+
+.submenu-aide-didacticiel {
+    position: absolute;
+    left: 42.6vmin;
+    top: 17.2vmin;
 }
